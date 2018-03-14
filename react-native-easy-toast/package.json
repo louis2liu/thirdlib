@@ -1,0 +1,106 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-native-easy-toast@^1.0.9",
+        "scope": null,
+        "escapedName": "react-native-easy-toast",
+        "name": "react-native-easy-toast",
+        "rawSpec": "^1.0.9",
+        "spec": ">=1.0.9 <2.0.0",
+        "type": "range"
+      },
+      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn"
+    ]
+  ],
+  "_cnpm_publish_time": 1520906287558,
+  "_from": "react-native-easy-toast@>=1.0.9 <2.0.0",
+  "_hasShrinkwrap": false,
+  "_id": "react-native-easy-toast@1.1.0",
+  "_inCache": true,
+  "_location": "/react-native-easy-toast",
+  "_nodeVersion": "8.6.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-native-easy-toast_1.1.0_1520906287515_0.01032940178897035"
+  },
+  "_npmUser": {
+    "name": "crazycodeboy",
+    "email": "crazycodeboy@gmail.com"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-easy-toast@^1.0.9",
+    "scope": null,
+    "escapedName": "react-native-easy-toast",
+    "name": "react-native-easy-toast",
+    "rawSpec": "^1.0.9",
+    "spec": ">=1.0.9 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/react-native-easy-toast/download/react-native-easy-toast-1.1.0.tgz",
+  "_shasum": "7d3a34ed298d32c4827b8d43ddfab6a71b98a2e3",
+  "_shrinkwrap": null,
+  "_spec": "react-native-easy-toast@^1.0.9",
+  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn",
+  "author": {
+    "name": "crazycodeboy"
+  },
+  "bugs": {
+    "url": "https://github.com/crazycodeboy/react-native-easy-toast/issues"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  },
+  "description": "A react native module to show toast like android, it works on iOS and Android.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "7d3a34ed298d32c4827b8d43ddfab6a71b98a2e3",
+    "size": 5078,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/react-native-easy-toast/download/react-native-easy-toast-1.1.0.tgz"
+  },
+  "gitHead": "4d8ec6756e09c1f26ae442b5abf535d531fa3381",
+  "homepage": "https://github.com/crazycodeboy/react-native-easy-toast#readme",
+  "keywords": [
+    "react-native",
+    "react-native-component",
+    "react-native-toast",
+    "toast",
+    "toast-ios",
+    "alert",
+    "react-component",
+    "navigator",
+    "ios",
+    "android"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "crazycodeboy",
+      "email": "crazycodeboy@gmail.com"
+    }
+  ],
+  "name": "react-native-easy-toast",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react-native": ">=0.20.0",
+    "prop-types": "^15.5.7"
+  },
+  "publish_time": 1520906287558,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crazycodeboy/react-native-easy-toast.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.1.0"
+}

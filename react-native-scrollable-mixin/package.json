@@ -1,0 +1,134 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-native-scrollable-mixin@^1.0.1",
+        "scope": null,
+        "escapedName": "react-native-scrollable-mixin",
+        "name": "react-native-scrollable-mixin",
+        "rawSpec": "^1.0.1",
+        "spec": ">=1.0.1 <2.0.0",
+        "type": "range"
+      },
+      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native-invertible-scroll-view"
+    ]
+  ],
+  "_cnpm_publish_time": 1437094983065,
+  "_from": "react-native-scrollable-mixin@>=1.0.1 <2.0.0",
+  "_hasShrinkwrap": false,
+  "_id": "react-native-scrollable-mixin@1.0.1",
+  "_inCache": true,
+  "_location": "/react-native-scrollable-mixin",
+  "_nodeVersion": "2.3.3",
+  "_npmUser": {
+    "name": "ide",
+    "email": "ide+npm@jameside.com"
+  },
+  "_npmVersion": "2.11.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-scrollable-mixin@^1.0.1",
+    "scope": null,
+    "escapedName": "react-native-scrollable-mixin",
+    "name": "react-native-scrollable-mixin",
+    "rawSpec": "^1.0.1",
+    "spec": ">=1.0.1 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/react-native-invertible-scroll-view"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/react-native-scrollable-mixin/download/react-native-scrollable-mixin-1.0.1.tgz",
+  "_shasum": "34a32167b64248594154fd0d6a8b03f22740548e",
+  "_shrinkwrap": null,
+  "_spec": "react-native-scrollable-mixin@^1.0.1",
+  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native-invertible-scroll-view",
+  "author": {
+    "name": "James Ide"
+  },
+  "bugs": {
+    "url": "https://github.com/exponentjs/react-native-scrollable-mixin/issues"
+  },
+  "dependencies": {},
+  "description": "A standard interface for your scrollable React Native components, making it easier to compose components.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "34a32167b64248594154fd0d6a8b03f22740548e",
+    "size": 2586,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/react-native-scrollable-mixin/download/react-native-scrollable-mixin-1.0.1.tgz"
+  },
+  "gitHead": "8278de26a156ee98de6d09e2d6162e824ac7e647",
+  "homepage": "https://github.com/exponentjs/react-native-scrollable-mixin",
+  "keywords": [
+    "react-native",
+    "scroll",
+    "scrollview",
+    "mixin"
+  ],
+  "license": "MIT",
+  "main": "ScrollableMixin.js",
+  "maintainers": [
+    {
+      "name": "abi",
+      "email": "abimanyuraja@gmail.com"
+    },
+    {
+      "name": "anp",
+      "email": "adam.n.perry@gmail.com"
+    },
+    {
+      "name": "brentvatne",
+      "email": "brentvatne@gmail.com"
+    },
+    {
+      "name": "ccheever",
+      "email": "ccheever@gmail.com"
+    },
+    {
+      "name": "dikaiosune",
+      "email": "adam.n.perry@gmail.com"
+    },
+    {
+      "name": "evanbacon",
+      "email": "baconbrix@gmail.com"
+    },
+    {
+      "name": "expoadmin",
+      "email": "exponent.team@gmail.com"
+    },
+    {
+      "name": "fson",
+      "email": "ville.immonen@iki.fi"
+    },
+    {
+      "name": "ide",
+      "email": "ide+npm@jameside.com"
+    },
+    {
+      "name": "jesseruder",
+      "email": "jesse@sixfivezero.net"
+    },
+    {
+      "name": "nikki93",
+      "email": "s.nikhilesh@gmail.com"
+    },
+    {
+      "name": "terribleben",
+      "email": "ben@exp.host"
+    }
+  ],
+  "name": "react-native-scrollable-mixin",
+  "optionalDependencies": {},
+  "publish_time": 1437094983065,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exponentjs/react-native-scrollable-mixin.git"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "version": "1.0.1"
+}

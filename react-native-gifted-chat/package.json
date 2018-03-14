@@ -1,0 +1,136 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-native-gifted-chat@^0.3.0",
+        "scope": null,
+        "escapedName": "react-native-gifted-chat",
+        "name": "react-native-gifted-chat",
+        "rawSpec": "^0.3.0",
+        "spec": ">=0.3.0 <0.4.0",
+        "type": "range"
+      },
+      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn"
+    ]
+  ],
+  "_cnpm_publish_time": 1509160590482,
+  "_from": "react-native-gifted-chat@>=0.3.0 <0.4.0",
+  "_hasShrinkwrap": false,
+  "_id": "react-native-gifted-chat@0.3.0",
+  "_inCache": true,
+  "_location": "/react-native-gifted-chat",
+  "_nodeVersion": "6.9.5",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-native-gifted-chat-0.3.0.tgz_1509160590346_0.32825147826224566"
+  },
+  "_npmUser": {
+    "name": "brunocascio",
+    "email": "brunocascio@gmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {
+    "fbjs": "0.8.16",
+    "loose-envify": "1.3.1"
+  },
+  "_requested": {
+    "raw": "react-native-gifted-chat@^0.3.0",
+    "scope": null,
+    "escapedName": "react-native-gifted-chat",
+    "name": "react-native-gifted-chat",
+    "rawSpec": "^0.3.0",
+    "spec": ">=0.3.0 <0.4.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/react-native-gifted-chat/download/react-native-gifted-chat-0.3.0.tgz",
+  "_shasum": "ab371723e3ddad07385d0ff1dbfcae156151daad",
+  "_shrinkwrap": null,
+  "_spec": "react-native-gifted-chat@^0.3.0",
+  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn",
+  "author": {
+    "name": "Farid Safi"
+  },
+  "bugs": {
+    "url": "https://github.com/FaridSafi/react-native-gifted-chat/issues"
+  },
+  "dependencies": {
+    "@expo/react-native-action-sheet": "^1.0.1",
+    "md5": "2.2.1",
+    "moment": "^2.19.0",
+    "prop-types": "15.5.10",
+    "react-native-communications": "2.2.1",
+    "react-native-invertible-scroll-view": "^1.1.0",
+    "react-native-lightbox": "^0.7.0",
+    "react-native-parsed-text": "^0.0.19",
+    "shallowequal": "1.0.2",
+    "uuid": "3.1.0"
+  },
+  "description": "The most complete chat UI for React Native",
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "15.0.2",
+    "eslint-config-cooperka": "0.2.3",
+    "eslint-plugin-import": "2.6.1",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.1.0",
+    "eslint-plugin-react-native": "2.3.2"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "ab371723e3ddad07385d0ff1dbfcae156151daad",
+    "size": 31343,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/react-native-gifted-chat/download/react-native-gifted-chat-0.3.0.tgz"
+  },
+  "gitHead": "ae7f9ea4899bcfcbacd0fc82c238b2b87dede406",
+  "homepage": "https://github.com/FaridSafi/react-native-gifted-chat#readme",
+  "keywords": [
+    "android",
+    "ios",
+    "react-native",
+    "react",
+    "react-component",
+    "messenger",
+    "message",
+    "chat"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "brunocascio",
+      "email": "brunocascio@gmail.com"
+    },
+    {
+      "name": "cooperka",
+      "email": "cooperka92@gmail.com"
+    },
+    {
+      "name": "faridsafi",
+      "email": "farid.lazreq+npm@senseful.fr"
+    },
+    {
+      "name": "kfiroo",
+      "email": "kfirgolan@gmail.com"
+    },
+    {
+      "name": "xcarpentier",
+      "email": "contact@xaviercarpentier.com"
+    }
+  ],
+  "name": "react-native-gifted-chat",
+  "optionalDependencies": {},
+  "publish_time": 1509160590482,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FaridSafi/react-native-gifted-chat.git"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .js,.jsx"
+  },
+  "version": "0.3.0"
+}

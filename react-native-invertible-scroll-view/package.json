@@ -1,0 +1,145 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-native-invertible-scroll-view@^1.1.0",
+        "scope": null,
+        "escapedName": "react-native-invertible-scroll-view",
+        "name": "react-native-invertible-scroll-view",
+        "rawSpec": "^1.1.0",
+        "spec": ">=1.1.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native-gifted-chat"
+    ]
+  ],
+  "_cnpm_publish_time": 1518468908209,
+  "_from": "react-native-invertible-scroll-view@>=1.1.0 <2.0.0",
+  "_hasShrinkwrap": false,
+  "_id": "react-native-invertible-scroll-view@1.1.1",
+  "_inCache": true,
+  "_location": "/react-native-invertible-scroll-view",
+  "_nodeVersion": "8.9.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-native-invertible-scroll-view_1.1.1_1518468908133_0.9032813549122338"
+  },
+  "_npmUser": {
+    "name": "ide",
+    "email": "ide+npm@jameside.com"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-invertible-scroll-view@^1.1.0",
+    "scope": null,
+    "escapedName": "react-native-invertible-scroll-view",
+    "name": "react-native-invertible-scroll-view",
+    "rawSpec": "^1.1.0",
+    "spec": ">=1.1.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/react-native-gifted-chat"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/react-native-invertible-scroll-view/download/react-native-invertible-scroll-view-1.1.1.tgz",
+  "_shasum": "43039037e6537dc8c4f29baae1cd1a223bc25d81",
+  "_shrinkwrap": null,
+  "_spec": "react-native-invertible-scroll-view@^1.1.0",
+  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native-gifted-chat",
+  "author": {
+    "name": "Charlie Cheever",
+    "email": "ccheever@getexponent.com"
+  },
+  "bugs": {
+    "url": "https://github.com/exponentjs/react-native-invertible-scroll-view/issues"
+  },
+  "dependencies": {
+    "create-react-class": "^15.6.0",
+    "prop-types": "^15.5.10",
+    "react-clone-referenced-element": "^1.0.1",
+    "react-native-scrollable-mixin": "^1.0.1"
+  },
+  "description": "An invertible ScrollView for React Native",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "43039037e6537dc8c4f29baae1cd1a223bc25d81",
+    "size": 4736,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/react-native-invertible-scroll-view/download/react-native-invertible-scroll-view-1.1.1.tgz"
+  },
+  "gitHead": "0587e9f0736bcc0c9ca47e85a851db9a3f2a1cde",
+  "homepage": "https://github.com/exponentjs/react-native-invertible-scroll-view",
+  "keywords": [
+    "react-native",
+    "invertible",
+    "scroll-view"
+  ],
+  "license": "MIT",
+  "main": "InvertibleScrollView.js",
+  "maintainers": [
+    {
+      "name": "abi",
+      "email": "abimanyuraja@gmail.com"
+    },
+    {
+      "name": "anp",
+      "email": "adam.n.perry@gmail.com"
+    },
+    {
+      "name": "brentvatne",
+      "email": "brentvatne@gmail.com"
+    },
+    {
+      "name": "ccheever",
+      "email": "ccheever@gmail.com"
+    },
+    {
+      "name": "dikaiosune",
+      "email": "adam.n.perry@gmail.com"
+    },
+    {
+      "name": "evanbacon",
+      "email": "baconbrix@gmail.com"
+    },
+    {
+      "name": "expoadmin",
+      "email": "exponent.team@gmail.com"
+    },
+    {
+      "name": "exponent",
+      "email": "exponent.team@gmail.com"
+    },
+    {
+      "name": "fson",
+      "email": "ville.immonen@iki.fi"
+    },
+    {
+      "name": "ide",
+      "email": "ide+npm@jameside.com"
+    },
+    {
+      "name": "jesseruder",
+      "email": "jesse@sixfivezero.net"
+    },
+    {
+      "name": "nikki93",
+      "email": "s.nikhilesh@gmail.com"
+    },
+    {
+      "name": "terribleben",
+      "email": "ben@exp.host"
+    }
+  ],
+  "name": "react-native-invertible-scroll-view",
+  "optionalDependencies": {},
+  "publish_time": 1518468908209,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exponentjs/react-native-invertible-scroll-view.git"
+  },
+  "scripts": {},
+  "version": "1.1.1"
+}
