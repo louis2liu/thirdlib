@@ -40,6 +40,7 @@
     "type": "range"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npm.taobao.org/react-native-video/download/react-native-video-2.0.0.tgz",
@@ -96,10 +97,6 @@
     {
       "name": "brentvatne",
       "email": "brentvatne@gmail.com"
-    },
-    {
-      "name": "isaiahgrey93",
-      "email": "isaiahgrey@gmail.com"
     },
     {
       "name": "isair",

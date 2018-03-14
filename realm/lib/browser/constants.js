@@ -41,7 +41,6 @@ export const propTypes = {};
     'RESULTS',
     'USER',
     'SESSION',
-    'SUBSCRIPTION',
     'UNDEFINED',
 ].forEach(function(type) {
     Object.defineProperty(objectTypes, type, {

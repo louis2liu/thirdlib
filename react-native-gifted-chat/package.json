@@ -2,19 +2,19 @@
   "_args": [
     [
       {
-        "raw": "react-native-gifted-chat@^0.3.0",
+        "raw": "react-native-gifted-chat",
         "scope": null,
         "escapedName": "react-native-gifted-chat",
         "name": "react-native-gifted-chat",
-        "rawSpec": "^0.3.0",
-        "spec": ">=0.3.0 <0.4.0",
-        "type": "range"
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
       },
       "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
   "_cnpm_publish_time": 1509160590482,
-  "_from": "react-native-gifted-chat@>=0.3.0 <0.4.0",
+  "_from": "react-native-gifted-chat@latest",
   "_hasShrinkwrap": false,
   "_id": "react-native-gifted-chat@0.3.0",
   "_inCache": true,
@@ -34,21 +34,22 @@
     "loose-envify": "1.3.1"
   },
   "_requested": {
-    "raw": "react-native-gifted-chat@^0.3.0",
+    "raw": "react-native-gifted-chat",
     "scope": null,
     "escapedName": "react-native-gifted-chat",
     "name": "react-native-gifted-chat",
-    "rawSpec": "^0.3.0",
-    "spec": ">=0.3.0 <0.4.0",
-    "type": "range"
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npm.taobao.org/react-native-gifted-chat/download/react-native-gifted-chat-0.3.0.tgz",
   "_shasum": "ab371723e3ddad07385d0ff1dbfcae156151daad",
   "_shrinkwrap": null,
-  "_spec": "react-native-gifted-chat@^0.3.0",
+  "_spec": "react-native-gifted-chat",
   "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Farid Safi"
@@ -115,10 +116,6 @@
     {
       "name": "kfiroo",
       "email": "kfirgolan@gmail.com"
-    },
-    {
-      "name": "xcarpentier",
-      "email": "contact@xaviercarpentier.com"
     }
   ],
   "name": "react-native-gifted-chat",

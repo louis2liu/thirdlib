@@ -46,8 +46,11 @@ const postHeaders = {
     'accept': 'application/json'
 };
 
-function append_url(server, path) {
-    return server + (server.charAt(server.length - 1) != '/' ? '/' : '') + path;
+function auth_url(server) {
+    if (server.charAt(server.length - 1) != '/') {
+        return server + '/auth';
+    }
+    return server + 'auth';
 }
 
 function scheduleAccessTokenRefresh(user, localRealmPath, realmUrl, expirationDate) {
@@ -60,80 +63,13 @@ function print_error() {
     (console.error || console.log).apply(console, arguments);
 }
 
-function validateRefresh(user, localRealmPath, response, json) {
-    let session = user._sessionForOnDiskPath(localRealmPath);
-    if (!session) {
-        print_error(`Unhandled session token refresh error: could not look up session at path ${localRealmPath}`);
-        return;
-    }
-
-    const errorHandler = session.config.error;
-    if (response.status != 200) {
-        let error = new AuthError(json);
-        if (errorHandler) {
-            errorHandler(session, error);
-        } else {
-            print_error('Unhandled session token refresh error', error);
-        }
-        return;
-    }
-    if (session.state === 'invalid') {
-        return;
-    }
-    return session;
-}
-
-function refreshAdminToken(user, localRealmPath, realmUrl) {
-    const token = user.token;
-    const server = user.server;
-
-    // We don't need to actually refresh the token, but we need to let ROS know
-    // we're accessing the file and get the sync label for multiplexing
-    let parsedRealmUrl = url_parse(realmUrl);
-    const url = append_url(user.server, 'realms/files/' + encodeURIComponent(parsedRealmUrl.pathname));
-    performFetch(url, {method: 'GET', timeout: 10000.0, headers: {Authorization: user.token}})
-    .then((response) => {
-        // There may not be a Realm Directory Service running on the server
-        // we're talking to. If we're talking directly to the sync service
-        // we'll get a 404, and if we're running inside ROS we'll get a 503 if
-        // the directory service hasn't started yet (perhaps because we got
-        // called due to the directory service itself opening some Realms).
-        //
-        // In both of these cases we can just pretend we got a valid response.
-        if (response.status === 404 || response.status === 503) {
-            return {response: {status: 200}, json: {path: parsedRealmUrl.pathname, syncLabel: '_direct'}};
-        }
-        else {
-            return response.json().then((json) => { return { response, json }; });
-        }
-    })
-    .then((responseAndJson) => {
-        const response = responseAndJson.response;
-        const json = responseAndJson.json;
-
-        const newUser = user.constructor.adminUser(token, server);
-        const session = validateRefresh(newUser, localRealmPath, response, json);
-        if (session) {
-            parsedRealmUrl.set('pathname', json.path);
-            session._refreshAccessToken(user.token, parsedRealmUrl.href, json.syncLabel);
-        }
-    })
-    .catch((e) => {
-        print_error(e);
-    });
-}
-
 function refreshAccessToken(user, localRealmPath, realmUrl) {
     if (!user.server) {
         throw new Error("Server for user must be specified");
     }
 
     let parsedRealmUrl = url_parse(realmUrl);
-    if (user.isAdminToken) {
-        return refreshAdminToken(user, localRealmPath, realmUrl);
-    }
-
-    const url = append_url(user.server, 'auth');
+    const url = auth_url(user.server);
     const options = {
         method: 'POST',
         body: JSON.stringify({
@@ -145,7 +81,7 @@ function refreshAccessToken(user, localRealmPath, realmUrl) {
         headers: postHeaders,
         // FIXME: This timeout appears to be necessary in order for some requests to be sent at all.
         // See https://github.com/realm/realm-js-private/issues/338 for details.
-        timeout: 10000.0
+        timeout: 1000.0
     };
     performFetch(url, options)
         .then((response) => response.json().then((json) => { return { response, json }; }))
@@ -155,13 +91,26 @@ function refreshAccessToken(user, localRealmPath, realmUrl) {
             // Look up a fresh instance of the user.
             // We do this because in React Native Remote Debugging
             // `Realm.clearTestState()` will have invalidated the user object
-            let newUser = user.constructor._getExistingUser(user.server, user.identity);
+            let newUser = user.constructor.all[user.identity];
             if (!newUser) {
                 return;
             }
-
-            const session = validateRefresh(newUser, localRealmPath, response, json);
+            let session = newUser._sessionForOnDiskPath(localRealmPath);
             if (!session) {
+                print_error(`Unhandled session token refresh error: could not look up session at path ${localRealmPath}`);
+            }
+
+            const errorHandler = session.config.error;
+            if (response.status != 200) {
+                let error = new AuthError(json);
+                if (errorHandler) {
+                    errorHandler(session, error);
+                } else {
+                    print_error('Unhandled session token refresh error', error);
+                }
+                return;
+            }
+            if (session.state === 'invalid') {
                 return;
             }
 
@@ -170,7 +119,6 @@ function refreshAccessToken(user, localRealmPath, realmUrl) {
             parsedRealmUrl.set('pathname', tokenData.path);
             session._refreshAccessToken(json.access_token.token, parsedRealmUrl.href, tokenData.sync_label);
 
-            const errorHandler = session.config.error;
             if (errorHandler && errorHandler._notifyOnAccessTokenRefreshed) {
                 errorHandler(session, errorHandler._notifyOnAccessTokenRefreshed)
             }
@@ -196,7 +144,7 @@ function refreshAccessToken(user, localRealmPath, realmUrl) {
  */
 function _authenticate(userConstructor, server, json, callback) {
     json.app_id = '';
-    const url = append_url(server, 'auth');
+    const url = auth_url(server);
     const options = {
         method: 'POST',
         body: JSON.stringify(json),
@@ -277,7 +225,7 @@ const staticMethods = {
             checkTypes(arguments, ['string', 'string', 'string', 'function']);
             const json = {
                 provider: 'password',
-                user_info: { password: password, register: false },
+                user_info: { password: password },
                 data: username
             };
 
@@ -321,54 +269,10 @@ const staticMethods = {
             return _authenticate(this, server, json, callback);
         },
 
-        authenticate(server, provider, options) {
-            checkTypes(arguments, ['string', 'string', 'object'])
-
-            var json = {}
-            switch (provider.toLowerCase()) {
-            case 'jwt':
-                json.provider = 'jwt'
-                json.token = options.token;
-                break
-            case 'password':
-                json.provider = 'password'
-                json.user_info = { password: options.password }
-                json.data = options.username
-                break
-            default:
-                Object.assign(json, options)
-                json.provider = provider
-            }
-
-            return _authenticate(this, server, json)
-        },
-
-        _refreshAccessToken: refreshAccessToken,
-};
-
+        _refreshAccessToken: refreshAccessToken
+    };
 
 const instanceMethods = {
-    logout() {
-        this._logout();
-        const url = url_parse(this.server);
-        url.set('pathname', '/auth/revoke');
-        const headers = {
-            Authorization: this.token
-        };
-        const body = {
-            token: this.token
-        };
-        const options = {
-            method: 'POST',
-            headers,
-            body: body,
-            open_timeout: 5000
-        };
-
-        performFetch(url.href, options)
-            .then(() => console.log('User is logged out'))
-            .catch((e) => print_error(e));
-    },
         openManagementRealm() {
             let url = url_parse(this.server);
             if (url.protocol === 'http:') {

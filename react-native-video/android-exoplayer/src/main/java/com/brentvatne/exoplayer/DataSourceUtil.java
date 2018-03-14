@@ -10,6 +10,8 @@ import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.upstream.HttpDataSource;
 import com.google.android.exoplayer2.util.Util;
 
+import java.util.HashMap;
+
 public class DataSourceUtil {
 
     private DataSourceUtil() {
@@ -62,8 +64,14 @@ public class DataSourceUtil {
                 buildHttpDataSourceFactory(appContext, bandwidthMeter));
     }
 
+    static HashMap<String,String> requestHeaders = new HashMap<>();
+    static {
+        requestHeaders.put("Referer","http://www.docbook.com.cn");
+    }
     private static HttpDataSource.Factory buildHttpDataSourceFactory(Context context, DefaultBandwidthMeter bandwidthMeter) {
-        return new OkHttpDataSourceFactory(OkHttpClientProvider.getOkHttpClient(), getUserAgent(context), bandwidthMeter);
+        OkHttpDataSourceFactory factory = new OkHttpDataSourceFactory(OkHttpClientProvider.getOkHttpClient(), getUserAgent(context), bandwidthMeter);
+        factory.getDefaultRequestProperties().set(requestHeaders);
+        return  factory;
     }
 
 }

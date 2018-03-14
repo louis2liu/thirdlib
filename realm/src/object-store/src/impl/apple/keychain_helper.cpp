@@ -18,6 +18,7 @@
 
 #include "impl/apple/keychain_helper.hpp"
 
+#include "util/format.hpp"
 
 #include <realm/util/cf_ptr.hpp>
 #include <realm/util/optional.hpp>

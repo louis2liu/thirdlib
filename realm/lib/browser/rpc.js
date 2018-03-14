@@ -77,12 +77,6 @@ export function _adminUser(args) {
     return deserialize(undefined, result);
 }
 
-export function _getExistingUser(args) {
-    args = args.map((arg) => serialize(null, arg));
-    const result = sendRequest('_getExistingUser', { arguments: args });
-    return deserialize(undefined, result);
-}
-
 export function callMethod(realmId, id, name, args) {
     if (args) {
         args = args.map((arg) => serialize(realmId, arg));

@@ -20,6 +20,7 @@
 
 #include "execution_context_id.hpp"
 #include "property.hpp"
+#include "util/format.hpp"
 
 #include <stdexcept>
 #include <string>

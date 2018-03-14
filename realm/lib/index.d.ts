@@ -81,7 +81,7 @@ declare namespace Realm {
         path?: string;
         readOnly?: boolean;
         inMemory?: boolean;
-        schema?: (ObjectClass | ObjectSchema)[];
+        schema?: ObjectClass[] | ObjectSchema[];
         schemaVersion?: number;
         sync?: Realm.Sync.SyncConfiguration;
         deleteRealmIfMigrationNeeded?: boolean;
@@ -145,9 +145,9 @@ declare namespace Realm {
          */
         isValid(): boolean;
 
-        min(property?: string): number | Date | null;
-        max(property?: string): number | Date | null;
-        sum(property?: string): number | null;
+        min(property?: string): number|Date|null;
+        max(property?: string): number|Date|null;
+        sum(property?: string): number|null;
         avg(property?: string): number;
 
         /**
@@ -160,11 +160,6 @@ declare namespace Realm {
         sorted(reverse?: boolean): Results<T>;
         sorted(descriptor: SortDescriptor[]): Results<T>;
         sorted(descriptor: string, reverse?: boolean): Results<T>;
-
-        /**
-         * @returns Results<T>
-         */
-        subscribe(subscriptionName?: string): Realm.Sync.Subscription;
 
         /**
          * @returns Results
@@ -273,7 +268,6 @@ declare namespace Realm.Sync {
         static readonly current: User;
         readonly identity: string;
         readonly isAdmin: boolean;
-        readonly isAdminToken: boolean;
         readonly server: string;
         readonly token: string;
         static adminUser(adminToken: string, server?: string): User;
@@ -296,7 +290,6 @@ declare namespace Realm.Sync {
         static registerWithProvider(server: string, options: { provider: string, providerToken: string, userInfo: any }, callback: (error: Error | null, user: User | null) => void): void;
         static registerWithProvider(server: string, options: { provider: string, providerToken: string, userInfo: any }): Promise<Realm.Sync.User>;
 
-        authenticate(server: string, provider: string, options: any): Promise<Realm.Sync.User>;
         logout(): void;
         openManagementRealm(): Realm;
         retrieveAccount(provider: string, username: string): Promise<Account>;
@@ -308,16 +301,9 @@ declare namespace Realm.Sync {
         invalidatePermissionOffer(permissionOfferOrToken: PermissionOffer | string): Promise<void>;
     }
 
-    interface _PermissionConditionUserId {
-        userId: string
-    }
-
-    interface _PermissionConditionMetadata {
-        metadataKey: string
-        metadataValue: string
-    }
-
-    type PermissionCondition = _PermissionConditionUserId | _PermissionConditionMetadata
+    type PermissionCondition = {
+        userId: string | { metadataKey: string, metadataValue: string }
+    };
 
     type AccessLevel = 'none' | 'read' | 'write' | 'admin';
 
@@ -362,9 +348,9 @@ declare namespace Realm.Sync {
 
     interface SyncError {
         name: string;
-        message: string;
+        message: string; 
         isFatal: boolean;
-        category?: string;
+        category?: string; 
         code: number;
     }
 
@@ -379,7 +365,6 @@ declare namespace Realm.Sync {
         open_ssl_verify_callback?: SSLVerifyCallback;
         error?: ErrorCallback;
         partial?: boolean;
-        _disablePartialSyncUrlChecks?:boolean;
     }
 
     type ProgressNotificationCallback = (transferred: number, transferable: number) => void;
@@ -398,29 +383,6 @@ declare namespace Realm.Sync {
 
         addProgressNotification(direction: ProgressDirection, mode: ProgressMode, progressCallback: ProgressNotificationCallback): void;
         removeProgressNotification(progressCallback: ProgressNotificationCallback): void;
-    }
-
-    type SubscriptionNotificationCallback = (subscription: Subscription, state: number) => void;
-
-    /**
-     * Subscription
-     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.Subscription.html }
-     */
-    class Subscription {
-        readonly state: SubscriptionState;
-        readonly error: string;
-
-        unsubscribe(): void;
-        addListener(subscruptionCallback: SubscriptionNotificationCallback): void;
-        removeListener(subscruptionCallback: SubscriptionNotificationCallback): void;
-    }
-
-    enum SubscriptionState {
-         Error,
-         Creating,
-         Pending,
-         Complete,
-         Invalidated,
     }
 
     /**
@@ -444,15 +406,10 @@ declare namespace Realm.Sync {
     }
 
     function addListener(serverURL: string, adminUser: Realm.Sync.User, regex: string, name: string, changeCallback: (changeEvent: ChangeEvent) => void): void;
-    function addListener(serverURL: string, adminUser: Realm.Sync.User, regex: string, name: string, changeCallback: (changeEvent: ChangeEvent) => Promise<void>): void;
-    function removeAllListeners(): Promise<void>;
-    function removeListener(regex: string, name: string, changeCallback: (changeEvent: ChangeEvent) => void): Promise<void>;
+    function removeAllListeners(name?: string): void;
+    function removeListener(regex: string, name: string, changeCallback: (changeEvent: ChangeEvent) => void): void;
     function setLogLevel(logLevel: 'all' | 'trace' | 'debug' | 'detail' | 'info' | 'warn' | 'error' | 'fatal' | 'off'): void;
     function initiateClientReset(path: string): void;
-
-    /**
-     * @deprecated, to be removed in future versions
-     */
     function setFeatureToken(token: string): void;
 
     type Instruction = {
@@ -488,42 +445,6 @@ declare namespace Realm.Sync {
     }
 }
 
-declare namespace Realm.Permissions {
-    class Permission {
-        static schema: ObjectSchema;
-
-        identity: string;
-        canRead: boolean;
-        canUpdate: boolean;
-        canDelete: boolean;
-        canSetPermissions: boolean;
-        canQuery: boolean;
-        canCreate: boolean;
-        canModifySchema: boolean;
-    }
-
-    class User {
-        static schema: ObjectSchema;
-        identity: string;
-    }
-
-    class Role {
-        static schema: ObjectSchema;
-        name: string;
-        members: User[];
-    }
-
-    class Class {
-        static schema: ObjectSchema;
-        class_name: string;
-        permissions: Permission[];
-    }
-
-    class Realm {
-        static schema: ObjectSchema;
-        permissions: Permission[];
-    }
-}
 
 interface ProgressPromise extends Promise<Realm> {
     progress(callback: Realm.Sync.ProgressNotificationCallback): Promise<Realm>
@@ -567,15 +488,10 @@ declare class Realm {
     static openAsync(config: Realm.Configuration, callback: (error: any, realm: Realm) => void, progressCallback?: Realm.Sync.ProgressNotificationCallback): void
 
     /**
-     * Return a configuration for a default Realm.
-     */
-    static automaticSyncConfiguration(): string;
-
-    /**
      * Delete the Realm file for the given configuration.
      * @param {Configuration} config
      */
-    static deleteFile(config: Realm.Configuration): void;
+    static deleteFile(config: Realm.Configuration): void
 
     /**
      * @param  {Realm.Configuration} config?
@@ -598,7 +514,7 @@ declare class Realm {
      * @param  {boolean} update?
      * @returns T
      */
-    create<T>(type: string | Realm.ObjectClass | Function, properties: T | Realm.ObjectPropsType, update?: boolean): T;
+    create<T>(type: string | Realm.ObjectClass | Function, properties: T & Realm.ObjectPropsType, update?: boolean): T;
 
     /**
      * @param  {Realm.Object|Realm.Object[]|Realm.List<any>|Realm.Results<any>|any} object
@@ -619,9 +535,9 @@ declare class Realm {
     /**
      * @param  {string|Realm.ObjectSchema|Function} type
      * @param  {number|string} key
-     * @returns {T | undefined}
+     * @returns T
      */
-    objectForPrimaryKey<T>(type: string | Realm.ObjectSchema | Function, key: number | string): T | undefined;
+    objectForPrimaryKey<T>(type: string | Realm.ObjectSchema | Function, key: number | string): T | null;
 
     /**
      * @param  {string|Realm.ObjectType|Function} type
@@ -675,9 +591,10 @@ declare class Realm {
      */
     compact(): boolean;
 
-    privileges() : Realm.Permissions.Realm;
-    privileges(objectType: string | Realm.ObjectSchema | Function) : Realm.Permissions.Class;
-    privileges(obj: Realm.Object) : Realm.Permissions.Class;
+    /**
+     * @returns Promise<Results<T>>
+     */
+    subscribeToObjects<T>(objectType: string, query: string): Promise<Realm.Results<T>>;
 }
 
 declare module 'realm' {

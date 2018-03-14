@@ -1,274 +1,3 @@
-2.3.0 Release notes (2018-3-13)
-=============================================================
-### Breaking changes
-* [Sync] Sync protocol changed to version 24.
-* [Sync] History schema format for server-side Realm files bumped to version 4. This means that after the server has been upgraded, it cannot be downgraded again without restoring state from backup.
-* [Sync] `Realm.subscribeToObjects()` has been removed. Use `Realm.Results.subscribe()` instead.
-
-### Enhancements
-* [Sync] Reduced initial download times in Realms with long transaction histories.
-* [Sync] Wait for pending notifications to complete when removing a sync listener (#1648).
-* Enabled sort and distinct in the query string. If sort or distinct are also applied outside of the query string, the conditions are stacked.
-  - Example syntax: `age > 20 SORT(name ASC, age DESC) DISTINCT(name)`
-  - The ordering for sorting can be one of the following case insensitive literals: `ASC`, `ASCENDING`, `DESC`, `DESCENDING`.
-  - Any number of properties can appear inside the brackets in a comma separated list.
-  - Any number of sort/distinct conditions can be indicated, they will be applied in the specified order.
-  - Sort or distinct cannot operate independently, these conditions must be attached to at least one query filter.
-* Added support for queries over named backlinks (#1498/#1660).
-  - Example syntax: `parents.age > 25` and `parents.@count == 2`.
-* [Sync] Added `Realm.Results.subscribe()` to subscribe to partial synced Realms.
-* [Sync] Added class `Realm.Sync.Subscription` and enum `Realm.Sync.SubscriptionState` to support partial synced Realms.
-* [Sync] Added an object-level permission subsystem. It is possible to grant fine-grained priviliges to users.
-* Added object-level permissions:
-  - Schemas `Realm.Permissions.Realm`, `Realm.Permissions.Class`, `Realm.Permissions.Role`, `Realm.Permissions.User`, and `Realm.Permissions.Permission` to support working with permissions. These schemas can be used in user-defined Realms and schemas.
-  - Permissions are enforced by the object server but connectivity is not required.
-  - Method `Realm.privilges()` to compute privileges on a Realm, a Realm object schema, or a Realm object. The method returns either a `Realm.Permissions.Realm` or `Realm.Permissions.Class` object.
-  - For non-synced Realms, all privileges are always granted.
-  - For more details, please read the reference documentation.
-* [Sync] Revoke refresh token upon logout (#1354).
-* Added `Realm.automaticSyncConfiguration()` which will return the configuration for a default synced Realm (#1688).
-* [Sync] Deprecated `Realm.Sync.setFeatureToken` (#1689).
-
-### Bug fixes
-* Fixed usage of disk space preallocation which would occasionally fail on recent MacOS running with the APFS filesystem (Realm Core #3005).
-
-### Internal
-* Updated to Realm Core 5.4.0.
-* Updated to Realm Sync 3.0.0.
-* Tested against Realm Object Server 3.0.0-alpha.8.
-* Added `_disablePartialSyncUrlChecks` to `Realm.Configuration`.
-
-2.2.15 Release notes (2018-3-9)
-=============================================================
-### Breaking changes
-* None.
-
-### Enhancements
-* None.
-
-### Bug fixes
-* Fixed a bug that could result in notifications from the global notifier being delayed or not delivered at all when multiple Realms change at once.
-
-### Internal
-* None.
-
-
-2.2.14 Release notes (2018-3-5)
-=============================================================
-### Breaking changes
-* None.
-
-### Enhancements
-* None.
-
-### Bug fixes
-* [Sync] Fixed race condition in handling of session bootstrapping in client.
-
-### Internal
-* Updated to Realm Sync 2.2.15.
-
-
-2.2.13 Release notes (2018-3-2)
-=============================================================
-### Breaking changes
-* None.
-
-### Enhancements
-* None.
-
-### Bug fixes
-* [Sync] Fixed handling of SSL certificates for the sync client.
-
-### Internal
-* Updated to Realm Sync 2.2.14.
-
-
-2.2.12 Release notes (2018-2-23)
-=============================================================
-### Breaking changes
-* None.
-
-### Enhancements
-* None.
-
-### Bug fixes
-* Validate that a given type appears at most once in the schema.
-
-### Internal
-* None.
-
-
-2.2.10 Release notes (2018-2-20)
-=============================================================
-### Breaking changes
-* None.
-
-### Enhancements
-* None.
-
-### Bug fixes
-* [Sync] A use-after-free bug was fixed which could cause arrays of primitives to behave unexpectedly.
-
-### Internal
-* Updated to Realm Sync 2.2.12.
-
-
-2.2.9 Release notes (2018-2-19)
-=============================================================
-### Breaking changes
-* None.
-
-### Enhancements
-* None.
-
-### Bug fixes
-* Improved root certificate checking.
-
-### Internal
-* Updated to Realm Sync 2.2.11.
-
-
-2.2.8 Release notes (2018-2-13)
-=============================================================
-### Breaking changes
-* None.
-
-### Enhancements
-* [Sync] For OpenSSL, the sync client includes a fixed list of certificates in its SSL certificate verification besides the default trust store in the case where the user is not specifying its own trust certificates or callback.
-
-### Bug fixes
-* None.
-
-### Internal
-* Updated to Realm Sync 2.2.10.
-
-
-2.2.7 Release notes (2018-2-6)
-=============================================================
-### Breaking changes
-* None.
-
-### Enhancements
-* [Sync] Wait for pending notifications to complete when removing a sync listener (#1648).
-* Add schema name to missing primary key error message
-
-### Bug fixes
-* [Sync] Fixed a bug causing use-after-free crashes in Global Notifier (realm-js-private #405).
-
-### Internal
-* None.
-
-
-2.2.6 Release notes (2018-1-26)
-=============================================================
-### Breaking changes
-* None.
-
-### Enhancements
-* None.
-
-### Bug fixes
-* [Sync] Fixed a bug where arguments were not transferred when debugging.
-
-### Internal
-* None.
-
-2.2.5 Release notes (2018-1-25)
-=============================================================
-### Breaking changes
-* None.
-
-### Enhancements
-* None.
-
-### Bug fixes
-* [Sync] Fixed a typing error leading to `_getExistingUser` wasn't defined in the Chrome debugging support library (#1625).
-* Fixed a bug in the TypeScript definition of `PermissionCondition` (#1574).
-* [Electron] Fixed a `dlopen` error related to OpenSSL that prevented using realm-js on Linux (#1636).
-
-### Internal
-* None.
-
-2.2.4 Release notes (2018-1-18)
-=============================================================
-### Breaking changes
-* None.
-
-### Enhancements
-* None.
-
-### Bug fixes
-* [Sync] Fixed a bug where errors in `refreshAdminToken` wasn't catched (#1627).
-* [Sync] Added `_getExitingUser` to the Chrome debugging support library.
-
-### Internal
-* None.
-
-2.2.3 Release notes (2018-1-17)
-=============================================================
-### Breaking changes
-* None.
-
-### Enhancements
-* None.
-
-### Bug fixes
-* [Sync] Fixed a bug in upload progress reporting.
-* [Sync] Fixed a bug where any errors which occurred when trying to sync the admin Realm were ignored, which made attempting to add a listener with an invalid admin user silently do nothing.
-
-### Internal
-* None.
-
-2.2.2 Release notes (2018-1-16)
-=============================================================
-### Breaking changes
-* None.
-
-### Enhancements
-* None.
-
-### Bug fixes
-* [Sync] Added missing `Realm.Sync` listener functions.
-
-### Internal
-* None.
-
-
-2.2.1 Release notes (2018-1-13)
-=============================================================
-### Breaking changes
-* None.
-
-### Enhancements
-* None.
-
-### Bug fixes
-* [Sync] Fixed a bug preventing opening Realms with an admin token without a working ROS directory service (#1615).
-
-### Internal
-* None.
-
-2.2.0 Release notes (2018-1-12)
-=============================================================
-### Breaking changes
-* None.
-
-### Enhancements
-* Added new query features to support a subset of `NSPredicates` for example `LIKE` for string matches, `@count` and `@sum` in lists. See documentation for more details.
-* Potential performance enhancements in cases of many writes between queries.
-* [Sync] Added method `Realm.Sync.User.authenticate` to unify authentication of users.
-* [Sync] Added JWT authenfication (#1548).
-
-### Bug fixes
-* Fix a bug where `Realm.open` could unexpectedly raise a "Realm at path ... already opened with different schema version" error.
-* `subscribeToObjects` was added as a property for Chrome debugging (#1608).
-* Increased request timeout for token refresh requests to 10 seconds. This should help with failing token refreshes on a loaded server (#1586).
-
-### Internal
-* Updated to Realm Sync 2.2.9.
-* Updated to Realm Core 5.1.2 (see "Enhancements").
-* Explicitly send `register: false` when logging in with `Realm.Sync.User.login` to avoid creating the user if they don't exist.
-
 2.1.1 Release notes (2017-12-15)
 =============================================================
 ### Breaking changes
@@ -278,10 +7,9 @@
 * None.
 
 ### Bug fixes
-* [Sync] Fixed a bug where long reconnection happens when a proxy in front of the sync worker returns one of those.
+* [Object Server] Fixed a bug where long reconnection happens when a proxy in front of the sync worker returns one of those.
 
 ### Internal
-* [Sync] Updated to Realm Object Server v2.2.0 for testing.
 * Updated to Realm Sync 2.1.10 (see "Bug fixes").
 
 
@@ -309,11 +37,11 @@
 * None.
 
 ### Bug fixes
-* [Sync] When authentication fails due to a misbehaving server, a proper error is thrown.
+* [Object Server] When authentication fails due to a misbehaving server, a proper error is thrown.
 
 ### Internal
-* [Sync] Strings can now be assigned to Date columns. When that happens the JavaScript Date constructor will be invoked to parse the string.
-* [Sync] Base64 strings can now be assigned to Data columns.
+* [Object Server] Strings can now be assigned to Date columns. When that happens the JavaScript Date constructor will be invoked to parse the string.
+* [Object Server] Base64 strings can now be assigned to Data columns.
 
 2.0.12 Release notes (2017-12-1)
 =============================================================
@@ -339,8 +67,8 @@
 * None
 
 ### Bug fixes
-* [Sync] Fixed a bug where deleted-then-recreated objects with identical primary keys to become empty.
-* [Sync] Fixed a bug in outward partial sync is changed to ensure convergence of partial sync in the case where the client creates a primary key object, that is already present on the server, and subscribes to it in the same transaction.
+* [Object Server] Fixed a bug where deleted-then-recreated objects with identical primary keys to become empty.
+* [Object Server] Fixed a bug in outward partial sync is changed to ensure convergence of partial sync in the case where the client creates a primary key object, that is already present on the server, and subscribes to it in the same transaction.
 
 ### Internal
 * Updated to Realm Sync 2.1.7 (see under "Bug fixes").
@@ -379,10 +107,10 @@
 * None.
 
 ### Enhancements
-* [Sync] Improving performance of processing large changesets.
+* [Object Server] Improving performance of processing large changesets.
 
 ### Bug fixes
-* [Sync] Changesets over 16MB in size are now handled correctly.
+* [Object Server] Changesets over 16MB in size are now handled correctly.
 
 ### Internal
 * Updated to Realm Sync 2.1.6.

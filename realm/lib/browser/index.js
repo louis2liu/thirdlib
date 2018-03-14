@@ -61,6 +61,7 @@ function setupRealm(realm, realmId) {
         'syncSession',
         'isInTransaction',
         'isClosed',
+        'subscribeToObjects',
     ].forEach((name) => {
         Object.defineProperty(realm, name, {get: util.getterForProperty(name)});
     });
@@ -146,8 +147,7 @@ util.createMethods(Realm.prototype, objectTypes.REALM, [
 
 const Sync = {
     User,
-    Session,
-    Subscription,
+    Session
 };
 
 Object.defineProperties(Realm, {

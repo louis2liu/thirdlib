@@ -56,7 +56,7 @@ module.exports = {
         const realm2 = new Realm({schema: [], path: testPath2});
         TestCase.assertEqual(realm2.path, defaultDir + testPath2);
     },
-    
+
     testRealmIsClosed: function() {
         const realm = new Realm({schema: []});
         TestCase.assertFalse(realm.isClosed);
@@ -205,21 +205,6 @@ module.exports = {
         realm = new Realm({readOnly: true});
         TestCase.assertEqual(realm.schema.length, 1);
         TestCase.assertEqual(realm.readOnly, true);
-    },
-
-    testRealmOpen: function() {
-        let realm = new Realm({schema: [schemas.TestObject], schemaVersion: 1});
-        realm.write(() => {
-            realm.create('TestObject', [1])
-        });
-        realm.close();
-
-        return Realm.open({schema: [schemas.TestObject], schemaVersion: 2}).then(realm => {
-            const objects = realm.objects('TestObject');
-            TestCase.assertEqual(objects.length, 1);
-            TestCase.assertEqual(objects[0].doubleCol, 1.0);
-            realm.close();
-        });
     },
 
     testDefaultPath: function() {

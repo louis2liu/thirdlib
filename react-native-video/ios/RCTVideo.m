@@ -308,9 +308,15 @@ static NSString *const timedMetadata = @"timedMetadata";
     [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:uri ofType:type]];
 
   if (isNetwork) {
-    NSArray *cookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
-    AVURLAsset *asset = [AVURLAsset URLAssetWithURL:url options:@{AVURLAssetHTTPCookiesKey : cookies}];
+     //NSDictionary *headers = [source objectForKey:@"requestHeaders"];
+      NSDictionary *headers = @{@"Referer":@"http://www.docbook.com.cn"};
+
+      AVURLAsset* asset = [AVURLAsset URLAssetWithURL:url options:@{@"AVURLAssetHTTPHeaderFieldsKey": headers}];
     return [AVPlayerItem playerItemWithAsset:asset];
+      
+//    NSArray *cookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
+//    AVURLAsset *asset = [AVURLAsset URLAssetWithURL:url options:@{AVURLAssetHTTPCookiesKey : cookies}];
+//    return [AVPlayerItem playerItemWithAsset:asset];
   }
   else if (isAsset) {
     AVURLAsset *asset = [AVURLAsset URLAssetWithURL:url options:nil];

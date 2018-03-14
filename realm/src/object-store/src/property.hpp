@@ -19,9 +19,8 @@
 #ifndef REALM_PROPERTY_HPP
 #define REALM_PROPERTY_HPP
 
+#include "util/compiler.hpp"
 #include "util/tagged_bool.hpp"
-
-#include <realm/util/features.h>
 
 #include <string>
 

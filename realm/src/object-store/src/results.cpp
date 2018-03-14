@@ -23,6 +23,8 @@
 #include "object_schema.hpp"
 #include "object_store.hpp"
 #include "schema.hpp"
+#include "util/compiler.hpp"
+#include "util/format.hpp"
 
 #include <stdexcept>
 
@@ -261,7 +263,15 @@ void Results::evaluate_query_if_needed(bool wants_notifications)
             m_query.sync_view_if_needed();
             m_table_view = m_query.find_all();
             if (!m_descriptor_ordering.is_empty()) {
+#if REALM_HAVE_COMPOSABLE_DISTINCT
                 m_table_view.apply_descriptor_ordering(m_descriptor_ordering);
+#else
+                if (m_descriptor_ordering.sort)
+                    m_table_view.sort(m_descriptor_ordering.sort);
+
+                if (m_descriptor_ordering.distinct)
+                    m_table_view.distinct(m_descriptor_ordering.distinct);
+#endif
             }
             m_mode = Mode::TableView;
             REALM_FALLTHROUGH;
@@ -436,10 +446,7 @@ void Results::clear()
             return;
         case Mode::Table:
             validate_write();
-            if (m_realm->is_partial())
-                Results(m_realm, m_table->where()).clear();
-            else
-                m_table->clear();
+            m_table->clear();
             break;
         case Mode::Query:
             // Not using Query:remove() because building the tableview and
@@ -613,24 +620,6 @@ Results Results::sort(SortDescriptor&& sort) const
 Results Results::filter(Query&& q) const
 {
     return Results(m_realm, get_query().and_query(std::move(q)), m_descriptor_ordering);
-}
-
-Results Results::apply_ordering(DescriptorOrdering&& ordering)
-{
-    DescriptorOrdering new_order = m_descriptor_ordering;
-    for (size_t i = 0; i < ordering.size(); ++i) {
-        const CommonDescriptor* desc = ordering[i];
-        if (const SortDescriptor* sort = dynamic_cast<const SortDescriptor*>(desc)) {
-            new_order.append_sort(std::move(*sort));
-            continue;
-        }
-        if (const DistinctDescriptor* distinct = dynamic_cast<const DistinctDescriptor*>(desc)) {
-            new_order.append_distinct(std::move(*distinct));
-            continue;
-        }
-        REALM_COMPILER_HINT_UNREACHABLE();
-    }
-    return Results(m_realm, get_query(), std::move(new_order));
 }
 
 Results Results::distinct(DistinctDescriptor&& uniqueness) const

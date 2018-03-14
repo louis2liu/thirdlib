@@ -9,12 +9,12 @@ import {
 } from 'react-native';
 
 export default class Send extends React.Component {
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   if (this.props.text.trim().length === 0 && nextProps.text.trim().length > 0 || this.props.text.trim().length > 0 && nextProps.text.trim().length === 0) {
-  //     return true;
-  //   }
-  //   return false;
-  // }
+  shouldComponentUpdate(nextProps, nextState) {
+    if (this.props.text.trim().length === 0 && nextProps.text.trim().length > 0 || this.props.text.trim().length > 0 && nextProps.text.trim().length === 0) {
+      return true;
+    }
+    return false;
+  }
   render() {
     if (this.props.text.trim().length > 0) {
       return (
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
 Send.defaultProps = {
   text: '',
   onSend: () => {},
-  label: 'Send',
+  label: '发送',
   containerStyle: {},
   textStyle: {},
 };

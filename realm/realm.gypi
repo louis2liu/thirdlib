@@ -59,7 +59,11 @@
         "src/object-store/src/impl/results_notifier.cpp",
         "src/object-store/src/impl/transact_log_handler.cpp",
         "src/object-store/src/impl/weak_realm_notifier.cpp",
+        "src/object-store/src/parser/parser.cpp",
+        "src/object-store/src/parser/query_builder.cpp",
+        "src/object-store/src/util/format.cpp",
         "src/object-store/src/util/uuid.cpp",
+
         "src/object-store/src/binding_callback_thread_observer.hpp",
         "src/object-store/src/binding_context.hpp",
         "src/object-store/src/collection_notifications.hpp",
@@ -89,6 +93,8 @@
         "src/object-store/src/object_accessor.hpp",
         "src/object-store/src/object_schema.hpp",
         "src/object-store/src/object_store.hpp",
+        "src/object-store/src/parser/parser.hpp",
+        "src/object-store/src/parser/query_builder.hpp",
         "src/object-store/src/property.hpp",
         "src/object-store/src/results.hpp",
         "src/object-store/src/schema.hpp",
@@ -99,7 +105,6 @@
         "src/object-store/src/sync/impl/sync_client.hpp",
         "src/object-store/src/sync/impl/sync_file.hpp",
         "src/object-store/src/sync/impl/sync_metadata.hpp",
-        "src/object-store/src/sync/impl/work_queue.hpp",
         "src/object-store/src/sync/partial_sync.hpp",
         "src/object-store/src/sync/sync_config.hpp",
         "src/object-store/src/sync/sync_manager.hpp",
@@ -109,10 +114,12 @@
         "src/object-store/src/thread_safe_reference.hpp",
         "src/object-store/src/util/aligned_union.hpp",
         "src/object-store/src/util/android/event_loop_signal.hpp",
+        "src/object-store/src/util/any.hpp",
         "src/object-store/src/util/apple/event_loop_signal.hpp",
         "src/object-store/src/util/atomic_shared_ptr.hpp",
         "src/object-store/src/util/compiler.hpp",
         "src/object-store/src/util/event_loop_signal.hpp",
+        "src/object-store/src/util/format.hpp",
         "src/object-store/src/util/generic/event_loop_signal.hpp",
         "src/object-store/src/util/tagged_bool.hpp",
         "src/object-store/src/util/time.hpp",
@@ -148,8 +155,7 @@
             "src/object-store/src/sync/sync_session.cpp",
             "src/object-store/src/sync/sync_config.cpp",
             "src/object-store/src/sync/impl/sync_file.cpp",
-            "src/object-store/src/sync/impl/sync_metadata.cpp",
-            "src/object-store/src/sync/impl/work_queue.cpp"
+            "src/object-store/src/sync/impl/sync_metadata.cpp"
           ],
         }]
       ],
@@ -159,6 +165,7 @@
           "src/object-store/src",
           "src/object-store/src/impl",
           "src/object-store/src/impl/apple",
+          "src/object-store/src/parser",
           "src/object-store/external/pegtl"
         ]
       },
@@ -177,7 +184,7 @@
         ]
       },
       "link_settings": {
-        "libraries": [ "-lrealm-parser<(debug_library_suffix)", "-lrealm<(debug_library_suffix)" ],
+        "libraries": [ "-lrealm<(debug_library_suffix)" ],
       },
       "variables": {
         "prefix": "<!(node -p \"process.env.REALM_CORE_PREFIX || String()\")"
@@ -192,6 +199,9 @@
           }
         }, {
           "dependencies": [ "vendored-realm" ]
+        }],
+        ["runtime=='electron'", {
+          "dependencies": [ "OpenSSL" ]
         }]
       ]
     },
@@ -225,6 +235,9 @@
           }
         }, {
           "dependencies": [ "vendored-realm" ]
+        }],
+        ["runtime=='electron'", {
+          "dependencies": [ "OpenSSL" ]
         }]
       ],
     },
@@ -257,7 +270,7 @@
       "type": "none",
       "all_dependent_settings": {
         "include_dirs": [ "<(vendor_dir)/include" ],
-        "library_dirs": [
+        "library_dirs": [ 
           "<(vendor_dir)/lib",
           "<(vendor_dir)/osx"
         ]

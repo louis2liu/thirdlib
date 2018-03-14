@@ -21,7 +21,7 @@
 
 #include "object_accessor.hpp"
 
-#include <realm/util/any.hpp>
+#include "util/any.hpp"
 
 namespace realm {
 using AnyDict = std::map<std::string, util::Any>;

@@ -30,7 +30,6 @@ createMethods(Results.prototype, objectTypes.RESULTS, [
     'filtered',
     'sorted',
     'snapshot',
-    'subscribe',
     'isValid',
     'indexOf',
     'min',
