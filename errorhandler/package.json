@@ -1,49 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "errorhandler@~1.4.2",
-        "scope": null,
-        "escapedName": "errorhandler",
-        "name": "errorhandler",
-        "rawSpec": "~1.4.2",
-        "spec": ">=1.4.2 <1.5.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/connect"
+      "errorhandler@1.4.3",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1453094893067,
-  "_from": "errorhandler@>=1.4.2 <1.5.0",
-  "_hasShrinkwrap": false,
+  "_from": "errorhandler@1.4.3",
   "_id": "errorhandler@1.4.3",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-t7cO2PNZ6duICS8tIMD4MUIK2D8=",
   "_location": "/errorhandler",
-  "_npmUser": {
-    "name": "dougwilson",
-    "email": "doug@somethingdoug.com"
-  },
-  "_npmVersion": "1.4.28",
-  "_phantomChildren": {
-    "mime-types": "2.1.18"
-  },
+  "_phantomChildren": {},
   "_requested": {
-    "raw": "errorhandler@~1.4.2",
-    "scope": null,
-    "escapedName": "errorhandler",
+    "type": "version",
+    "registry": true,
+    "raw": "errorhandler@1.4.3",
     "name": "errorhandler",
-    "rawSpec": "~1.4.2",
-    "spec": ">=1.4.2 <1.5.0",
-    "type": "range"
+    "escapedName": "errorhandler",
+    "rawSpec": "1.4.3",
+    "saveSpec": null,
+    "fetchSpec": "1.4.3"
   },
   "_requiredBy": [
     "/connect"
   ],
-  "_resolved": "https://registry.npmjs.org/errorhandler/-/errorhandler-1.4.3.tgz",
-  "_shasum": "b7b70ed8f359e9db88092f2d20c0f831420ad83f",
-  "_shrinkwrap": null,
-  "_spec": "errorhandler@~1.4.2",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/connect",
+  "_resolved": "http://registry.npm.taobao.org/errorhandler/download/errorhandler-1.4.3.tgz",
+  "_spec": "1.4.3",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "bugs": {
     "url": "https://github.com/expressjs/errorhandler/issues"
   },
@@ -69,13 +52,6 @@
     "mocha": "2.3.4",
     "supertest": "1.1.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "b7b70ed8f359e9db88092f2d20c0f831420ad83f",
-    "size": 5561,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/errorhandler/download/errorhandler-1.4.3.tgz"
-  },
   "engines": {
     "node": ">= 0.8"
   },
@@ -85,39 +61,9 @@
     "HISTORY.md",
     "index.js"
   ],
-  "gitHead": "c41e9aaf9a518bcf6132c36f81fe67593eac99e8",
-  "homepage": "https://github.com/expressjs/errorhandler",
+  "homepage": "https://github.com/expressjs/errorhandler#readme",
   "license": "MIT",
-  "maintainers": [
-    {
-      "name": "defunctzombie",
-      "email": "shtylman@gmail.com"
-    },
-    {
-      "name": "dougwilson",
-      "email": "doug@somethingdoug.com"
-    },
-    {
-      "name": "fishrock123",
-      "email": "fishrock123@rocketmail.com"
-    },
-    {
-      "name": "jongleberry",
-      "email": "jonathanrichardong@gmail.com"
-    },
-    {
-      "name": "mscdex",
-      "email": "mscdex@mscdex.net"
-    },
-    {
-      "name": "tjholowaychuk",
-      "email": "tj@vision-media.ca"
-    }
-  ],
   "name": "errorhandler",
-  "optionalDependencies": {},
-  "publish_time": 1453094893067,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/expressjs/errorhandler.git"

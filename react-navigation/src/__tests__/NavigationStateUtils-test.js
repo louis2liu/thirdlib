@@ -1,3 +1,5 @@
+/* @flow */
+
 import NavigationStateUtils from '../StateUtils';
 
 const routeName = 'Anything';
@@ -5,11 +7,7 @@ const routeName = 'Anything';
 describe('StateUtils', () => {
   // Getters
   it('gets route', () => {
-    const state = {
-      index: 0,
-      routes: [{ key: 'a', routeName }],
-      isTransitioning: false,
-    };
+    const state = { index: 0, routes: [{ key: 'a', routeName }] };
     expect(NavigationStateUtils.get(state, 'a')).toEqual({
       key: 'a',
       routeName,
@@ -21,7 +19,6 @@ describe('StateUtils', () => {
     const state = {
       index: 1,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     expect(NavigationStateUtils.indexOf(state, 'a')).toBe(0);
     expect(NavigationStateUtils.indexOf(state, 'b')).toBe(1);
@@ -32,7 +29,6 @@ describe('StateUtils', () => {
     const state = {
       index: 0,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     expect(NavigationStateUtils.has(state, 'b')).toBe(true);
     expect(NavigationStateUtils.has(state, 'c')).toBe(false);
@@ -40,14 +36,9 @@ describe('StateUtils', () => {
 
   // Push
   it('pushes a route', () => {
-    const state = {
-      index: 0,
-      routes: [{ key: 'a', routeName }],
-      isTransitioning: false,
-    };
+    const state = { index: 0, routes: [{ key: 'a', routeName }] };
     const newState = {
       index: 1,
-      isTransitioning: false,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
     };
     expect(NavigationStateUtils.push(state, { key: 'b', routeName })).toEqual(
@@ -56,11 +47,7 @@ describe('StateUtils', () => {
   });
 
   it('does not push duplicated route', () => {
-    const state = {
-      index: 0,
-      routes: [{ key: 'a', routeName }],
-      isTransitioning: false,
-    };
+    const state = { index: 0, routes: [{ key: 'a', routeName }] };
     expect(() =>
       NavigationStateUtils.push(state, { key: 'a', routeName })
     ).toThrow();
@@ -71,22 +58,13 @@ describe('StateUtils', () => {
     const state = {
       index: 1,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
-    const newState = {
-      index: 0,
-      routes: [{ key: 'a', routeName }],
-      isTransitioning: false,
-    };
+    const newState = { index: 0, routes: [{ key: 'a', routeName }] };
     expect(NavigationStateUtils.pop(state)).toEqual(newState);
   });
 
   it('does not pop route if not applicable', () => {
-    const state = {
-      index: 0,
-      routes: [{ key: 'a', routeName }],
-      isTransitioning: false,
-    };
+    const state = { index: 0, routes: [{ key: 'a', routeName }] };
     expect(NavigationStateUtils.pop(state)).toBe(state);
   });
 
@@ -95,12 +73,10 @@ describe('StateUtils', () => {
     const state = {
       index: 0,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     const newState = {
       index: 1,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     expect(NavigationStateUtils.jumpToIndex(state, 0)).toBe(state);
     expect(NavigationStateUtils.jumpToIndex(state, 1)).toEqual(newState);
@@ -110,7 +86,6 @@ describe('StateUtils', () => {
     const state = {
       index: 0,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     expect(() => NavigationStateUtils.jumpToIndex(state, 2)).toThrow();
   });
@@ -119,12 +94,10 @@ describe('StateUtils', () => {
     const state = {
       index: 0,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     const newState = {
       index: 1,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     expect(NavigationStateUtils.jumpTo(state, 'a')).toBe(state);
     expect(NavigationStateUtils.jumpTo(state, 'b')).toEqual(newState);
@@ -134,7 +107,6 @@ describe('StateUtils', () => {
     const state = {
       index: 0,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     expect(() => NavigationStateUtils.jumpTo(state, 'c')).toThrow();
   });
@@ -143,12 +115,10 @@ describe('StateUtils', () => {
     const state = {
       index: 1,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     const newState = {
       index: 0,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     expect(NavigationStateUtils.back(state)).toEqual(newState);
     expect(NavigationStateUtils.back(newState)).toBe(newState);
@@ -158,12 +128,10 @@ describe('StateUtils', () => {
     const state = {
       index: 0,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     const newState = {
       index: 1,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     expect(NavigationStateUtils.forward(state)).toEqual(newState);
     expect(NavigationStateUtils.forward(newState)).toBe(newState);
@@ -174,12 +142,10 @@ describe('StateUtils', () => {
     const state = {
       index: 0,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     const newState = {
       index: 1,
       routes: [{ key: 'a', routeName }, { key: 'c', routeName }],
-      isTransitioning: false,
     };
     expect(
       NavigationStateUtils.replaceAt(state, 'b', { key: 'c', routeName })
@@ -190,12 +156,10 @@ describe('StateUtils', () => {
     const state = {
       index: 0,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     const newState = {
       index: 1,
       routes: [{ key: 'a', routeName }, { key: 'c', routeName }],
-      isTransitioning: false,
     };
     expect(
       NavigationStateUtils.replaceAtIndex(state, 1, { key: 'c', routeName })
@@ -206,7 +170,6 @@ describe('StateUtils', () => {
     const state = {
       index: 0,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     expect(
       NavigationStateUtils.replaceAtIndex(state, 1, state.routes[1])
@@ -218,12 +181,10 @@ describe('StateUtils', () => {
     const state = {
       index: 0,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     const newState = {
       index: 1,
       routes: [{ key: 'x', routeName }, { key: 'y', routeName }],
-      isTransitioning: false,
     };
     expect(
       NavigationStateUtils.reset(state, [
@@ -241,12 +202,10 @@ describe('StateUtils', () => {
     const state = {
       index: 0,
       routes: [{ key: 'a', routeName }, { key: 'b', routeName }],
-      isTransitioning: false,
     };
     const newState = {
       index: 0,
       routes: [{ key: 'x', routeName }, { key: 'y', routeName }],
-      isTransitioning: false,
     };
     expect(
       NavigationStateUtils.reset(

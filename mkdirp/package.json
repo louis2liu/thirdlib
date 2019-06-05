@@ -39,7 +39,6 @@
     "/babel-register",
     "/fstream",
     "/istanbul-api",
-    "/istanbul-api/istanbul-lib-source-maps",
     "/istanbul-lib-report",
     "/istanbul-lib-source-maps",
     "/jest-snapshot",

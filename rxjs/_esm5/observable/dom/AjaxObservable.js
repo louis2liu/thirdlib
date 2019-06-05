@@ -391,16 +391,12 @@ function parseXhrResponse(responseType, xhr) {
                 return xhr.responseType ? xhr.response : JSON.parse(xhr.response || xhr.responseText || 'null');
             }
             else {
-                // HACK(benlesh): TypeScript shennanigans
-                // tslint:disable-next-line:no-any latest TS seems to think xhr is "never" here.
                 return JSON.parse(xhr.responseText || 'null');
             }
         case 'xml':
             return xhr.responseXML;
         case 'text':
         default:
-            // HACK(benlesh): TypeScript shennanigans
-            // tslint:disable-next-line:no-any latest TS seems to think xhr is "never" here.
             return ('response' in xhr) ? xhr.response : xhr.responseText;
     }
 }
@@ -416,4 +412,4 @@ export var AjaxTimeoutError = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     }
     return AjaxTimeoutError;
 }(AjaxError));
-//# sourceMappingURL=AjaxObservable.js.map
+//# sourceMappingURL=AjaxObservable.js.map 

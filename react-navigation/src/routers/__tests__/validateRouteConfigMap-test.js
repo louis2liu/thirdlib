@@ -1,6 +1,9 @@
+/* @flow */
+
 import React from 'react';
 
 import validateRouteConfigMap from '../validateRouteConfigMap';
+
 import StackRouter from '../StackRouter';
 
 const ListScreen = () => <div />;
@@ -13,29 +16,19 @@ ProfileNavigator.router = StackRouter({
 });
 
 describe('validateRouteConfigMap', () => {
-  test('Fails on empty bare screen', () => {
-    const invalidMap = {
-      Home: undefined,
-    };
-    expect(() =>
-      validateRouteConfigMap(invalidMap)
-    ).toThrowErrorMatchingSnapshot();
-  });
   test('Fails on empty config', () => {
     const invalidMap = {};
-    expect(() =>
-      validateRouteConfigMap(invalidMap)
-    ).toThrowErrorMatchingSnapshot();
+    expect(() => validateRouteConfigMap(invalidMap)).toThrow();
   });
   test('Fails on bad object', () => {
     const invalidMap = {
+      // @todo fix flow, this should error as no screen/getScreen
+      // provided
       Home: {
         foo: 'bar',
       },
     };
-    expect(() =>
-      validateRouteConfigMap(invalidMap)
-    ).toThrowErrorMatchingSnapshot();
+    expect(() => validateRouteConfigMap(invalidMap)).toThrow();
   });
   test('Fails if both screen and getScreen are defined', () => {
     const invalidMap = {
@@ -44,17 +37,17 @@ describe('validateRouteConfigMap', () => {
         getScreen: () => ListScreen,
       },
     };
-    expect(() =>
-      validateRouteConfigMap(invalidMap)
-    ).toThrowErrorMatchingSnapshot();
+    expect(() => validateRouteConfigMap(invalidMap)).toThrow();
   });
   test('Succeeds on a valid config', () => {
-    const validMap = {
+    const invalidMap = {
       Home: {
         screen: ProfileNavigator,
       },
-      Chat: ListScreen,
+      Chat: {
+        screen: ListScreen,
+      },
     };
-    validateRouteConfigMap(validMap);
+    validateRouteConfigMap(invalidMap);
   });
 });

@@ -1,52 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "react-native-md5@^1.0.0",
-        "scope": null,
-        "escapedName": "react-native-md5",
-        "name": "react-native-md5",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn"
+      "react-native-md5@1.0.0",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1476694321916,
-  "_from": "react-native-md5@>=1.0.0 <2.0.0",
-  "_hasShrinkwrap": false,
+  "_from": "react-native-md5@1.0.0",
   "_id": "react-native-md5@1.0.0",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-IyC+JNZ0k4rl709JJpjtu/oOAgU=",
   "_location": "/react-native-md5",
-  "_nodeVersion": "4.5.0",
-  "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/react-native-md5-1.0.0.tgz_1476694318848_0.9196706875227392"
-  },
-  "_npmUser": {
-    "name": "kmend",
-    "email": "chen.qiao@foxmail.com"
-  },
-  "_npmVersion": "2.15.9",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "react-native-md5@^1.0.0",
-    "scope": null,
-    "escapedName": "react-native-md5",
+    "type": "version",
+    "registry": true,
+    "raw": "react-native-md5@1.0.0",
     "name": "react-native-md5",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
-    "type": "range"
+    "escapedName": "react-native-md5",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npm.taobao.org/react-native-md5/download/react-native-md5-1.0.0.tgz",
-  "_shasum": "2320be24d674938ae5ef4f492698edbbfa0e0205",
-  "_shrinkwrap": null,
-  "_spec": "react-native-md5@^1.0.0",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn",
+  "_resolved": "https://registry.npmjs.org/react-native-md5/-/react-native-md5-1.0.0.tgz",
+  "_spec": "1.0.0",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "kmend"
   },
@@ -56,14 +36,6 @@
   "dependencies": {},
   "description": "react-native-md5 Demo",
   "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "2320be24d674938ae5ef4f492698edbbfa0e0205",
-    "size": 4405,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/react-native-md5/download/react-native-md5-1.0.0.tgz"
-  },
-  "gitHead": "9161152a4ea6072104e5fddb3df1a4527d875681",
   "homepage": "https://github.com/kmend/react-native-md5",
   "keywords": [
     "react-native",
@@ -76,16 +48,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "maintainers": [
-    {
-      "name": "kmend",
-      "email": "chen.qiao@foxmail.com"
-    }
-  ],
   "name": "react-native-md5",
-  "optionalDependencies": {},
-  "publish_time": 1476694321916,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kmend/react-native-md5.git"

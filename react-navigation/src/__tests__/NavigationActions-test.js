@@ -1,3 +1,5 @@
+/* @flow */
+
 import NavigationActions from '../NavigationActions';
 
 describe('actions', () => {

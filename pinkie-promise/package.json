@@ -15,6 +15,7 @@
   ],
   "_cnpm_publish_time": 1460309840299,
   "_from": "pinkie-promise@>=2.0.0 <3.0.0",
+  "_hasShrinkwrap": false,
   "_id": "pinkie-promise@2.0.1",
   "_inCache": true,
   "_location": "/pinkie-promise",

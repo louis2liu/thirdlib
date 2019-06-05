@@ -1,0 +1,61 @@
+{
+  "_from": "react-native-audio@^4.1.3",
+  "_id": "react-native-audio@4.1.3",
+  "_inBundle": false,
+  "_integrity": "sha1-yrQXA0GfV8bU3pxr/Sf4/FSkrK8=",
+  "_location": "/react-native-audio",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "react-native-audio@^4.1.3",
+    "name": "react-native-audio",
+    "escapedName": "react-native-audio",
+    "rawSpec": "^4.1.3",
+    "saveSpec": null,
+    "fetchSpec": "^4.1.3"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/react-native-audio/download/react-native-audio-4.1.3.tgz",
+  "_shasum": "cab41703419f57c6d4de9c6bfd27f8fc54a4acaf",
+  "_spec": "react-native-audio@^4.1.3",
+  "_where": "/Users/yazheng/Desktop/ydProject/docbook-RN-app-YS/yunshu_rn",
+  "author": {
+    "name": "Joshua Sierles",
+    "email": "joshua@diluvia.net",
+    "url": "https://github.com/jsierles"
+  },
+  "bugs": {
+    "url": "https://github.com/jsierles/react-native-audio/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "React Native extension for recording audio",
+  "files": [
+    "ios/AudioRecorderManager.m",
+    "ios/AudioRecorderManager.h",
+    "ios/RNAudio.xcodeproj",
+    "README.md",
+    "LICENSE",
+    "index.js",
+    "android/*",
+    "RNAudio.podspec"
+  ],
+  "homepage": "https://github.com/jsierles/react-native-audio#readme",
+  "keywords": [
+    "react-native",
+    "audio",
+    "record"
+  ],
+  "main": "index.js",
+  "name": "react-native-audio",
+  "nativePackage": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jsierles/react-native-audio.git"
+  },
+  "version": "4.1.3"
+}

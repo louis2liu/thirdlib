@@ -1,4 +1,6 @@
 //! moment.js locale configuration
+//! locale : Maldivian [dv]
+//! author : Jawish Hameed : https://github.com/jawish
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'
@@ -21,7 +23,8 @@ var months = [
     'އޮކްޓޯބަރު',
     'ނޮވެމްބަރު',
     'ޑިސެމްބަރު'
-], weekdays = [
+];
+var weekdays = [
     'އާދިއްތަ',
     'ހޯމަ',
     'އަންގާރަ',

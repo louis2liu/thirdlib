@@ -7,6 +7,7 @@
  */
 
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {
     StyleSheet,
     View,
@@ -16,9 +17,10 @@ import {
     ViewPropTypes as RNViewPropTypes,
 } from 'react-native'
 
-import PropTypes from 'prop-types';
 const ViewPropTypes = RNViewPropTypes || View.propTypes;
-export const DURATION = { 
+ 
+export const DURATION = {
+    LENGTH_LONG: 2000,
     LENGTH_SHORT: 500,
     FOREVER: 0,
 };
@@ -29,6 +31,7 @@ export default class Toast extends Component {
 
     constructor(props) {
         super(props);
+
         this.state = {
             isShow: false,
             text: '',
@@ -36,9 +39,9 @@ export default class Toast extends Component {
         }
     }
 
-    show(text, duration, callback) {
+    show(text, duration) {
         this.duration = typeof duration === 'number' ? duration : DURATION.LENGTH_SHORT;
-        this.callback = callback;
+
         this.setState({
             isShow: true,
             text: text,
@@ -75,9 +78,6 @@ export default class Toast extends Component {
                     isShow: false,
                 });
                 this.isShow = false;
-                if(typeof this.callback === 'function') {
-                    this.callback();
-                }
             });
         }, delay);
     }
@@ -108,7 +108,7 @@ export default class Toast extends Component {
                 <Animated.View
                     style={[styles.content, { opacity: this.state.opacityValue }, this.props.style]}
                 >
-                    {React.isValidElement(this.state.text) ? this.state.text : <Text style={this.props.textStyle}>{this.state.text}</Text>}
+                    <Text style={this.props.textStyle}>{this.state.text}</Text>
                 </Animated.View>
             </View> : null;
         return view;

@@ -1,4 +1,6 @@
 //! moment.js locale configuration
+//! locale : Maltese (Malta) [mt]
+//! author : Alessandro Maruccia : https://github.com/alesma
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'

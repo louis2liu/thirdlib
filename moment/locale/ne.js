@@ -1,4 +1,6 @@
 //! moment.js locale configuration
+//! locale : Nepalese [ne]
+//! author : suvash : https://github.com/suvash
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'
@@ -19,8 +21,8 @@ var symbolMap = {
     '8': '८',
     '9': '९',
     '0': '०'
-},
-numberMap = {
+};
+var numberMap = {
     '१': '1',
     '२': '2',
     '३': '3',

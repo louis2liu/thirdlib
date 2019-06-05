@@ -1,53 +1,33 @@
 {
   "_args": [
     [
-      {
-        "raw": "babel-preset-react-native@^4.0.0",
-        "scope": null,
-        "escapedName": "babel-preset-react-native",
-        "name": "babel-preset-react-native",
-        "rawSpec": "^4.0.0",
-        "spec": ">=4.0.0 <5.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/metro-bundler"
+      "babel-preset-react-native@4.0.0",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1505391100882,
-  "_from": "babel-preset-react-native@>=4.0.0 <5.0.0",
-  "_hasShrinkwrap": false,
+  "_from": "babel-preset-react-native@4.0.0",
   "_id": "babel-preset-react-native@4.0.0",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha512-Wfbo6x244nUbBxjr7hQaNFdjj7FDYU+TVT7cFVPEdVPI68vhN52iLvamm+ErhNdHq6M4j1cMT6AJBYx7Wzdr0g==",
   "_location": "/babel-preset-react-native",
-  "_nodeVersion": "8.5.0",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/babel-preset-react-native-4.0.0.tgz_1505391099961_0.9598081859294325"
-  },
-  "_npmUser": {
-    "name": "rafeca",
-    "email": "rafeca@gmail.com"
-  },
-  "_npmVersion": "5.3.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "babel-preset-react-native@^4.0.0",
-    "scope": null,
-    "escapedName": "babel-preset-react-native",
+    "type": "version",
+    "registry": true,
+    "raw": "babel-preset-react-native@4.0.0",
     "name": "babel-preset-react-native",
-    "rawSpec": "^4.0.0",
-    "spec": ">=4.0.0 <5.0.0",
-    "type": "range"
+    "escapedName": "babel-preset-react-native",
+    "rawSpec": "4.0.0",
+    "saveSpec": null,
+    "fetchSpec": "4.0.0"
   },
   "_requiredBy": [
     "#DEV:/",
     "/metro-bundler"
   ],
-  "_resolved": "http://registry.npm.taobao.org/babel-preset-react-native/download/babel-preset-react-native-4.0.0.tgz",
-  "_shasum": "3df80dd33a453888cdd33bdb87224d17a5d73959",
-  "_shrinkwrap": null,
-  "_spec": "babel-preset-react-native@^4.0.0",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/metro-bundler",
+  "_resolved": "https://registry.npmjs.org/babel-preset-react-native/-/babel-preset-react-native-4.0.0.tgz",
+  "_spec": "4.0.0",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "bugs": {
     "url": "https://github.com/facebook/react-native/issues"
   },
@@ -85,14 +65,6 @@
     "react-transform-hmr": "^1.0.4"
   },
   "description": "Babel preset for React Native applications",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "3df80dd33a453888cdd33bdb87224d17a5d73959",
-    "size": 5299,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/babel-preset-react-native/download/babel-preset-react-native-4.0.0.tgz"
-  },
   "homepage": "https://github.com/facebook/react-native/tree/master/babel-preset/README.md",
   "keywords": [
     "babel",
@@ -101,88 +73,7 @@
   ],
   "license": "BSD-3-Clause",
   "main": "index.js",
-  "maintainers": [
-    {
-      "name": "abi",
-      "email": "abimanyuraja@gmail.com"
-    },
-    {
-      "name": "anp",
-      "email": "adam.n.perry@gmail.com"
-    },
-    {
-      "name": "bestander",
-      "email": "bestander@gmail.com"
-    },
-    {
-      "name": "brentvatne",
-      "email": "brentvatne@gmail.com"
-    },
-    {
-      "name": "ccheever",
-      "email": "ccheever@gmail.com"
-    },
-    {
-      "name": "davidaurelio",
-      "email": "dev@david-aurelio.com"
-    },
-    {
-      "name": "dikaiosune",
-      "email": "adam.n.perry@gmail.com"
-    },
-    {
-      "name": "evanbacon",
-      "email": "baconbrix@gmail.com"
-    },
-    {
-      "name": "expoadmin",
-      "email": "exponent.team@gmail.com"
-    },
-    {
-      "name": "fb",
-      "email": "opensource+npm@fb.com"
-    },
-    {
-      "name": "fson",
-      "email": "ville.immonen@iki.fi"
-    },
-    {
-      "name": "ide",
-      "email": "ide+npm@jameside.com"
-    },
-    {
-      "name": "jeanlauliac",
-      "email": "jean@lauliac.com"
-    },
-    {
-      "name": "jesseruder",
-      "email": "jesse@sixfivezero.net"
-    },
-    {
-      "name": "mjesun",
-      "email": "mjesun@hotmail.com"
-    },
-    {
-      "name": "nikki93",
-      "email": "s.nikhilesh@gmail.com"
-    },
-    {
-      "name": "rafeca",
-      "email": "rafeca@gmail.com"
-    },
-    {
-      "name": "skevy",
-      "email": "adam@sk3vy.com"
-    },
-    {
-      "name": "terribleben",
-      "email": "ben@exp.host"
-    }
-  ],
   "name": "babel-preset-react-native",
-  "optionalDependencies": {},
-  "publish_time": 1505391100882,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "https://github.com/facebook/react-native/tree/master/babel-preset"

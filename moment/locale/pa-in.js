@@ -1,4 +1,6 @@
 //! moment.js locale configuration
+//! locale : Punjabi (India) [pa-in]
+//! author : Harpreet Singh : https://github.com/harpreetkhalsagtbit
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'
@@ -19,8 +21,8 @@ var symbolMap = {
     '8': '੮',
     '9': '੯',
     '0': '੦'
-},
-numberMap = {
+};
+var numberMap = {
     '੧': '1',
     '੨': '2',
     '੩': '3',

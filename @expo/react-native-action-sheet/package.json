@@ -1,52 +1,33 @@
 {
   "_args": [
     [
-      {
-        "raw": "@expo/react-native-action-sheet@^1.0.1",
-        "scope": "@expo",
-        "escapedName": "@expo%2freact-native-action-sheet",
-        "name": "@expo/react-native-action-sheet",
-        "rawSpec": "^1.0.1",
-        "spec": ">=1.0.1 <2.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native-gifted-chat"
+      "@expo/react-native-action-sheet@1.0.2",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1519085399565,
-  "_from": "@expo/react-native-action-sheet@>=1.0.1 <2.0.0",
-  "_hasShrinkwrap": false,
+  "_from": "@expo/react-native-action-sheet@1.0.2",
   "_id": "@expo/react-native-action-sheet@1.0.2",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha512-luscyHGelXeJLYVj3/sm3/Kz6TFfNZc3j/UiIyJB4wUq+S8C1lpk4mkKktGysZ9cbexCYXLs/HR6NvI+Wn0LSw==",
   "_location": "/@expo/react-native-action-sheet",
-  "_nodeVersion": "9.2.0",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/react-native-action-sheet_1.0.2_1519085399461_0.44507730910358156"
-  },
-  "_npmUser": {
-    "name": "brentvatne",
-    "email": "brentvatne@gmail.com"
-  },
-  "_npmVersion": "5.5.1",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "@expo/react-native-action-sheet@^1.0.1",
-    "scope": "@expo",
-    "escapedName": "@expo%2freact-native-action-sheet",
+    "type": "version",
+    "registry": true,
+    "raw": "@expo/react-native-action-sheet@1.0.2",
     "name": "@expo/react-native-action-sheet",
-    "rawSpec": "^1.0.1",
-    "spec": ">=1.0.1 <2.0.0",
-    "type": "range"
+    "escapedName": "@expo%2freact-native-action-sheet",
+    "scope": "@expo",
+    "rawSpec": "1.0.2",
+    "saveSpec": null,
+    "fetchSpec": "1.0.2"
   },
   "_requiredBy": [
     "/react-native-gifted-chat"
   ],
-  "_resolved": "https://registry.npm.taobao.org/@expo/react-native-action-sheet/download/@expo/react-native-action-sheet-1.0.2.tgz",
-  "_shasum": "abdfb21cbefec6147c6ee8b8fb725287cbd2e696",
-  "_shrinkwrap": null,
-  "_spec": "@expo/react-native-action-sheet@^1.0.1",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native-gifted-chat",
+  "_resolved": "https://registry.npmjs.org/@expo/react-native-action-sheet/-/react-native-action-sheet-1.0.2.tgz",
+  "_spec": "1.0.2",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Jesse Ruder",
     "email": "jesse@sixfivezero.net"
@@ -64,13 +45,6 @@
     "react": "^15.6.1",
     "react-native": "^0.28.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "abdfb21cbefec6147c6ee8b8fb725287cbd2e696",
-    "size": 4455,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/@expo/react-native-action-sheet/download/@expo/react-native-action-sheet-1.0.2.tgz"
-  },
   "files": [
     "ActionSheet.android.js",
     "ActionSheet.ios.js",
@@ -79,7 +53,6 @@
     "index.js",
     "README.md"
   ],
-  "gitHead": "ca5c544b9e8cc49cb566bac355ecd7159c6ef948",
   "homepage": "https://github.com/expo/react-native-action-sheet",
   "keywords": [
     "react-native",
@@ -87,60 +60,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "maintainers": [
-    {
-      "name": "abi",
-      "email": "abimanyuraja@gmail.com"
-    },
-    {
-      "name": "anp",
-      "email": "adam.n.perry@gmail.com"
-    },
-    {
-      "name": "brentvatne",
-      "email": "brentvatne@gmail.com"
-    },
-    {
-      "name": "ccheever",
-      "email": "ccheever@gmail.com"
-    },
-    {
-      "name": "dikaiosune",
-      "email": "adam.n.perry@gmail.com"
-    },
-    {
-      "name": "evanbacon",
-      "email": "baconbrix@gmail.com"
-    },
-    {
-      "name": "expoadmin",
-      "email": "exponent.team@gmail.com"
-    },
-    {
-      "name": "fson",
-      "email": "ville.immonen@iki.fi"
-    },
-    {
-      "name": "ide",
-      "email": "ide+npm@jameside.com"
-    },
-    {
-      "name": "jesseruder",
-      "email": "jesse@sixfivezero.net"
-    },
-    {
-      "name": "nikki93",
-      "email": "s.nikhilesh@gmail.com"
-    },
-    {
-      "name": "terribleben",
-      "email": "ben@exp.host"
-    }
-  ],
   "name": "@expo/react-native-action-sheet",
-  "optionalDependencies": {},
-  "publish_time": 1519085399565,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/expo/react-native-action-sheet.git"

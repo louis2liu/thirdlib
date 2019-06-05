@@ -39,7 +39,6 @@
     "/are-we-there-yet/readable-stream",
     "/bl/readable-stream",
     "/concat-stream/readable-stream",
-    "/htmlparser2-without-node-native/readable-stream",
     "/merge-stream/readable-stream",
     "/readable-stream",
     "/tar-pack/readable-stream",

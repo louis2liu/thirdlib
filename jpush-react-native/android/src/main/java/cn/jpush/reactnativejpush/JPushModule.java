@@ -8,6 +8,8 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
 import android.util.SparseArray;
 
 import com.facebook.react.bridge.Arguments;
@@ -31,6 +33,8 @@ import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import cn.jpush.android.api.BasicPushNotificationBuilder;
 import cn.jpush.android.api.CustomPushNotificationBuilder;
@@ -149,11 +153,11 @@ public class JPushModule extends ReactContextBaseJavaModule {
     }
 
     private static void sendEvent() {
+        WritableMap map = Arguments.createMap();
         if (mEvent != null) {
             Logger.i(TAG, "Sending event : " + mEvent);
             switch (mEvent) {
                 case RECEIVE_CUSTOM_MESSAGE:
-                    WritableMap map = Arguments.createMap();
                     map.putInt("id", mCachedBundle.getInt(JPushInterface.EXTRA_NOTIFICATION_ID));
                     map.putString("message", mCachedBundle.getString(JPushInterface.EXTRA_MESSAGE));
                     map.putString("extras", mCachedBundle.getString(JPushInterface.EXTRA_EXTRA));
@@ -170,7 +174,6 @@ public class JPushModule extends ReactContextBaseJavaModule {
                     break;
                 case RECEIVE_NOTIFICATION:
                 case OPEN_NOTIFICATION:
-                    map = Arguments.createMap();
                     map.putInt("id", mCachedBundle.getInt(JPushInterface.EXTRA_NOTIFICATION_ID));
                     map.putString("alertContent", mCachedBundle.getString(JPushInterface.EXTRA_ALERT));
                     map.putString("extras", mCachedBundle.getString(JPushInterface.EXTRA_EXTRA));
@@ -381,7 +384,8 @@ public class JPushModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void getRegistrationID(Callback callback) {
         try {
-            String id = JPushInterface.getRegistrationID(getReactApplicationContext());
+            mContext = getCurrentActivity();
+            String id = JPushInterface.getRegistrationID(mContext);
             if (id != null) {
                 callback.invoke(id);
             } else {
@@ -502,7 +506,7 @@ public class JPushModule extends ReactContextBaseJavaModule {
         }
 
         @Override
-        public void onReceive(Context context, Intent data) {
+        public void onReceive(Context context, final Intent data) {
             mCachedBundle = data.getExtras();
             if (JPushInterface.ACTION_MESSAGE_RECEIVED.equals(data.getAction())) {
                 try {
@@ -511,6 +515,20 @@ public class JPushModule extends ReactContextBaseJavaModule {
                     mEvent = RECEIVE_CUSTOM_MESSAGE;
                     if (mRAC != null) {
                         sendEvent();
+                    } else {
+                        TimerTask task = new TimerTask() {
+                            @Override
+                            public void run() {
+                                /**
+                                 *要执行的操作
+                                 */
+                                mCachedBundle = data.getExtras();
+                                mEvent = RECEIVE_CUSTOM_MESSAGE;
+                                sendEvent();
+                            }
+                        };
+                        Timer timer = new Timer();
+                        timer.schedule(task, 8000);//8秒后执行TimeTask的run方法
                     }
                 } catch (Exception e) {
                     e.printStackTrace();

@@ -1,52 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "commander@^2.9.0",
-        "scope": null,
-        "escapedName": "commander",
-        "name": "commander",
-        "rawSpec": "^2.9.0",
-        "spec": ">=2.9.0 <3.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native"
+      "commander@2.15.1",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1520471512912,
-  "_from": "commander@>=2.9.0 <3.0.0",
-  "_hasShrinkwrap": false,
-  "_id": "commander@2.15.0",
-  "_inCache": true,
+  "_from": "commander@2.15.1",
+  "_id": "commander@2.15.1",
+  "_inBundle": false,
+  "_integrity": "sha1-30boZ9D8Kuxmo0ZitAapzK//Ww8=",
   "_location": "/commander",
-  "_nodeVersion": "9.7.1",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/commander_2.15.0_1520471512609_0.20298682127168233"
-  },
-  "_npmUser": {
-    "name": "abetomo",
-    "email": "abe@enzou.tokyo"
-  },
-  "_npmVersion": "5.7.1",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "commander@^2.9.0",
-    "scope": null,
-    "escapedName": "commander",
+    "type": "version",
+    "registry": true,
+    "raw": "commander@2.15.1",
     "name": "commander",
-    "rawSpec": "^2.9.0",
-    "spec": ">=2.9.0 <3.0.0",
-    "type": "range"
+    "escapedName": "commander",
+    "rawSpec": "2.15.1",
+    "saveSpec": null,
+    "fetchSpec": "2.15.1"
   },
   "_requiredBy": [
     "/react-native"
   ],
-  "_resolved": "https://registry.npm.taobao.org/commander/download/commander-2.15.0.tgz",
-  "_shasum": "ad2a23a1c3b036e392469b8012cec6b33b4c1322",
-  "_shrinkwrap": null,
-  "_spec": "commander@^2.9.0",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native",
+  "_resolved": "http://registry.npm.taobao.org/commander/download/commander-2.15.1.tgz",
+  "_spec": "2.15.1",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "TJ Holowaychuk",
     "email": "tj@vision-media.ca"
@@ -64,18 +44,10 @@
     "standard": "^10.0.3",
     "typescript": "^2.7.2"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "ad2a23a1c3b036e392469b8012cec6b33b4c1322",
-    "size": 17820,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/commander/download/commander-2.15.0.tgz"
-  },
   "files": [
     "index.js",
     "typings/index.d.ts"
   ],
-  "gitHead": "d8404f8de45c9ba780606878f4d35d0a45743d32",
   "homepage": "https://github.com/tj/commander.js#readme",
   "keywords": [
     "commander",
@@ -85,32 +57,7 @@
   ],
   "license": "MIT",
   "main": "index",
-  "maintainers": [
-    {
-      "name": "abetomo",
-      "email": "abe@enzou.tokyo"
-    },
-    {
-      "name": "somekittens",
-      "email": "rkoutnik@gmail.com"
-    },
-    {
-      "name": "tjholowaychuk",
-      "email": "tj@vision-media.ca"
-    },
-    {
-      "name": "vanesyan",
-      "email": "romain.vanesyan@gmail.com"
-    },
-    {
-      "name": "zhiyelee",
-      "email": "zhiyelee@gmail.com"
-    }
-  ],
   "name": "commander",
-  "optionalDependencies": {},
-  "publish_time": 1520471512912,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tj/commander.js.git"
@@ -121,5 +68,5 @@
     "test-typings": "node_modules/typescript/bin/tsc -p tsconfig.json"
   },
   "typings": "typings/index.d.ts",
-  "version": "2.15.0"
+  "version": "2.15.1"
 }

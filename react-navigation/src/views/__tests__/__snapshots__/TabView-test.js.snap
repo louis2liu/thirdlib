@@ -27,7 +27,6 @@ exports[`TabBarBottom renders successfully 1`] = `
     <View
       collapsable={undefined}
       onLayout={[Function]}
-      pointerEvents="box-none"
       style={
         Object {
           "backgroundColor": "#F7F7F7",
@@ -62,80 +61,68 @@ exports[`TabBarBottom renders successfully 1`] = `
             "alignItems": "center",
             "backgroundColor": "rgba(0, 0, 0, 0)",
             "flex": 1,
+            "justifyContent": "flex-end",
           }
         }
         testID={undefined}
       >
         <View
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-              },
-              Object {
-                "flexDirection": "column",
-                "justifyContent": "flex-end",
-              },
-              undefined,
-            ]
+            Object {
+              "flexGrow": 1,
+            }
           }
         >
           <View
-            style={
-              Object {
-                "flexGrow": 1,
-              }
-            }
-          >
-            <View
-              collapsable={undefined}
-              style={
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "center",
-                  "height": "100%",
-                  "justifyContent": "center",
-                  "opacity": 1,
-                  "position": "absolute",
-                  "width": "100%",
-                }
-              }
-            />
-            <View
-              collapsable={undefined}
-              style={
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "center",
-                  "height": "100%",
-                  "justifyContent": "center",
-                  "opacity": 0,
-                  "position": "absolute",
-                  "width": "100%",
-                }
-              }
-            />
-          </View>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
             collapsable={undefined}
-            ellipsizeMode="tail"
-            numberOfLines={1}
             style={
               Object {
-                "backgroundColor": "transparent",
-                "color": "rgba(52, 120, 246, 1)",
-                "fontSize": 10,
-                "marginBottom": 1.5,
-                "textAlign": "center",
+                "alignItems": "center",
+                "bottom": 0,
+                "justifyContent": "center",
+                "left": 0,
+                "opacity": 1,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
               }
             }
-          >
-            s1
-          </Text>
+          />
+          <View
+            collapsable={undefined}
+            style={
+              Object {
+                "alignItems": "center",
+                "bottom": 0,
+                "justifyContent": "center",
+                "left": 0,
+                "opacity": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              }
+            }
+          />
         </View>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          collapsable={undefined}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgba(52, 120, 246, 1)",
+              "fontSize": 10,
+              "marginBottom": 1.5,
+              "marginLeft": 0,
+              "marginTop": 0,
+              "textAlign": "center",
+            }
+          }
+        >
+          s1
+        </Text>
       </View>
     </View>
   </View>
@@ -174,7 +161,6 @@ exports[`TabBarBottom renders successfully 1`] = `
     onScrollShouldSetResponder={[Function]}
     onStartShouldSetResponder={[Function]}
     onStartShouldSetResponderCapture={[Function]}
-    onTouchCancel={[Function]}
     onTouchEnd={[Function]}
     onTouchMove={[Function]}
     onTouchStart={[Function]}
@@ -223,8 +209,6 @@ exports[`TabBarBottom renders successfully 1`] = `
         testID={undefined}
       >
         <View
-          collapsable={false}
-          removeClippedSubviews={false}
           style={
             Object {
               "flex": 1,
@@ -233,35 +217,20 @@ exports[`TabBarBottom renders successfully 1`] = `
           }
         >
           <View
-            style={
+            navigation={
               Object {
-                "flex": 1,
+                "dispatch": undefined,
+                "goBack": [Function],
+                "navigate": [Function],
+                "setParams": [Function],
+                "state": Object {
+                  "key": "s1",
+                  "routeName": "s1",
+                },
               }
             }
-          >
-            <View
-              navigation={
-                Object {
-                  "addListener": [Function],
-                  "dispatch": undefined,
-                  "getParam": [Function],
-                  "goBack": [Function],
-                  "isFocused": [Function],
-                  "navigate": [Function],
-                  "pop": [Function],
-                  "popToTop": [Function],
-                  "push": [Function],
-                  "replace": [Function],
-                  "setParams": [Function],
-                  "state": Object {
-                    "key": "s1",
-                    "routeName": "s1",
-                  },
-                }
-              }
-              screenProps={undefined}
-            />
-          </View>
+            screenProps={undefined}
+          />
         </View>
       </View>
     </RCTScrollContentView>

@@ -1,4 +1,8 @@
 //! moment.js locale configuration
+//! locale : Arabic [ar]
+//! author : Abdel Said: https://github.com/abdelsaid
+//! author : Ahmed Elkhatib
+//! author : forabi https://github.com/forabi
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'
@@ -19,7 +23,8 @@ var symbolMap = {
     '8': '٨',
     '9': '٩',
     '0': '٠'
-}, numberMap = {
+};
+var numberMap = {
     '١': '1',
     '٢': '2',
     '٣': '3',
@@ -30,16 +35,19 @@ var symbolMap = {
     '٨': '8',
     '٩': '9',
     '٠': '0'
-}, pluralForm = function (n) {
+};
+var pluralForm = function (n) {
     return n === 0 ? 0 : n === 1 ? 1 : n === 2 ? 2 : n % 100 >= 3 && n % 100 <= 10 ? 3 : n % 100 >= 11 ? 4 : 5;
-}, plurals = {
+};
+var plurals = {
     s : ['أقل من ثانية', 'ثانية واحدة', ['ثانيتان', 'ثانيتين'], '%d ثوان', '%d ثانية', '%d ثانية'],
     m : ['أقل من دقيقة', 'دقيقة واحدة', ['دقيقتان', 'دقيقتين'], '%d دقائق', '%d دقيقة', '%d دقيقة'],
     h : ['أقل من ساعة', 'ساعة واحدة', ['ساعتان', 'ساعتين'], '%d ساعات', '%d ساعة', '%d ساعة'],
     d : ['أقل من يوم', 'يوم واحد', ['يومان', 'يومين'], '%d أيام', '%d يومًا', '%d يوم'],
     M : ['أقل من شهر', 'شهر واحد', ['شهران', 'شهرين'], '%d أشهر', '%d شهرا', '%d شهر'],
     y : ['أقل من عام', 'عام واحد', ['عامان', 'عامين'], '%d أعوام', '%d عامًا', '%d عام']
-}, pluralize = function (u) {
+};
+var pluralize = function (u) {
     return function (number, withoutSuffix, string, isFuture) {
         var f = pluralForm(number),
             str = plurals[u][pluralForm(number)];
@@ -48,7 +56,8 @@ var symbolMap = {
         }
         return str.replace(/%d/i, number);
     };
-}, months = [
+};
+var months = [
     'يناير',
     'فبراير',
     'مارس',

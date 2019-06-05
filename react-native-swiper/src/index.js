@@ -15,6 +15,7 @@ import {
   Platform,
   ActivityIndicator
 } from 'react-native'
+import {screen,ScreenUtil} from  '../../../../yunshu_rn/yunshu-src/common'
 
 /**
  * Default styles

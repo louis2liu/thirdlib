@@ -2,51 +2,55 @@
   "_args": [
     [
       {
-        "raw": "inquirer@*",
+        "raw": "inquirer@^3.0.6",
         "scope": null,
         "escapedName": "inquirer",
         "name": "inquirer",
-        "rawSpec": "*",
-        "spec": "*",
+        "rawSpec": "^3.0.6",
+        "spec": ">=3.0.6 <4.0.0",
         "type": "range"
       },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/jpush-react-native"
+      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native"
     ]
   ],
-  "_cnpm_publish_time": 1517847121134,
-  "_from": "inquirer@*",
+  "_cnpm_publish_time": 1505746703811,
+  "_from": "inquirer@>=3.0.6 <4.0.0",
   "_hasShrinkwrap": false,
-  "_id": "inquirer@5.1.0",
+  "_id": "inquirer@3.3.0",
   "_inCache": true,
   "_location": "/inquirer",
-  "_nodeVersion": "8.9.1",
+  "_nodeVersion": "8.1.3",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/inquirer-5.1.0.tgz_1517847120997_0.34342508506961167"
+    "tmp": "tmp/inquirer-3.3.0.tgz_1505746703250_0.32175100315362215"
   },
   "_npmUser": {
     "name": "sboudrias",
     "email": "admin@simonboudrias.com"
   },
-  "_npmVersion": "5.5.1",
-  "_phantomChildren": {},
+  "_npmVersion": "5.0.3",
+  "_phantomChildren": {
+    "color-convert": "1.9.1",
+    "escape-string-regexp": "1.0.5",
+    "has-flag": "2.0.0"
+  },
   "_requested": {
-    "raw": "inquirer@*",
+    "raw": "inquirer@^3.0.6",
     "scope": null,
     "escapedName": "inquirer",
     "name": "inquirer",
-    "rawSpec": "*",
-    "spec": "*",
+    "rawSpec": "^3.0.6",
+    "spec": ">=3.0.6 <4.0.0",
     "type": "range"
   },
   "_requiredBy": [
-    "/jpush-react-native"
+    "/react-native"
   ],
-  "_resolved": "https://registry.npm.taobao.org/inquirer/download/inquirer-5.1.0.tgz",
-  "_shasum": "19da508931892328abbbdd4c477f1efc65abfd67",
+  "_resolved": "http://registry.npm.taobao.org/inquirer/download/inquirer-3.3.0.tgz",
+  "_shasum": "9dd2f2ad765dcab1ff0443b491442a20ba227dc9",
   "_shrinkwrap": null,
-  "_spec": "inquirer@*",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/jpush-react-native",
+  "_spec": "inquirer@^3.0.6",
+  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native",
   "author": {
     "name": "Simon Boudrias",
     "email": "admin@simonboudrias.com"
@@ -59,12 +63,13 @@
     "chalk": "^2.0.0",
     "cli-cursor": "^2.1.0",
     "cli-width": "^2.0.0",
-    "external-editor": "^2.1.0",
+    "external-editor": "^2.0.4",
     "figures": "^2.0.0",
     "lodash": "^4.3.0",
     "mute-stream": "0.0.7",
     "run-async": "^2.2.0",
-    "rxjs": "^5.5.2",
+    "rx-lite": "^4.0.8",
+    "rx-lite-aggregates": "^4.0.8",
     "string-width": "^2.1.0",
     "strip-ansi": "^4.0.0",
     "through": "^2.3.6"
@@ -73,64 +78,33 @@
   "devDependencies": {
     "chai": "^4.0.1",
     "cmdify": "^0.0.4",
-    "coveralls": "^3.0.0",
-    "eslint": "^4.1.0",
-    "eslint-config-prettier": "^2.4.0",
-    "eslint-config-xo": "^0.19.0",
-    "eslint-plugin-prettier": "^2.2.0",
-    "husky": "^0.14.3",
-    "lint-staged": "^6.0.0",
-    "mocha": "^5.0.0",
+    "eslint": "^4.2.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "gulp": "^3.9.0",
+    "gulp-codacy": "^1.0.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-eslint": "^4.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^1.1.2",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-mocha": "^3.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-plumber": "^1.0.0",
+    "mocha": "^3.4.2",
     "mockery": "^2.1.0",
-    "nsp": "^3.0.0",
-    "nyc": "^11.3.0",
-    "prettier": "^1.7.0",
-    "sinon": "^4.0.0"
+    "sinon": "^3.0.0"
   },
   "directories": {},
   "dist": {
-    "shasum": "19da508931892328abbbdd4c477f1efc65abfd67",
-    "size": 18716,
+    "shasum": "9dd2f2ad765dcab1ff0443b491442a20ba227dc9",
+    "size": 17956,
     "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/inquirer/download/inquirer-5.1.0.tgz"
-  },
-  "engines": {
-    "node": ">=6.0.0"
-  },
-  "eslintConfig": {
-    "extends": [
-      "xo",
-      "prettier"
-    ],
-    "env": {
-      "mocha": true,
-      "node": true
-    },
-    "rules": {
-      "no-eq-null": "off",
-      "eqeqeq": [
-        "error",
-        "always",
-        {
-          "null": "ignore"
-        }
-      ],
-      "prettier/prettier": [
-        "error",
-        {
-          "singleQuote": true,
-          "printWidth": 90
-        }
-      ]
-    },
-    "plugins": [
-      "prettier"
-    ]
+    "tarball": "http://registry.npm.taobao.org/inquirer/download/inquirer-3.3.0.tgz"
   },
   "files": [
     "lib"
   ],
-  "gitHead": "c7f99d7382d9fc5a6fb1f1cae53e9a9290e71b4d",
+  "gitHead": "dcf31103e8e86efab7fa687b563be21f26807175",
   "homepage": "https://github.com/SBoudrias/Inquirer.js#readme",
   "keywords": [
     "command",
@@ -141,16 +115,6 @@
     "menu"
   ],
   "license": "MIT",
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add"
-    ]
-  },
   "main": "lib/inquirer.js",
   "maintainers": [
     {
@@ -164,18 +128,15 @@
   ],
   "name": "inquirer",
   "optionalDependencies": {},
-  "publish_time": 1517847121134,
+  "publish_time": 1505746703811,
   "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SBoudrias/Inquirer.js.git"
   },
   "scripts": {
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "precommit": "lint-staged",
-    "prepublish": "nsp check",
-    "pretest": "eslint .",
-    "test": "nyc mocha test/**/* -r ./test/before"
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
   },
-  "version": "5.1.0"
+  "version": "3.3.0"
 }

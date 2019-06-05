@@ -29,10 +29,7 @@
     "email": "rafeca@gmail.com"
   },
   "_npmVersion": "5.3.0",
-  "_phantomChildren": {
-    "escape-string-regexp": "1.0.5",
-    "has-ansi": "2.0.0"
-  },
+  "_phantomChildren": {},
   "_requested": {
     "raw": "metro-bundler@^0.20.0",
     "scope": null,

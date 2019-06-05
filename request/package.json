@@ -1,54 +1,34 @@
 {
   "_args": [
     [
-      {
-        "raw": "request@^2.79.0",
-        "scope": null,
-        "escapedName": "request",
-        "name": "request",
-        "rawSpec": "^2.79.0",
-        "spec": ">=2.79.0 <3.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/metro-bundler"
+      "request@2.83.0",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1520851069925,
-  "_from": "request@>=2.79.0 <3.0.0",
-  "_hasShrinkwrap": false,
-  "_id": "request@2.85.0",
-  "_inCache": true,
+  "_from": "request@2.83.0",
+  "_id": "request@2.83.0",
+  "_inBundle": false,
+  "_integrity": "sha512-lR3gD69osqm6EYLk9wB/G1W/laGWjzH90t1vEa2xuxHD5KUrSzp9pUSfTm+YC5Nxt2T8nMPEvKlhbQayU7bgFw==",
   "_location": "/request",
-  "_nodeVersion": "8.1.2",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/request_2.85.0_1520851069876_0.369555657762632"
-  },
-  "_npmUser": {
-    "name": "simov",
-    "email": "simeonvelichkov@gmail.com"
-  },
-  "_npmVersion": "5.6.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "request@^2.79.0",
-    "scope": null,
-    "escapedName": "request",
+    "type": "version",
+    "registry": true,
+    "raw": "request@2.83.0",
     "name": "request",
-    "rawSpec": "^2.79.0",
-    "spec": ">=2.79.0 <3.0.0",
-    "type": "range"
+    "escapedName": "request",
+    "rawSpec": "2.83.0",
+    "saveSpec": null,
+    "fetchSpec": "2.83.0"
   },
   "_requiredBy": [
     "/jsdom",
     "/metro-bundler",
     "/realm"
   ],
-  "_resolved": "https://registry.npm.taobao.org/request/download/request-2.85.0.tgz",
-  "_shasum": "5a03615a47c61420b3eb99b7dba204f83603e1fa",
-  "_shrinkwrap": null,
-  "_spec": "request@^2.79.0",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/metro-bundler",
+  "_resolved": "https://registry.npmjs.org/request/-/request-2.83.0.tgz",
+  "_spec": "2.83.0",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Mikeal Rogers",
     "email": "mikeal.rogers@gmail.com"
@@ -103,13 +83,6 @@
     "tape": "^4.6.0",
     "taper": "^0.5.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "5a03615a47c61420b3eb99b7dba204f83603e1fa",
-    "size": 57060,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/request/download/request-2.85.0.tgz"
-  },
   "engines": {
     "node": ">= 4"
   },
@@ -118,7 +91,6 @@
     "index.js",
     "request.js"
   ],
-  "gitHead": "21ef363b91c17763d6c79a639a197bf72135b97a",
   "greenkeeper": {
     "ignore": [
       "hawk",
@@ -134,28 +106,7 @@
   ],
   "license": "Apache-2.0",
   "main": "index.js",
-  "maintainers": [
-    {
-      "name": "fredkschott",
-      "email": "FredKSchott@gmail.com"
-    },
-    {
-      "name": "mikeal",
-      "email": "mikeal.rogers@gmail.com"
-    },
-    {
-      "name": "nylen",
-      "email": "jnylen@gmail.com"
-    },
-    {
-      "name": "simov",
-      "email": "simeonvelichkov@gmail.com"
-    }
-  ],
   "name": "request",
-  "optionalDependencies": {},
-  "publish_time": 1520851069925,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/request/request.git"
@@ -167,5 +118,5 @@
     "test-ci": "taper tests/test-*.js",
     "test-cov": "istanbul cover tape tests/test-*.js"
   },
-  "version": "2.85.0"
+  "version": "2.83.0"
 }

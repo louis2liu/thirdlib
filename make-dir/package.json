@@ -1,52 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "make-dir@^1.0.0",
-        "scope": null,
-        "escapedName": "make-dir",
-        "name": "make-dir",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/decompress"
+      "make-dir@1.1.0",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1519025204932,
-  "_from": "make-dir@>=1.0.0 <2.0.0",
-  "_hasShrinkwrap": false,
-  "_id": "make-dir@1.2.0",
-  "_inCache": true,
+  "_from": "make-dir@1.1.0",
+  "_id": "make-dir@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-0Pkui4wLJ7rxvmfUvs87skoEaxmu0hCUApF8nonzpl7q//FWp9zu8W61Scz4sd/kUiqDxvUhtoam2efDyiBzcA==",
   "_location": "/make-dir",
-  "_nodeVersion": "8.9.4",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/make-dir_1.2.0_1519025204776_0.3757507708266983"
-  },
-  "_npmUser": {
-    "name": "sindresorhus",
-    "email": "sindresorhus@gmail.com"
-  },
-  "_npmVersion": "5.6.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "make-dir@^1.0.0",
-    "scope": null,
-    "escapedName": "make-dir",
+    "type": "version",
+    "registry": true,
+    "raw": "make-dir@1.1.0",
     "name": "make-dir",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
-    "type": "range"
+    "escapedName": "make-dir",
+    "rawSpec": "1.1.0",
+    "saveSpec": null,
+    "fetchSpec": "1.1.0"
   },
   "_requiredBy": [
     "/decompress"
   ],
-  "_resolved": "https://registry.npm.taobao.org/make-dir/download/make-dir-1.2.0.tgz",
-  "_shasum": "6d6a49eead4aae296c53bbf3a1a008bd6c89469b",
-  "_shrinkwrap": null,
-  "_spec": "make-dir@^1.0.0",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/decompress",
+  "_resolved": "https://registry.npmjs.org/make-dir/-/make-dir-1.1.0.tgz",
+  "_spec": "1.1.0",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
@@ -61,19 +41,12 @@
   "description": "Make a directory and its parents if needed - Think `mkdir -p`",
   "devDependencies": {
     "ava": "*",
-    "codecov": "^3.0.0",
+    "codecov": "^2.1.0",
     "graceful-fs": "^4.1.11",
-    "nyc": "^11.3.0",
+    "nyc": "^10.2.0",
     "path-type": "^3.0.0",
     "tempy": "^0.2.1",
     "xo": "*"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "6d6a49eead4aae296c53bbf3a1a008bd6c89469b",
-    "size": 2900,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/make-dir/download/make-dir-1.2.0.tgz"
   },
   "engines": {
     "node": ">=4"
@@ -81,7 +54,6 @@
   "files": [
     "index.js"
   ],
-  "gitHead": "7f854b4728c2ca45fdc015cc7099dae23bcfe738",
   "homepage": "https://github.com/sindresorhus/make-dir#readme",
   "keywords": [
     "mkdir",
@@ -105,16 +77,7 @@
     "file-system"
   ],
   "license": "MIT",
-  "maintainers": [
-    {
-      "name": "sindresorhus",
-      "email": "sindresorhus@gmail.com"
-    }
-  ],
   "name": "make-dir",
-  "optionalDependencies": {},
-  "publish_time": 1519025204932,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sindresorhus/make-dir.git"
@@ -122,5 +85,5 @@
   "scripts": {
     "test": "xo && nyc ava"
   },
-  "version": "1.2.0"
+  "version": "1.1.0"
 }

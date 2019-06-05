@@ -37,7 +37,8 @@
   },
   "_requiredBy": [
     "/tar-stream",
-    "/through2"
+    "/through2",
+    "/worker-farm"
   ],
   "_resolved": "https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz",
   "_shasum": "a5c6d532be656e23db820efb943a1f04998d63af",

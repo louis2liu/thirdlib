@@ -188,7 +188,7 @@ const styles = {
         wrapper: {
             borderRadius: 5,//15
             //backgroundColor: '#0084ff',
-            backgroundColor: '#6d9cfb',
+            // backgroundColor: '#6d9cfb',
             marginLeft: 10,
             minHeight: 20,
             justifyContent: 'flex-end',

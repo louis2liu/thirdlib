@@ -1,55 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "gulp-util@^3.0.4",
-        "scope": null,
-        "escapedName": "gulp-util",
-        "name": "gulp-util",
-        "rawSpec": "^3.0.4",
-        "spec": ">=3.0.4 <4.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/fbjs-scripts"
+      "gulp-util@3.0.8",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1482793870645,
-  "_from": "gulp-util@>=3.0.4 <4.0.0",
-  "_hasShrinkwrap": false,
+  "_from": "gulp-util@3.0.8",
   "_id": "gulp-util@3.0.8",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-AFTh50RQLifATBh8PsxQXdVLu08=",
   "_location": "/gulp-util",
-  "_nodeVersion": "0.10.41",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/gulp-util-3.0.8.tgz_1482793870401_0.4167847656644881"
-  },
-  "_npmUser": {
-    "name": "phated",
-    "email": "blaine.bublitz@gmail.com"
-  },
-  "_npmVersion": "2.15.2",
-  "_phantomChildren": {
-    "escape-string-regexp": "1.0.5",
-    "has-ansi": "2.0.0"
-  },
+  "_phantomChildren": {},
   "_requested": {
-    "raw": "gulp-util@^3.0.4",
-    "scope": null,
-    "escapedName": "gulp-util",
+    "type": "version",
+    "registry": true,
+    "raw": "gulp-util@3.0.8",
     "name": "gulp-util",
-    "rawSpec": "^3.0.4",
-    "spec": ">=3.0.4 <4.0.0",
-    "type": "range"
+    "escapedName": "gulp-util",
+    "rawSpec": "3.0.8",
+    "saveSpec": null,
+    "fetchSpec": "3.0.8"
   },
   "_requiredBy": [
     "/fbjs-scripts"
   ],
   "_resolved": "http://registry.npm.taobao.org/gulp-util/download/gulp-util-3.0.8.tgz",
-  "_shasum": "0054e1e744502e27c04c187c3ecc505dd54bbb4f",
-  "_shrinkwrap": null,
-  "_spec": "gulp-util@^3.0.4",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/fbjs-scripts",
+  "_spec": "3.0.8",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Fractal",
     "email": "contact@wearefractal.com",
@@ -78,7 +55,6 @@
     "through2": "^2.0.0",
     "vinyl": "^0.5.0"
   },
-  "deprecated": "gulp-util is deprecated - replace it, following the guidelines at https://medium.com/gulpjs/gulp-util-ca3b1f9f9ac5",
   "description": "Utility functions for gulp plugins",
   "devDependencies": {
     "buffer-equal": "^0.0.1",
@@ -92,13 +68,6 @@
     "rimraf": "^2.2.8",
     "should": "^7.0.1"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "0054e1e744502e27c04c187c3ecc505dd54bbb4f",
-    "size": 5486,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/gulp-util/download/gulp-util-3.0.8.tgz"
-  },
   "engines": {
     "node": ">=0.10"
   },
@@ -106,23 +75,9 @@
     "index.js",
     "lib"
   ],
-  "gitHead": "28c2aa2a3f8782a995b47ed051ab52885c705024",
   "homepage": "https://github.com/gulpjs/gulp-util#readme",
   "license": "MIT",
-  "maintainers": [
-    {
-      "name": "contra",
-      "email": "contra@wearefractal.com"
-    },
-    {
-      "name": "phated",
-      "email": "blaine.bublitz@gmail.com"
-    }
-  ],
   "name": "gulp-util",
-  "optionalDependencies": {},
-  "publish_time": 1482793870645,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gulpjs/gulp-util.git"

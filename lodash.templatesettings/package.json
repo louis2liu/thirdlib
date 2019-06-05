@@ -1,48 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "lodash.templatesettings@^3.0.0",
-        "scope": null,
-        "escapedName": "lodash.templatesettings",
-        "name": "lodash.templatesettings",
-        "rawSpec": "^3.0.0",
-        "spec": ">=3.0.0 <4.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/lodash.template"
+      "lodash.templatesettings@3.1.1",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1452683758362,
-  "_from": "lodash.templatesettings@>=3.0.0 <4.0.0",
-  "_hasShrinkwrap": false,
+  "_from": "lodash.templatesettings@3.1.1",
   "_id": "lodash.templatesettings@3.1.1",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-+zB4RHU7Zrnxr6VOJix0UwfbqOU=",
   "_location": "/lodash.templatesettings",
-  "_nodeVersion": "5.4.0",
-  "_npmUser": {
-    "name": "jdalton",
-    "email": "john.david.dalton@gmail.com"
-  },
-  "_npmVersion": "2.14.15",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "lodash.templatesettings@^3.0.0",
-    "scope": null,
-    "escapedName": "lodash.templatesettings",
+    "type": "version",
+    "registry": true,
+    "raw": "lodash.templatesettings@3.1.1",
     "name": "lodash.templatesettings",
-    "rawSpec": "^3.0.0",
-    "spec": ">=3.0.0 <4.0.0",
-    "type": "range"
+    "escapedName": "lodash.templatesettings",
+    "rawSpec": "3.1.1",
+    "saveSpec": null,
+    "fetchSpec": "3.1.1"
   },
   "_requiredBy": [
     "/lodash.template"
   ],
-  "_resolved": "https://registry.npmjs.org/lodash.templatesettings/-/lodash.templatesettings-3.1.1.tgz",
-  "_shasum": "fb307844753b66b9f1afa54e262c745307dba8e5",
-  "_shrinkwrap": null,
-  "_spec": "lodash.templatesettings@^3.0.0",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/lodash.template",
+  "_resolved": "http://registry.npm.taobao.org/lodash.templatesettings/download/lodash.templatesettings-3.1.1.tgz",
+  "_spec": "3.1.1",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "John-David Dalton",
     "email": "john.david.dalton@gmail.com",
@@ -73,14 +57,6 @@
     "lodash.escape": "^3.0.0"
   },
   "description": "The lodash method `_.templateSettings` exported as a module.",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "fb307844753b66b9f1afa54e262c745307dba8e5",
-    "size": 2111,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/lodash.templatesettings/download/lodash.templatesettings-3.1.1.tgz"
-  },
   "homepage": "https://lodash.com/",
   "icon": "https://lodash.com/icon.svg",
   "keywords": [
@@ -91,20 +67,7 @@
     "templatesettings"
   ],
   "license": "MIT",
-  "maintainers": [
-    {
-      "name": "jdalton",
-      "email": "john.david.dalton@gmail.com"
-    },
-    {
-      "name": "mathias",
-      "email": "mathias@qiwi.be"
-    }
-  ],
   "name": "lodash.templatesettings",
-  "optionalDependencies": {},
-  "publish_time": 1452683758362,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lodash/lodash.git"

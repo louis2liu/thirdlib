@@ -1,58 +1,38 @@
 {
   "_args": [
     [
-      {
-        "raw": "htmlparser2-without-node-native@^3.9.2",
-        "scope": null,
-        "escapedName": "htmlparser2-without-node-native",
-        "name": "htmlparser2-without-node-native",
-        "rawSpec": "^3.9.2",
-        "spec": ">=3.9.2 <4.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native-htmlview"
+      "htmlparser2-without-node-native@3.9.2",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1505911964712,
-  "_from": "htmlparser2-without-node-native@>=3.9.2 <4.0.0",
-  "_hasShrinkwrap": false,
+  "_from": "htmlparser2-without-node-native@3.9.2",
   "_id": "htmlparser2-without-node-native@3.9.2",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-s+0FDYd9D/NGWWnjOYd7f59mMfY=",
   "_location": "/htmlparser2-without-node-native",
-  "_nodeVersion": "6.9.2",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/htmlparser2-without-node-native-3.9.2.tgz_1505911964617_0.5427882124204189"
-  },
-  "_npmUser": {
-    "name": "oyyd",
-    "email": "oyydoibh@gmail.com"
-  },
-  "_npmVersion": "3.10.9",
   "_phantomChildren": {
     "core-util-is": "1.0.2",
     "inherits": "2.0.3",
-    "process-nextick-args": "2.0.0",
+    "process-nextick-args": "1.0.7",
     "safe-buffer": "5.1.1",
     "util-deprecate": "1.0.2"
   },
   "_requested": {
-    "raw": "htmlparser2-without-node-native@^3.9.2",
-    "scope": null,
-    "escapedName": "htmlparser2-without-node-native",
+    "type": "version",
+    "registry": true,
+    "raw": "htmlparser2-without-node-native@3.9.2",
     "name": "htmlparser2-without-node-native",
-    "rawSpec": "^3.9.2",
-    "spec": ">=3.9.2 <4.0.0",
-    "type": "range"
+    "escapedName": "htmlparser2-without-node-native",
+    "rawSpec": "3.9.2",
+    "saveSpec": null,
+    "fetchSpec": "3.9.2"
   },
   "_requiredBy": [
     "/react-native-htmlview"
   ],
-  "_resolved": "https://registry.npm.taobao.org/htmlparser2-without-node-native/download/htmlparser2-without-node-native-3.9.2.tgz",
-  "_shasum": "b3ed050d877d0ff3465969e339877b7f9f6631f6",
-  "_shrinkwrap": null,
-  "_spec": "htmlparser2-without-node-native@^3.9.2",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native-htmlview",
+  "_resolved": "https://registry.npmjs.org/htmlparser2-without-node-native/-/htmlparser2-without-node-native-3.9.2.tgz",
+  "_spec": "3.9.2",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Felix Boehm",
     "email": "me@feedic.com"
@@ -83,16 +63,9 @@
   "directories": {
     "lib": "lib/"
   },
-  "dist": {
-    "shasum": "b3ed050d877d0ff3465969e339877b7f9f6631f6",
-    "size": 9812,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/htmlparser2-without-node-native/download/htmlparser2-without-node-native-3.9.2.tgz"
-  },
   "files": [
     "lib"
   ],
-  "gitHead": "3e125453c4241afe48afc30b76e48d802686a514",
   "homepage": "https://github.com/fb55/htmlparser2#readme",
   "keywords": [
     "html",
@@ -106,16 +79,7 @@
   ],
   "license": "MIT",
   "main": "lib/index.js",
-  "maintainers": [
-    {
-      "name": "oyyd",
-      "email": "oyydoibh@gmail.com"
-    }
-  ],
   "name": "htmlparser2-without-node-native",
-  "optionalDependencies": {},
-  "publish_time": 1505911964712,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git://github.com/fb55/htmlparser2.git"

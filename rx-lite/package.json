@@ -10,7 +10,7 @@
         "spec": ">=4.0.8 <5.0.0",
         "type": "range"
       },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native/node_modules/inquirer"
+      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/inquirer"
     ]
   ],
   "_cnpm_publish_time": 1455670076530,
@@ -40,14 +40,14 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/react-native/inquirer",
+    "/inquirer",
     "/rx-lite-aggregates"
   ],
   "_resolved": "http://registry.npm.taobao.org/rx-lite/download/rx-lite-4.0.8.tgz",
   "_shasum": "0b1e11af8bc44836f04a6407e92da42467b79444",
   "_shrinkwrap": null,
   "_spec": "rx-lite@^4.0.8",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native/node_modules/inquirer",
+  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/inquirer",
   "author": {
     "name": "Cloud Programmability Team",
     "url": "https://github.com/Reactive-Extensions/RxJS/blob/master/authors.txt"

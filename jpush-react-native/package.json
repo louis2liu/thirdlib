@@ -1,78 +1,43 @@
 {
   "_args": [
     [
-      {
-        "raw": "jpush-react-native@^2.1.7",
-        "scope": null,
-        "escapedName": "jpush-react-native",
-        "name": "jpush-react-native",
-        "rawSpec": "^2.1.7",
-        "spec": ">=2.1.7 <3.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn"
+      "jpush-react-native@2.1.7",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1520831647166,
-  "_from": "jpush-react-native@>=2.1.7 <3.0.0",
-  "_hasShrinkwrap": false,
-  "_id": "jpush-react-native@2.1.12",
-  "_inCache": true,
+  "_from": "jpush-react-native@2.1.7",
+  "_id": "jpush-react-native@2.1.7",
+  "_inBundle": false,
+  "_integrity": "sha1-OadFlSZTnSKPksR0zrpcB7jzvcY=",
   "_location": "/jpush-react-native",
-  "_nodeVersion": "6.6.0",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/jpush-react-native_2.1.12_1520831646973_0.9078105602567663"
-  },
-  "_npmUser": {
-    "name": "huminios",
-    "email": "380108184@qq.com"
-  },
-  "_npmVersion": "3.10.3",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "jpush-react-native@^2.1.7",
-    "scope": null,
-    "escapedName": "jpush-react-native",
+    "type": "version",
+    "registry": true,
+    "raw": "jpush-react-native@2.1.7",
     "name": "jpush-react-native",
-    "rawSpec": "^2.1.7",
-    "spec": ">=2.1.7 <3.0.0",
-    "type": "range"
+    "escapedName": "jpush-react-native",
+    "rawSpec": "2.1.7",
+    "saveSpec": null,
+    "fetchSpec": "2.1.7"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npm.taobao.org/jpush-react-native/download/jpush-react-native-2.1.12.tgz",
-  "_shasum": "2173b61316a77e58e0c744fd9a5e3d1c3bbcef56",
-  "_shrinkwrap": null,
-  "_spec": "jpush-react-native@^2.1.7",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn",
+  "_resolved": "https://registry.npmjs.org/jpush-react-native/-/jpush-react-native-2.1.7.tgz",
+  "_spec": "2.1.7",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "KenChoi, huminiOS"
   },
   "bugs": {
     "url": "https://github.com/jpush/jpush-react-native/issues"
   },
-  "dependencies": {
-    "inquirer": "*",
-    "mpatch": "^0.1.0"
-  },
   "description": "a jpush plugin for react native application",
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "husky": "^0.14.3",
-    "lint-staged": "^6.0.1",
-    "prettier": "^1.10.2",
-    "standard": "^10.0.3"
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "2173b61316a77e58e0c744fd9a5e3d1c3bbcef56",
-    "size": 1546799,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/jpush-react-native/download/jpush-react-native-2.1.12.tgz"
-  },
-  "gitHead": "e87c4259eb47c937062fdb863ce2c2478f069957",
   "homepage": "https://github.com/jpush/jpush-react-native#readme",
   "keywords": [
     "react",
@@ -80,47 +45,16 @@
     "jpush"
   ],
   "license": "ISC",
-  "lint-staged": {
-    "*.{ts,md}": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.js": [
-      "prettier --write",
-      "standard --fix",
-      "git add"
-    ]
-  },
   "main": "index.js",
-  "maintainers": [
-    {
-      "name": "jpush",
-      "email": "support@jpush.cn"
-    },
-    {
-      "name": "kenchoi",
-      "email": "caiyg@jpush.cn"
-    }
-  ],
   "name": "jpush-react-native",
-  "optionalDependencies": {},
   "peerDependencies": {
     "jcore-react-native": ">= 1.2.0"
   },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
-  },
-  "publish_time": 1520831647166,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/jpush/jpush-react-native.git"
   },
   "rnpm": {
-    "android": {
-      "packageInstance": "new JPushPackage(!BuildConfig.DEBUG, !BuildConfig.DEBUG)"
-    },
     "ios": {
       "sharedLibraries": [
         "libz",
@@ -135,25 +69,11 @@
         "libresolv",
         "CoreGraphics"
       ]
-    },
-    "commands": {
-      "prelink": "node node_modules/jpush-react-native/scripts/patch"
     }
   },
   "scripts": {
-    "lint": "prettier --write '**/*.{js,ts,md}'; standard --fix",
-    "precommit": "lint-staged"
-  },
-  "standard": {
-    "env": {
-      "jest": true
-    },
-    "parser": "babel-eslint",
-    "ignore": [
-      "android/",
-      "ios/"
-    ]
+    "postinstall": "node postInstall.js"
   },
   "types": "index.d.ts",
-  "version": "2.1.12"
+  "version": "2.1.7"
 }

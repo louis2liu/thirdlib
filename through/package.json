@@ -37,7 +37,6 @@
   },
   "_requiredBy": [
     "/inquirer",
-    "/react-native/inquirer",
     "/unbzip2-stream"
   ],
   "_resolved": "https://registry.npmjs.org/through/-/through-2.3.8.tgz",

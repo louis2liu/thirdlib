@@ -1,4 +1,6 @@
 //! moment.js locale configuration
+//! locale : Tibetan [bo]
+//! author : Thupten N. Chakrishar : https://github.com/vajradog
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'
@@ -19,8 +21,8 @@ var symbolMap = {
     '8': '༨',
     '9': '༩',
     '0': '༠'
-},
-numberMap = {
+};
+var numberMap = {
     '༡': '1',
     '༢': '2',
     '༣': '3',

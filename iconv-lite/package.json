@@ -1,54 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "iconv-lite@^0.4.17",
-        "scope": null,
-        "escapedName": "iconv-lite",
-        "name": "iconv-lite",
-        "rawSpec": "^0.4.17",
-        "spec": ">=0.4.17 <0.5.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/external-editor"
+      "iconv-lite@0.4.11",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1505015801914,
-  "_from": "iconv-lite@>=0.4.17 <0.5.0",
-  "_hasShrinkwrap": false,
-  "_id": "iconv-lite@0.4.19",
-  "_inCache": true,
+  "_from": "iconv-lite@0.4.11",
+  "_id": "iconv-lite@0.4.11",
+  "_inBundle": false,
+  "_integrity": "sha1-LstC/SlHRJIiCaLnxATayHk9it4=",
   "_location": "/iconv-lite",
-  "_nodeVersion": "8.1.0",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/iconv-lite-0.4.19.tgz_1505015801484_0.10463660513050854"
-  },
-  "_npmUser": {
-    "name": "ashtuchkin",
-    "email": "ashtuchkin@gmail.com"
-  },
-  "_npmVersion": "5.0.3",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "iconv-lite@^0.4.17",
-    "scope": null,
-    "escapedName": "iconv-lite",
+    "type": "version",
+    "registry": true,
+    "raw": "iconv-lite@0.4.11",
     "name": "iconv-lite",
-    "rawSpec": "^0.4.17",
-    "spec": ">=0.4.17 <0.5.0",
-    "type": "range"
+    "escapedName": "iconv-lite",
+    "rawSpec": "0.4.11",
+    "saveSpec": null,
+    "fetchSpec": "0.4.11"
   },
   "_requiredBy": [
-    "/encoding",
-    "/external-editor",
-    "/whatwg-encoding"
+    "/body-parser"
   ],
-  "_resolved": "http://registry.npm.taobao.org/iconv-lite/download/iconv-lite-0.4.19.tgz",
-  "_shasum": "f7468f60135f5e5dad3399c0a81be9a1603a082b",
-  "_shrinkwrap": null,
-  "_spec": "iconv-lite@^0.4.17",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/external-editor",
+  "_resolved": "http://registry.npm.taobao.org/iconv-lite/download/iconv-lite-0.4.11.tgz",
+  "_spec": "0.4.11",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Alexander Shtuchkin",
     "email": "ashtuchkin@gmail.com"
@@ -110,29 +88,19 @@
       "url": "https://github.com/nleush"
     }
   ],
-  "dependencies": {},
   "description": "Convert character encodings in pure javascript.",
   "devDependencies": {
     "async": "*",
     "errto": "*",
-    "iconv": "*",
+    "iconv": "2.1",
     "istanbul": "*",
     "mocha": "*",
-    "request": "*",
-    "semver": "*",
+    "request": "2.47",
     "unorm": "*"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "f7468f60135f5e5dad3399c0a81be9a1603a082b",
-    "size": 186571,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/iconv-lite/download/iconv-lite-0.4.19.tgz"
-  },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=0.8.0"
   },
-  "gitHead": "5255c1b3c81a0f276619cce3151a1923cba90431",
   "homepage": "https://github.com/ashtuchkin/iconv-lite",
   "keywords": [
     "iconv",
@@ -142,16 +110,7 @@
   ],
   "license": "MIT",
   "main": "./lib/index.js",
-  "maintainers": [
-    {
-      "name": "ashtuchkin",
-      "email": "ashtuchkin@gmail.com"
-    }
-  ],
   "name": "iconv-lite",
-  "optionalDependencies": {},
-  "publish_time": 1505015801914,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git://github.com/ashtuchkin/iconv-lite.git"
@@ -161,6 +120,5 @@
     "coverage-open": "open coverage/lcov-report/index.html",
     "test": "mocha --reporter spec --grep ."
   },
-  "typings": "./lib/index.d.ts",
-  "version": "0.4.19"
+  "version": "0.4.11"
 }

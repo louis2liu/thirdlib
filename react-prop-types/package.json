@@ -1,52 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "react-prop-types@^0.4.0",
-        "scope": null,
-        "escapedName": "react-prop-types",
-        "name": "react-prop-types",
-        "rawSpec": "^0.4.0",
-        "spec": ">=0.4.0 <0.5.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn"
+      "react-prop-types@0.4.0",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1469829120798,
-  "_from": "react-prop-types@>=0.4.0 <0.5.0",
-  "_hasShrinkwrap": false,
+  "_from": "react-prop-types@0.4.0",
   "_id": "react-prop-types@0.4.0",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-+ZsL+0AGkpya8gUefBQUpcdbk9A=",
   "_location": "/react-prop-types",
-  "_nodeVersion": "6.3.1",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/react-prop-types-0.4.0.tgz_1469829118772_0.6000117862131447"
-  },
-  "_npmUser": {
-    "name": "taion",
-    "email": "tesrin@gmail.com"
-  },
-  "_npmVersion": "3.10.3",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "react-prop-types@^0.4.0",
-    "scope": null,
-    "escapedName": "react-prop-types",
+    "type": "version",
+    "registry": true,
+    "raw": "react-prop-types@0.4.0",
     "name": "react-prop-types",
-    "rawSpec": "^0.4.0",
-    "spec": ">=0.4.0 <0.5.0",
-    "type": "range"
+    "escapedName": "react-prop-types",
+    "rawSpec": "0.4.0",
+    "saveSpec": null,
+    "fetchSpec": "0.4.0"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npm.taobao.org/react-prop-types/download/react-prop-types-0.4.0.tgz",
-  "_shasum": "f99b0bfb4006929c9af2051e7c1414a5c75b93d0",
-  "_shrinkwrap": null,
-  "_spec": "react-prop-types@^0.4.0",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn",
+  "_resolved": "https://registry.npmjs.org/react-prop-types/-/react-prop-types-0.4.0.tgz",
+  "_spec": "0.4.0",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Matthew L Smith",
     "email": "mtscout6@gmail.com"
@@ -82,17 +62,9 @@
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "f99b0bfb4006929c9af2051e7c1414a5c75b93d0",
-    "size": 5165,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/react-prop-types/download/react-prop-types-0.4.0.tgz"
-  },
   "files": [
     "lib"
   ],
-  "gitHead": "6557c51354dc0e3950f08a00b93aa605a21fe413",
   "homepage": "https://github.com/react-bootstrap/react-prop-types#readme",
   "keywords": [
     "react",
@@ -100,24 +72,6 @@
   ],
   "license": "MIT",
   "main": "lib/index.js",
-  "maintainers": [
-    {
-      "name": "acdlite",
-      "email": "acdlite@me.com"
-    },
-    {
-      "name": "monastic.panic",
-      "email": "monastic.panic@gmail.com"
-    },
-    {
-      "name": "mtscout6",
-      "email": "mtscout6@gmail.com"
-    },
-    {
-      "name": "taion",
-      "email": "tesrin@gmail.com"
-    }
-  ],
   "name": "react-prop-types",
   "nyc": {
     "include": [
@@ -126,12 +80,9 @@
     "sourceMap": false,
     "instrument": false
   },
-  "optionalDependencies": {},
   "peerDependencies": {
     "react": ">=0.14.0"
   },
-  "publish_time": 1469829120798,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/react-bootstrap/react-prop-types.git"

@@ -1,54 +1,33 @@
 {
   "_args": [
     [
-      {
-        "raw": "moment@^2.20.0",
-        "scope": null,
-        "escapedName": "moment",
-        "name": "moment",
-        "rawSpec": "^2.20.0",
-        "spec": ">=2.20.0 <3.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn"
+      "moment@2.20.1",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1520023270675,
-  "_from": "moment@>=2.20.0 <3.0.0",
-  "_hasShrinkwrap": false,
-  "_id": "moment@2.21.0",
-  "_inCache": true,
+  "_from": "moment@2.20.1",
+  "_id": "moment@2.20.1",
+  "_inBundle": false,
+  "_integrity": "sha512-Yh9y73JRljxW5QxN08Fner68eFLxM5ynNOAw2LbIB1YAGeQzZT8QFSUvkAz609Zf+IHhhaUxqZK8dG3W/+HEvg==",
   "_location": "/moment",
-  "_nodeVersion": "9.7.1",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/moment_2.21.0_1520023270557_0.7787497718815717"
-  },
-  "_npmUser": {
-    "name": "marwahaha",
-    "email": "marwahaha@berkeley.edu"
-  },
-  "_npmVersion": "5.6.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "moment@^2.20.0",
-    "scope": null,
-    "escapedName": "moment",
+    "type": "version",
+    "registry": true,
+    "raw": "moment@2.20.1",
     "name": "moment",
-    "rawSpec": "^2.20.0",
-    "spec": ">=2.20.0 <3.0.0",
-    "type": "range"
+    "escapedName": "moment",
+    "rawSpec": "2.20.1",
+    "saveSpec": null,
+    "fetchSpec": "2.20.1"
   },
   "_requiredBy": [
     "/",
-    "/react-native-datepicker",
     "/react-native-gifted-chat"
   ],
-  "_resolved": "https://registry.npm.taobao.org/moment/download/moment-2.21.0.tgz",
-  "_shasum": "2a114b51d2a6ec9e6d83cf803f838a878d8a023a",
-  "_shrinkwrap": null,
-  "_spec": "moment@^2.20.0",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn",
+  "_resolved": "https://registry.npmjs.org/moment/-/moment-2.20.1.tgz",
+  "_spec": "2.20.1",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Iskren Ivov Chernev",
     "email": "iskren.chernev@gmail.com",
@@ -83,7 +62,6 @@
       "url": "https://github.com/oire"
     }
   ],
-  "dependencies": {},
   "description": "Parse, validate, manipulate, and display dates",
   "devDependencies": {
     "benchmark": "latest",
@@ -118,13 +96,6 @@
     "typescript": "^1.8.10",
     "uglify-js": "latest"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "2a114b51d2a6ec9e6d83cf803f838a878d8a023a",
-    "size": 506446,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/moment/download/moment-2.21.0.tgz"
-  },
   "dojoBuild": "package.js",
   "ender": "./ender.js",
   "engines": {
@@ -158,32 +129,7 @@
   ],
   "license": "MIT",
   "main": "./moment.js",
-  "maintainers": [
-    {
-      "name": "ichernev",
-      "email": "iskren.chernev@gmail.com"
-    },
-    {
-      "name": "maggiepint",
-      "email": "maggiepint@gmail.com"
-    },
-    {
-      "name": "marwahaha",
-      "email": "marwahaha@berkeley.edu"
-    },
-    {
-      "name": "mj1856",
-      "email": "mj1856@hotmail.com"
-    },
-    {
-      "name": "timrwood",
-      "email": "washwithcare@gmail.com"
-    }
-  ],
   "name": "moment",
-  "optionalDependencies": {},
-  "publish_time": 1520023270675,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/moment/moment.git"
@@ -201,5 +147,5 @@
     ]
   },
   "typings": "./moment.d.ts",
-  "version": "2.21.0"
+  "version": "2.20.1"
 }

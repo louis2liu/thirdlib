@@ -1,52 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "is-natural-number@^4.0.1",
-        "scope": null,
-        "escapedName": "is-natural-number",
-        "name": "is-natural-number",
-        "rawSpec": "^4.0.1",
-        "spec": ">=4.0.1 <5.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/strip-dirs"
+      "is-natural-number@4.0.1",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1463398968135,
-  "_from": "is-natural-number@>=4.0.1 <5.0.0",
-  "_hasShrinkwrap": false,
+  "_from": "is-natural-number@4.0.1",
   "_id": "is-natural-number@4.0.1",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-q5124dtM7VHjXeDHLr7PCfc0zeg=",
   "_location": "/is-natural-number",
-  "_nodeVersion": "5.9.1",
-  "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/is-natural-number-4.0.1.tgz_1463398964620_0.07150219171307981"
-  },
-  "_npmUser": {
-    "name": "shinnn",
-    "email": "snnskwtnb@gmail.com"
-  },
-  "_npmVersion": "3.9.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "is-natural-number@^4.0.1",
-    "scope": null,
-    "escapedName": "is-natural-number",
+    "type": "version",
+    "registry": true,
+    "raw": "is-natural-number@4.0.1",
     "name": "is-natural-number",
-    "rawSpec": "^4.0.1",
-    "spec": ">=4.0.1 <5.0.0",
-    "type": "range"
+    "escapedName": "is-natural-number",
+    "rawSpec": "4.0.1",
+    "saveSpec": null,
+    "fetchSpec": "4.0.1"
   },
   "_requiredBy": [
     "/strip-dirs"
   ],
-  "_resolved": "https://registry.npm.taobao.org/is-natural-number/download/is-natural-number-4.0.1.tgz",
-  "_shasum": "ab9d76e1db4ced51e35de0c72ebecf09f734cde8",
-  "_shrinkwrap": null,
-  "_spec": "is-natural-number@^4.0.1",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/strip-dirs",
+  "_resolved": "https://registry.npmjs.org/is-natural-number/-/is-natural-number-4.0.1.tgz",
+  "_spec": "4.0.1",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Shinnosuke Watanabe",
     "url": "https://github.com/shinnn"
@@ -54,7 +34,6 @@
   "bugs": {
     "url": "https://github.com/shinnn/is-natural-number.js/issues"
   },
-  "dependencies": {},
   "description": "Check if a value is a natural number",
   "devDependencies": {
     "@shinnn/eslint-config": "^2.1.0",
@@ -65,18 +44,10 @@
     "tap-dot": "^1.0.5",
     "tape": "^4.5.1"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "ab9d76e1db4ced51e35de0c72ebecf09f734cde8",
-    "size": 2378,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/is-natural-number/download/is-natural-number-4.0.1.tgz"
-  },
   "files": [
     "index.js",
     "index.jsnext.js"
   ],
-  "gitHead": "a19fa22c16d1f2b9fafafbcf887efc3cbcd1ae81",
   "homepage": "https://github.com/shinnn/is-natural-number.js#readme",
   "jsnext:main": "index.jsnext.js",
   "keywords": [
@@ -92,16 +63,7 @@
     "client-side"
   ],
   "license": "MIT",
-  "maintainers": [
-    {
-      "name": "shinnn",
-      "email": "snnskwtnb@gmail.com"
-    }
-  ],
   "name": "is-natural-number",
-  "optionalDependencies": {},
-  "publish_time": 1463398968135,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shinnn/is-natural-number.js.git"

@@ -1,52 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "decompress@^4.2.0",
-        "scope": null,
-        "escapedName": "decompress",
-        "name": "decompress",
-        "rawSpec": "^4.2.0",
-        "spec": ">=4.2.0 <5.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/realm"
+      "decompress@4.2.0",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1494604774229,
-  "_from": "decompress@>=4.2.0 <5.0.0",
-  "_hasShrinkwrap": false,
+  "_from": "decompress@4.2.0",
   "_id": "decompress@4.2.0",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-eu3YVCflqS2s/lVnSnxQXpbQH50=",
   "_location": "/decompress",
-  "_nodeVersion": "4.8.3",
-  "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/decompress-4.2.0.tgz_1494604771419_0.9168465454131365"
-  },
-  "_npmUser": {
-    "name": "sindresorhus",
-    "email": "sindresorhus@gmail.com"
-  },
-  "_npmVersion": "2.15.11",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "decompress@^4.2.0",
-    "scope": null,
-    "escapedName": "decompress",
+    "type": "version",
+    "registry": true,
+    "raw": "decompress@4.2.0",
     "name": "decompress",
-    "rawSpec": "^4.2.0",
-    "spec": ">=4.2.0 <5.0.0",
-    "type": "range"
+    "escapedName": "decompress",
+    "rawSpec": "4.2.0",
+    "saveSpec": null,
+    "fetchSpec": "4.2.0"
   },
   "_requiredBy": [
     "/realm"
   ],
-  "_resolved": "https://registry.npm.taobao.org/decompress/download/decompress-4.2.0.tgz",
-  "_shasum": "7aedd85427e5a92dacfe55674a7c505e96d01f9d",
-  "_shrinkwrap": null,
-  "_spec": "decompress@^4.2.0",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/realm",
+  "_resolved": "https://registry.npmjs.org/decompress/-/decompress-4.2.0.tgz",
+  "_spec": "4.2.0",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Kevin Mårtensson",
     "email": "kevinmartensson@gmail.com",
@@ -73,20 +53,12 @@
     "pify": "^2.3.0",
     "xo": "*"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "7aedd85427e5a92dacfe55674a7c505e96d01f9d",
-    "size": 2619,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/decompress/download/decompress-4.2.0.tgz"
-  },
   "engines": {
     "node": ">=4"
   },
   "files": [
     "index.js"
   ],
-  "gitHead": "b40549fcf2529a7531bd0fe52bfd4e6c52670f5f",
   "homepage": "https://github.com/kevva/decompress#readme",
   "keywords": [
     "bz2",
@@ -100,24 +72,7 @@
     "unzip"
   ],
   "license": "MIT",
-  "maintainers": [
-    {
-      "name": "kevva",
-      "email": "kevinmartensson@gmail.com"
-    },
-    {
-      "name": "shinnn",
-      "email": "snnskwtnb@gmail.com"
-    },
-    {
-      "name": "sindresorhus",
-      "email": "sindresorhus@gmail.com"
-    }
-  ],
   "name": "decompress",
-  "optionalDependencies": {},
-  "publish_time": 1494604774229,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kevva/decompress.git"

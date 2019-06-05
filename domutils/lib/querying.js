@@ -82,14 +82,18 @@ function existsOne(test, elems){
 
 function findAll(test, rootElems){
 	var result = [];
-	var stack = rootElems.slice();
+	var stack = [rootElems];
 	while(stack.length){
-		var elem = stack.shift();
-		if(!isTag(elem)) continue;
-		if (elem.children && elem.children.length > 0) {
-			stack.unshift.apply(stack, elem.children);
+		var elems = stack.pop();
+		for(var i = 0, j = elems.length; i < j; i++){
+			if(!isTag(elems[i])) continue;
+			if(test(elems[i])) result.push(elems[i]);
 		}
-		if(test(elem)) result.push(elem);
+		while(j-- > 0){
+			if(elems[j].children && elems[j].children.length > 0){
+				stack.push(elems[j].children);
+			}
+		}
 	}
 	return result;
 }

@@ -1,4 +1,6 @@
 //! moment.js locale configuration
+//! locale : Uzbek Latin [uz-latn]
+//! author : Rasulbek Mirzayev : github.com/Rasulbeeek
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'

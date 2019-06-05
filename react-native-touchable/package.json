@@ -1,69 +1,39 @@
 {
   "_args": [
     [
-      {
-        "raw": "react-native-touchable@^1.0.6",
-        "scope": null,
-        "escapedName": "react-native-touchable",
-        "name": "react-native-touchable",
-        "rawSpec": "^1.0.6",
-        "spec": ">=1.0.6 <2.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn"
+      "react-native-touchable@1.0.6",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1500433446235,
-  "_from": "react-native-touchable@>=1.0.6 <2.0.0",
-  "_hasShrinkwrap": false,
+  "_from": "react-native-touchable@1.0.6",
   "_id": "react-native-touchable@1.0.6",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-AZi9oaaMZYwxvcDpWSjbPckMPy8=",
   "_location": "/react-native-touchable",
-  "_nodeVersion": "7.8.0",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/react-native-touchable-1.0.6.tgz_1500433446130_0.18798642349429429"
-  },
-  "_npmUser": {
-    "name": "mengqingdong",
-    "email": "781238222@qq.com"
-  },
-  "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "react-native-touchable@^1.0.6",
-    "scope": null,
-    "escapedName": "react-native-touchable",
+    "type": "version",
+    "registry": true,
+    "raw": "react-native-touchable@1.0.6",
     "name": "react-native-touchable",
-    "rawSpec": "^1.0.6",
-    "spec": ">=1.0.6 <2.0.0",
-    "type": "range"
+    "escapedName": "react-native-touchable",
+    "rawSpec": "1.0.6",
+    "saveSpec": null,
+    "fetchSpec": "1.0.6"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npm.taobao.org/react-native-touchable/download/react-native-touchable-1.0.6.tgz",
-  "_shasum": "0198bda1a68c658c31bdc0e95928db3dc90c3f2f",
-  "_shrinkwrap": null,
-  "_spec": "react-native-touchable@^1.0.6",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn",
+  "_resolved": "https://registry.npmjs.org/react-native-touchable/-/react-native-touchable-1.0.6.tgz",
+  "_spec": "1.0.6",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "mengqingdong"
   },
   "bugs": {
     "url": "https://github.com/781238222/react-native-touchable/issues"
   },
-  "dependencies": {},
   "description": "react-native 触摸类组件",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "0198bda1a68c658c31bdc0e95928db3dc90c3f2f",
-    "size": 43903,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/react-native-touchable/download/react-native-touchable-1.0.6.tgz"
-  },
-  "gitHead": "fda6097d9c85f5aa1f0be29cac03a12f5c45294c",
   "homepage": "https://github.com/781238222/react-native-touchable#readme",
   "keywords": [
     "react",
@@ -72,16 +42,7 @@
   ],
   "license": "ISC",
   "main": "index.js",
-  "maintainers": [
-    {
-      "name": "mengqingdong",
-      "email": "781238222@qq.com"
-    }
-  ],
   "name": "react-native-touchable",
-  "optionalDependencies": {},
-  "publish_time": 1500433446235,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/781238222/react-native-touchable.git"

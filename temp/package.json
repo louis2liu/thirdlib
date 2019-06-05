@@ -1,48 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "temp@0.8.3",
-        "scope": null,
-        "escapedName": "temp",
-        "name": "temp",
-        "rawSpec": "0.8.3",
-        "spec": "0.8.3",
-        "type": "version"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/metro-bundler"
+      "temp@0.8.3",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1433782552866,
   "_from": "temp@0.8.3",
-  "_hasShrinkwrap": false,
   "_id": "temp@0.8.3",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-4Ma8TSa5AxJEEOT+2BEDAU38H1k=",
   "_location": "/temp",
-  "_nodeVersion": "0.12.0",
-  "_npmUser": {
-    "name": "bruce",
-    "email": "brwcodes@gmail.com"
-  },
-  "_npmVersion": "2.5.1",
   "_phantomChildren": {},
   "_requested": {
+    "type": "version",
+    "registry": true,
     "raw": "temp@0.8.3",
-    "scope": null,
-    "escapedName": "temp",
     "name": "temp",
+    "escapedName": "temp",
     "rawSpec": "0.8.3",
-    "spec": "0.8.3",
-    "type": "version"
+    "saveSpec": null,
+    "fetchSpec": "0.8.3"
   },
   "_requiredBy": [
     "/metro-bundler"
   ],
-  "_resolved": "https://registry.npmjs.org/temp/-/temp-0.8.3.tgz",
-  "_shasum": "e0c6bc4d26b903124410e4fed81103014dfc1f59",
-  "_shrinkwrap": null,
-  "_spec": "temp@0.8.3",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/metro-bundler",
+  "_resolved": "http://registry.npm.taobao.org/temp/download/temp-0.8.3.tgz",
+  "_spec": "0.8.3",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Bruce Williams",
     "email": "brwcodes@gmail.com"
@@ -59,17 +43,10 @@
   "directories": {
     "lib": "lib"
   },
-  "dist": {
-    "shasum": "e0c6bc4d26b903124410e4fed81103014dfc1f59",
-    "size": 7148,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/temp/download/temp-0.8.3.tgz"
-  },
   "engines": [
     "node >=0.8.0"
   ],
-  "gitHead": "76966b174840a540c8d1566507f2afcad99a3afa",
-  "homepage": "https://github.com/bruce/node-temp",
+  "homepage": "https://github.com/bruce/node-temp#readme",
   "keywords": [
     "temporary",
     "tmp",
@@ -81,16 +58,7 @@
   ],
   "license": "MIT",
   "main": "./lib/temp",
-  "maintainers": [
-    {
-      "name": "bruce",
-      "email": "brwcodes@gmail.com"
-    }
-  ],
   "name": "temp",
-  "optionalDependencies": {},
-  "publish_time": 1433782552866,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git://github.com/bruce/node-temp.git"

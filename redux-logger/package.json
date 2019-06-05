@@ -1,52 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "redux-logger@^2.4.0",
-        "scope": null,
-        "escapedName": "redux-logger",
-        "name": "redux-logger",
-        "rawSpec": "^2.4.0",
-        "spec": ">=2.4.0 <3.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn"
+      "redux-logger@2.10.2",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1490176746850,
-  "_from": "redux-logger@>=2.4.0 <3.0.0",
-  "_hasShrinkwrap": false,
+  "_from": "redux-logger@2.10.2",
   "_id": "redux-logger@2.10.2",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-PFpfCm8yV3wd6t9mVfJX+CxsOTc=",
   "_location": "/redux-logger",
-  "_nodeVersion": "7.2.0",
-  "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/redux-logger-2.10.2.tgz_1490176746176_0.945808432996273"
-  },
-  "_npmUser": {
-    "name": "evgenyrodionov",
-    "email": "npm@erodionov.ru"
-  },
-  "_npmVersion": "4.4.1",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "redux-logger@^2.4.0",
-    "scope": null,
-    "escapedName": "redux-logger",
+    "type": "version",
+    "registry": true,
+    "raw": "redux-logger@2.10.2",
     "name": "redux-logger",
-    "rawSpec": "^2.4.0",
-    "spec": ">=2.4.0 <3.0.0",
-    "type": "range"
+    "escapedName": "redux-logger",
+    "rawSpec": "2.10.2",
+    "saveSpec": null,
+    "fetchSpec": "2.10.2"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "http://registry.npm.taobao.org/redux-logger/download/redux-logger-2.10.2.tgz",
-  "_shasum": "3c5a5f0a6f32577c1deadf6655f257f82c6c3937",
-  "_shrinkwrap": null,
-  "_spec": "redux-logger@^2.4.0",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn",
+  "_resolved": "https://registry.npmjs.org/redux-logger/-/redux-logger-2.10.2.tgz",
+  "_spec": "2.10.2",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Eugene Rodionov",
     "url": "https://github.com/theaqua"
@@ -84,19 +64,11 @@
     "sinon": "^1.17.7",
     "webpack": "1.13.3"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "3c5a5f0a6f32577c1deadf6655f257f82c6c3937",
-    "size": 19224,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/redux-logger/download/redux-logger-2.10.2.tgz"
-  },
   "files": [
     "dist",
     "lib",
     "src"
   ],
-  "gitHead": "dbd6d5d1bb21c92bd9c7930c03ad16a9aae436b9",
   "homepage": "https://github.com/theaqua/redux-logger#readme",
   "keywords": [
     "redux",
@@ -106,12 +78,6 @@
   ],
   "license": "MIT",
   "main": "lib/index.js",
-  "maintainers": [
-    {
-      "name": "evgenyrodionov",
-      "email": "npm@erodionov.ru"
-    }
-  ],
   "name": "redux-logger",
   "nyc": {
     "exclude": [
@@ -123,9 +89,6 @@
       "webpack.*.js"
     ]
   },
-  "optionalDependencies": {},
-  "publish_time": 1490176746850,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/theaqua/redux-logger.git"

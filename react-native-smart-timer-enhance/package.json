@@ -1,0 +1,56 @@
+{
+  "_args": [
+    [
+      "react-native-smart-timer-enhance@1.0.3",
+      "/Users/yazheng/Desktop/ydProject/docbook-RN-app-YS/yunshu_rn"
+    ]
+  ],
+  "_from": "react-native-smart-timer-enhance@1.0.3",
+  "_id": "react-native-smart-timer-enhance@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha1-R93Bm+WmwZGERJA5SV8lVGvNlP4=",
+  "_location": "/react-native-smart-timer-enhance",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react-native-smart-timer-enhance@1.0.3",
+    "name": "react-native-smart-timer-enhance",
+    "escapedName": "react-native-smart-timer-enhance",
+    "rawSpec": "1.0.3",
+    "saveSpec": null,
+    "fetchSpec": "1.0.3"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/react-native-smart-timer-enhance/download/react-native-smart-timer-enhance-1.0.3.tgz",
+  "_spec": "1.0.3",
+  "_where": "/Users/yazheng/Desktop/ydProject/docbook-RN-app-YS/yunshu_rn",
+  "author": {
+    "name": "HISAME SHIZUMARU"
+  },
+  "bugs": {
+    "url": "https://github.com/react-native-component/react-native-smart-timer-enhance/issues"
+  },
+  "description": " A TimerEnhance for React Native app (es6) which replaced TimerMixin (es5) provides timer functions for executing code in the future that are safely cleaned up when the component unmounts",
+  "homepage": "https://github.com/react-native-component/react-native-smart-timer-enhance#readme",
+  "keywords": [
+    "react-native",
+    "smart",
+    "timer",
+    "enhance",
+    "component"
+  ],
+  "license": "MIT",
+  "main": "TimerEnhance.js",
+  "name": "react-native-smart-timer-enhance",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-native-component/react-native-smart-timer-enhance.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.3"
+}

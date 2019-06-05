@@ -109,7 +109,6 @@ exports[`DrawerNavigator renders successfully 1`] = `
         onScrollShouldSetResponder={[Function]}
         onStartShouldSetResponder={[Function]}
         onStartShouldSetResponderCapture={[Function]}
-        onTouchCancel={[Function]}
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
@@ -140,7 +139,6 @@ exports[`DrawerNavigator renders successfully 1`] = `
           <View
             collapsable={undefined}
             onLayout={[Function]}
-            pointerEvents="box-none"
             style={
               Object {
                 "paddingBottom": 0,
@@ -166,7 +164,6 @@ exports[`DrawerNavigator renders successfully 1`] = `
                 accessibilityTraits={undefined}
                 accessible={true}
                 collapsable={undefined}
-                hasTVPreferredFocus={undefined}
                 hitSlop={undefined}
                 isTVSelectable={true}
                 nativeID={undefined}
@@ -188,7 +185,6 @@ exports[`DrawerNavigator renders successfully 1`] = `
                 <View
                   collapsable={undefined}
                   onLayout={[Function]}
-                  pointerEvents="box-none"
                   style={
                     Object {
                       "backgroundColor": "rgba(0, 0, 0, .04)",
@@ -223,7 +219,6 @@ exports[`DrawerNavigator renders successfully 1`] = `
                           Object {
                             "color": "#2196f3",
                           },
-                          undefined,
                           undefined,
                         ]
                       }

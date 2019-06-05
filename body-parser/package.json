@@ -1,47 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "body-parser@~1.13.3",
-        "scope": null,
-        "escapedName": "body-parser",
-        "name": "body-parser",
-        "rawSpec": "~1.13.3",
-        "spec": ">=1.13.3 <1.14.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/connect"
+      "body-parser@1.13.3",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1438369484557,
-  "_from": "body-parser@>=1.13.3 <1.14.0",
-  "_hasShrinkwrap": false,
+  "_from": "body-parser@1.13.3",
   "_id": "body-parser@1.13.3",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-wIzzMMM1jhUQFqBXRvE/ApyX+pc=",
   "_location": "/body-parser",
-  "_npmUser": {
-    "name": "dougwilson",
-    "email": "doug@somethingdoug.com"
-  },
-  "_npmVersion": "1.4.28",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "body-parser@~1.13.3",
-    "scope": null,
-    "escapedName": "body-parser",
+    "type": "version",
+    "registry": true,
+    "raw": "body-parser@1.13.3",
     "name": "body-parser",
-    "rawSpec": "~1.13.3",
-    "spec": ">=1.13.3 <1.14.0",
-    "type": "range"
+    "escapedName": "body-parser",
+    "rawSpec": "1.13.3",
+    "saveSpec": null,
+    "fetchSpec": "1.13.3"
   },
   "_requiredBy": [
     "/connect"
   ],
-  "_resolved": "https://registry.npmjs.org/body-parser/-/body-parser-1.13.3.tgz",
-  "_shasum": "c08cf330c3358e151016a05746f13f029c97fa97",
-  "_shrinkwrap": null,
-  "_spec": "body-parser@~1.13.3",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/connect",
+  "_resolved": "http://registry.npm.taobao.org/body-parser/download/body-parser-1.13.3.tgz",
+  "_spec": "1.13.3",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "bugs": {
     "url": "https://github.com/expressjs/body-parser/issues"
   },
@@ -75,13 +60,6 @@
     "mocha": "2.2.5",
     "supertest": "1.0.1"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "c08cf330c3358e151016a05746f13f029c97fa97",
-    "size": 11329,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/body-parser/download/body-parser-1.13.3.tgz"
-  },
   "engines": {
     "node": ">= 0.8"
   },
@@ -91,19 +69,9 @@
     "HISTORY.md",
     "index.js"
   ],
-  "gitHead": "79d0972bd18247071326105bfb36539830b61b76",
-  "homepage": "https://github.com/expressjs/body-parser",
+  "homepage": "https://github.com/expressjs/body-parser#readme",
   "license": "MIT",
-  "maintainers": [
-    {
-      "name": "dougwilson",
-      "email": "doug@somethingdoug.com"
-    }
-  ],
   "name": "body-parser",
-  "optionalDependencies": {},
-  "publish_time": 1438369484557,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/expressjs/body-parser.git"

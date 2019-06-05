@@ -1,4 +1,6 @@
 //! moment.js locale configuration
+//! locale : Konkani Latin script [gom-latn]
+//! author : The Discoverer : https://github.com/WikiDiscoverer
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'

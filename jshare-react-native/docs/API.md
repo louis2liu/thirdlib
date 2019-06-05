@@ -56,7 +56,7 @@ JShareModule.xxx();
    * 分享
    * @param {object} message = {
    * 
-   * platformString 必填，用于分享置不同的平台 //可以是 'wechat_session' / 'wechat_timeLine' / 'wechat_favourite' / 'qq' / 'qzone' / 'sina_weibo' / 'sina_weibo_contact'  / 'facebook' /'facebook_messenger' 
+   * platformString 必填，用于分享置不同的平台 //可以是 'wechat_session' / 'wechat_timeLine' / 'wechat_favourite' / 'qq' / 'qzone' / 'sina_weibo' / 'sina_weibo_contact' 
    * type 必填
    * 
    * {
@@ -177,7 +177,7 @@ JShareModule.xxx();
    *  name: String        
    *  iconUrl: String   // 社交平台头像链接
    *  gender: String    // 'female' /  'male'
-   *  response: String  // 社交平台上的原始数据, 返回 JSON 字符串
+   *  response: Object  // 社交平台上的原始数据
    * }
    *
    * @param {Function} fail = function (error) {} ## 
@@ -202,10 +202,10 @@ JShareModule.xxx();
 
   ```javascript
   /**
-   * 判断某平台是否已经授权
+   * 判断某平台是否支持授权
    * 
    * @param {Object} param = {
-   *  platform: String //可以是 'wechat_session' / 'wechat_timeLine' / 'wechat_favourite' / 'qq' / 'qzone' / 'sina_weibo' / 'sina_weibo_contact'  / 'facebook' /'facebook_messenger' 
+   *  platform: String //可以是 'wechat_session' / 'wechat_timeLine' / 'wechat_favourite' / 'qq' / 'qzone' / 'sina_weibo' / 'sina_weibo_contact' 
    * }
    * @param {Function} callback = (Boolean) => {} 
    */
@@ -228,7 +228,7 @@ JShareModule.xxx();
    * 判断该平台的分享是否有效
    * Android only
    * @param {Object} param = {
-   *  platform: String //可以是 'wechat_session' / 'wechat_timeLine' / 'wechat_favourite' / 'qq' / 'qzone' / 'sina_weibo' / 'sina_weibo_contact'  / 'facebook' /'facebook_messenger' 
+   *  platform: String //可以是 'wechat_session' / 'wechat_timeLine' / 'wechat_favourite' / 'qq' / 'qzone' / 'sina_weibo' / 'sina_weibo_contact' 
    * }
    * @param {Function} callback = (Boolean) => {} 
    */
@@ -245,13 +245,13 @@ JShareModule.xxx();
   });
   ```
 
-- **authorize(param, successCallback, failCallback)**
+- **authorize(param, successCallback, failCallback) Android Only**
 
   ```javascript
   /**
-   * 授权接口
+   * 授权接口 Android Only
    * @param {Object} param = {
-   *  platform: String //可以是 'wechat_session' / 'wechat_timeLine' / 'wechat_favourite' / 'qq' / 'qzone' / 'sina_weibo' / 'sina_weibo_contact'  / 'facebook' /'facebook_messenger' 
+   *  platform: String //可以是 'wechat_session' / 'wechat_timeLine' / 'wechat_favourite' / 'qq' / 'qzone' / 'sina_weibo' / 'sina_weibo_contact' 
    * }
    * @param {Function} success 
    * @param {Function} fail 
@@ -271,12 +271,12 @@ JShareModule.xxx();
   });
   ```
 
-- **isSupportAuthorize(param, callback)    Android Only** 
+- **isAuthorize(param, callback)**
   ```javascript
   /**
-   *  判断平台是否支持授权接口, NOTE：Android Only
+   *  判断是否授权接口
    * @param {Object} param = {
-   *  platform: String //可以是 'wechat_session' / 'wechat_timeLine' / 'wechat_favourite' /    'qq' / 'qzone' / 'sina_weibo' / 'sina_weibo_contact' / 'facebook' /'facebook_messenger' 
+   *  platform: String //可以是 'wechat_session' / 'wechat_timeLine' / 'wechat_favourite' /    'qq' / 'qzone' / 'sina_weibo' / 'sina_weibo_contact' 
    * }  
    * @param {Function} callback = (Boolean) => {} 
    */
@@ -288,7 +288,7 @@ JShareModule.xxx();
   var param = {  
     platform: "wechat_session"
   };
-  JShareModule.isSupportAuthorize(param, (result) => {        
+  JShareModule.isAuthorize(param, (result) => {        		
      console.log("param is Authorize: " + result);
   });
   ```
@@ -329,7 +329,7 @@ JShareModule.xxx();
   ```
 
 
-- **isSinaWeiboWebLogined(callback)**
+- **isSinaWeiboWebLogined(param, callback)**
 
   ```javascript
   /**
@@ -352,7 +352,7 @@ JShareModule.xxx();
   });
   ```
 
-- **sinaWeiboWebLogOut(callback)** 
+- **sinaWeiboWebLogOut(param, callback)**
 
   ```javascript
   /**
@@ -375,12 +375,13 @@ JShareModule.xxx();
   });
   ```
 
-- **isWeChatInstalled(callback)**
+- **isWeChatInstalled(param, callback)**
 
   ```javascript
   /**
    * 检查是否安装微信客户端
    * 
+   * iOS Only
    * @param {Function} success = (Boolean) => {} 
    */
   ```
@@ -397,12 +398,13 @@ JShareModule.xxx();
   });
   ```
 
-- **isQQInstalled(callback)**
+- **isQQInstalled(param, callback)**
 
   ```javascript
   /**
    * 检查是否存在QQ客户端
    * 
+   * iOS Only
    * @param {Function} success = (Boolean) => {} 
    */
   ```
@@ -419,12 +421,13 @@ JShareModule.xxx();
   });
   ```
 
-- **isSinaWeiBoInstalled(callback)**
+- **isSinaWeiBoInstalled(param, callback)**
 
   ```javascript
   /**
    * 检查是否存在新浪微博客户端
    * 
+   * iOS Only
    * @param {Function} success = (Boolean) => {} 
    */
   ```
@@ -440,28 +443,6 @@ JShareModule.xxx();
     }
   });
   ```
-
-- **isFacebookInstalled(callback)**
-
-    ```javascript
-    /**
-     * 检查是否存在 facebook 户端
-     * 
-     * @param {Function} success = (Boolean) => {} 
-     */
-    ```
-
-    usage:
-
-    ```javascript
-    JShareModule.isFacebookInstalled((isInstalled) => {
-      if (isInstalled === true) {
-        console.log("sina weibo is intalled");
-      } else {
-        console.log("sina weibo is not installed");
-      }
-    });
-    ```
 
 - **setDebug(param, callback)，Android 建议在 MainApplication 中调用，[参考 demo](./../example/android/app/src/main/java/cn/jiguang/share/demo/MainApplication.java)** 
 

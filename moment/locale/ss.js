@@ -1,4 +1,6 @@
 //! moment.js locale configuration
+//! locale : siSwati [ss]
+//! author : Nicolai Davies<mail@nicolai.io> : https://github.com/nicolaidavies
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'
@@ -6,6 +8,7 @@
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
+
 
 
 var ss = moment.defineLocale('ss', {

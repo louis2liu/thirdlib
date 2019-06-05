@@ -5,6 +5,7 @@ import {
   ListView,
   View,
   StyleSheet,
+    Dimensions
 } from 'react-native';
 
 import shallowequal from 'shallowequal';

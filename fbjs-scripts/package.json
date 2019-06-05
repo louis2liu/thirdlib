@@ -1,52 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "fbjs-scripts@^0.8.1",
-        "scope": null,
-        "escapedName": "fbjs-scripts",
-        "name": "fbjs-scripts",
-        "rawSpec": "^0.8.1",
-        "spec": ">=0.8.1 <0.9.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native"
+      "fbjs-scripts@0.8.2",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1500944118591,
-  "_from": "fbjs-scripts@>=0.8.1 <0.9.0",
-  "_hasShrinkwrap": false,
-  "_id": "fbjs-scripts@0.8.1",
-  "_inCache": true,
+  "_from": "fbjs-scripts@0.8.2",
+  "_id": "fbjs-scripts@0.8.2",
+  "_inBundle": false,
+  "_integrity": "sha1-0s6QLsPIv3zqXQ2vhpJmGpBxDyU=",
   "_location": "/fbjs-scripts",
-  "_nodeVersion": "8.1.4",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/fbjs-scripts-0.8.1.tgz_1500944118494_0.29824183182790875"
-  },
-  "_npmUser": {
-    "name": "mjesun",
-    "email": "mjesun@hotmail.com"
-  },
-  "_npmVersion": "5.0.3",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "fbjs-scripts@^0.8.1",
-    "scope": null,
-    "escapedName": "fbjs-scripts",
+    "type": "version",
+    "registry": true,
+    "raw": "fbjs-scripts@0.8.2",
     "name": "fbjs-scripts",
-    "rawSpec": "^0.8.1",
-    "spec": ">=0.8.1 <0.9.0",
-    "type": "range"
+    "escapedName": "fbjs-scripts",
+    "rawSpec": "0.8.2",
+    "saveSpec": null,
+    "fetchSpec": "0.8.2"
   },
   "_requiredBy": [
     "/react-native"
   ],
-  "_resolved": "http://registry.npm.taobao.org/fbjs-scripts/download/fbjs-scripts-0.8.1.tgz",
-  "_shasum": "c1c6efbecb7f008478468976b783880c2f669765",
-  "_shrinkwrap": null,
-  "_spec": "fbjs-scripts@^0.8.1",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native",
+  "_resolved": "http://registry.npm.taobao.org/fbjs-scripts/download/fbjs-scripts-0.8.2.tgz",
+  "_spec": "0.8.2",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "bugs": {
     "url": "https://github.com/facebook/fbjs/issues"
   },
@@ -61,41 +41,12 @@
     "through2": "^2.0.0"
   },
   "description": "A bundle of helpful scripts used in projects consuming fbjs.",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "c1c6efbecb7f008478468976b783880c2f669765",
-    "size": 6607,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/fbjs-scripts/download/fbjs-scripts-0.8.1.tgz"
-  },
   "homepage": "https://github.com/facebook/fbjs#readme",
-  "license": "BSD-3-Clause",
-  "maintainers": [
-    {
-      "name": "cpojer",
-      "email": "christoph.pojer@gmail.com"
-    },
-    {
-      "name": "fb",
-      "email": "opensource+npm@fb.com"
-    },
-    {
-      "name": "mjesun",
-      "email": "mjesun@hotmail.com"
-    },
-    {
-      "name": "zpao",
-      "email": "paul@oshannessy.com"
-    }
-  ],
+  "license": "MIT",
   "name": "fbjs-scripts",
-  "optionalDependencies": {},
-  "publish_time": 1500944118591,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/facebook/fbjs.git"
   },
-  "version": "0.8.1"
+  "version": "0.8.2"
 }

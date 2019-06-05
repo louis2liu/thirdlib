@@ -37,9 +37,6 @@
   },
   "_requiredBy": [
     "/node-pre-gyp/request",
-    "/reactotron-core-client",
-    "/reactotron-react-native",
-    "/redux-persist",
     "/request"
   ],
   "_resolved": "https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz",

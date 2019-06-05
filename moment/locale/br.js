@@ -1,4 +1,6 @@
 //! moment.js locale configuration
+//! locale : Breton [br]
+//! author : Jean-Baptiste Le Duigou : https://github.com/jbleduigou
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'

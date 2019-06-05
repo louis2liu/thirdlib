@@ -1,52 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "react-native-dismiss-keyboard@1.0.0",
-        "scope": null,
-        "escapedName": "react-native-dismiss-keyboard",
-        "name": "react-native-dismiss-keyboard",
-        "rawSpec": "1.0.0",
-        "spec": "1.0.0",
-        "type": "version"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native-drawer-layout"
+      "react-native-dismiss-keyboard@1.0.0",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1463072195961,
   "_from": "react-native-dismiss-keyboard@1.0.0",
-  "_hasShrinkwrap": false,
   "_id": "react-native-dismiss-keyboard@1.0.0",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-MohiQrPyMX4SHzrrmwpYXiuHm0k=",
   "_location": "/react-native-dismiss-keyboard",
-  "_nodeVersion": "4.4.3",
-  "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/react-native-dismiss-keyboard-1.0.0.tgz_1463072194327_0.27796655730344355"
-  },
-  "_npmUser": {
-    "name": "dschmidt",
-    "email": "dschmidt@weluse.de"
-  },
-  "_npmVersion": "2.15.1",
   "_phantomChildren": {},
   "_requested": {
+    "type": "version",
+    "registry": true,
     "raw": "react-native-dismiss-keyboard@1.0.0",
-    "scope": null,
-    "escapedName": "react-native-dismiss-keyboard",
     "name": "react-native-dismiss-keyboard",
+    "escapedName": "react-native-dismiss-keyboard",
     "rawSpec": "1.0.0",
-    "spec": "1.0.0",
-    "type": "version"
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
   },
   "_requiredBy": [
     "/react-native-drawer-layout"
   ],
-  "_resolved": "http://registry.npm.taobao.org/react-native-dismiss-keyboard/download/react-native-dismiss-keyboard-1.0.0.tgz",
-  "_shasum": "32886242b3f2317e121f3aeb9b0a585e2b879b49",
-  "_shrinkwrap": null,
-  "_spec": "react-native-dismiss-keyboard@1.0.0",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/react-native-drawer-layout",
+  "_resolved": "https://registry.npmjs.org/react-native-dismiss-keyboard/-/react-native-dismiss-keyboard-1.0.0.tgz",
+  "_spec": "1.0.0",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Daniel Schmidt",
     "email": "daniel.maximilian@gmx.net",
@@ -55,7 +35,6 @@
   "bugs": {
     "url": "https://github.com/DanielMSchmidt/react-native-dismiss-keyboard/issues"
   },
-  "dependencies": {},
   "description": "A simple way to dismiss the keyboard programmatically in a react native application.",
   "devDependencies": {
     "babel": "^5.8.34",
@@ -68,17 +47,9 @@
     "eslint-plugin-react": "^3.13.1",
     "xo": "^0.12.1"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "32886242b3f2317e121f3aeb9b0a585e2b879b49",
-    "size": 1612,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/react-native-dismiss-keyboard/download/react-native-dismiss-keyboard-1.0.0.tgz"
-  },
   "files": [
     "dist/"
   ],
-  "gitHead": "fd62e4660736f22a25ca7b5fa38adeafa844a3e0",
   "homepage": "https://github.com/DanielMSchmidt/react-native-dismiss-keyboard#readme",
   "keywords": [
     "react-component",
@@ -91,16 +62,7 @@
   ],
   "license": "MIT",
   "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "dschmidt",
-      "email": "dschmidt@weluse.de"
-    }
-  ],
   "name": "react-native-dismiss-keyboard",
-  "optionalDependencies": {},
-  "publish_time": 1463072195961,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/DanielMSchmidt/react-native-dismiss-keyboard.git"

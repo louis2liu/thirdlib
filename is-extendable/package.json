@@ -36,17 +36,7 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/object.omit",
-    "/set-value",
-    "/set-value/extend-shallow",
-    "/snapdragon/extend-shallow",
-    "/test-exclude/braces/extend-shallow",
-    "/test-exclude/expand-brackets/extend-shallow",
-    "/test-exclude/extglob/extend-shallow",
-    "/test-exclude/fill-range/extend-shallow",
-    "/union-value",
-    "/union-value/extend-shallow",
-    "/union-value/set-value"
+    "/object.omit"
   ],
   "_resolved": "https://registry.npmjs.org/is-extendable/-/is-extendable-0.1.1.tgz",
   "_shasum": "62b110e289a471418e3ec36a617d472e301dfc89",

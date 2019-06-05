@@ -1,4 +1,6 @@
 //! moment.js locale configuration
+//! locale : Danish [da]
+//! author : Ulrik Nielsen : https://github.com/mrbase
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'

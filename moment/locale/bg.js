@@ -1,4 +1,6 @@
 //! moment.js locale configuration
+//! locale : Bulgarian [bg]
+//! author : Krasen Borisov : https://github.com/kraz
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'

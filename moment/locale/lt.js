@@ -1,4 +1,6 @@
 //! moment.js locale configuration
+//! locale : Lithuanian [lt]
+//! author : Mindaugas Mozūras : https://github.com/mmozuras
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'

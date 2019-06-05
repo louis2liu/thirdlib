@@ -1,4 +1,6 @@
 //! moment.js locale configuration
+//! locale : Vietnamese [vi]
+//! author : Bang Nguyen : https://github.com/bangnk
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'

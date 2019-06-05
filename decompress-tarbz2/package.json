@@ -1,52 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "decompress-tarbz2@^4.0.0",
-        "scope": null,
-        "escapedName": "decompress-tarbz2",
-        "name": "decompress-tarbz2",
-        "rawSpec": "^4.0.0",
-        "spec": ">=4.0.0 <5.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/decompress"
+      "decompress-tarbz2@4.1.1",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1503048064099,
-  "_from": "decompress-tarbz2@>=4.0.0 <5.0.0",
-  "_hasShrinkwrap": false,
+  "_from": "decompress-tarbz2@4.1.1",
   "_id": "decompress-tarbz2@4.1.1",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha512-s88xLzf1r81ICXLAVQVzaN6ZmX4A6U4z2nMbOwobxkLoIIfjVMBg7TeguTUXkKeXni795B6y5rnvDw7rxhAq9A==",
   "_location": "/decompress-tarbz2",
-  "_nodeVersion": "6.11.2",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/decompress-tarbz2-4.1.1.tgz_1503048062797_0.43814932461827993"
-  },
-  "_npmUser": {
-    "name": "kevva",
-    "email": "kevinmartensson@gmail.com"
-  },
-  "_npmVersion": "5.3.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "decompress-tarbz2@^4.0.0",
-    "scope": null,
-    "escapedName": "decompress-tarbz2",
+    "type": "version",
+    "registry": true,
+    "raw": "decompress-tarbz2@4.1.1",
     "name": "decompress-tarbz2",
-    "rawSpec": "^4.0.0",
-    "spec": ">=4.0.0 <5.0.0",
-    "type": "range"
+    "escapedName": "decompress-tarbz2",
+    "rawSpec": "4.1.1",
+    "saveSpec": null,
+    "fetchSpec": "4.1.1"
   },
   "_requiredBy": [
     "/decompress"
   ],
-  "_resolved": "https://registry.npm.taobao.org/decompress-tarbz2/download/decompress-tarbz2-4.1.1.tgz",
-  "_shasum": "3082a5b880ea4043816349f378b56c516be1a39b",
-  "_shrinkwrap": null,
-  "_spec": "decompress-tarbz2@^4.0.0",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/decompress",
+  "_resolved": "https://registry.npmjs.org/decompress-tarbz2/-/decompress-tarbz2-4.1.1.tgz",
+  "_spec": "4.1.1",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Kevin Mårtensson",
     "email": "kevinmartensson@gmail.com",
@@ -68,20 +48,12 @@
     "is-jpg": "^1.0.0",
     "xo": "*"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "3082a5b880ea4043816349f378b56c516be1a39b",
-    "size": 1781,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/decompress-tarbz2/download/decompress-tarbz2-4.1.1.tgz"
-  },
   "engines": {
     "node": ">=4"
   },
   "files": [
     "index.js"
   ],
-  "gitHead": "ef9db04d247eb11c03efa6b6386a52f6d457177f",
   "homepage": "https://github.com/kevva/decompress-tarbz2#readme",
   "keywords": [
     "bz2",
@@ -93,16 +65,7 @@
     "tarbz2"
   ],
   "license": "MIT",
-  "maintainers": [
-    {
-      "name": "kevva",
-      "email": "kevinmartensson@gmail.com"
-    }
-  ],
   "name": "decompress-tarbz2",
-  "optionalDependencies": {},
-  "publish_time": 1503048064099,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kevva/decompress-tarbz2.git"

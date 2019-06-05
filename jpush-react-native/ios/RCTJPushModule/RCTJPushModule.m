@@ -28,6 +28,12 @@
 #import "React/RCTBridge.h"
 #endif
 
+#if DEBUG
+#define DELAYTIME   8.0
+#else
+#define DELAYTIME   3.0
+#endif
+
 @interface RCTJPushModule () {
   BOOL _isJPushDidLogin;
 }
@@ -196,8 +202,18 @@ RCT_EXPORT_METHOD(getApplicationIconBadge:(RCTResponseSenderBlock)callback) {
 }
 
 - (void)networkDidReceiveMessage:(NSNotification *)notification {
-  [self.bridge.eventDispatcher sendAppEventWithName:@"receivePushMsg"
-                                               body:[notification userInfo]];
+    if ([RCTJPushActionQueue sharedInstance].isReactDidLoad) {
+        [self.bridge.eventDispatcher sendAppEventWithName:@"receivePushMsg"
+                                                     body:[notification userInfo]];
+    }else{
+        dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(DELAYTIME * NSEC_PER_SEC));
+        dispatch_after(delayTime, dispatch_get_main_queue(), ^{
+            [self.bridge.eventDispatcher sendAppEventWithName:@"receivePushMsg"
+                                                         body:[notification userInfo]];
+        });
+    }
+    
+
 }
 
 - (void)receiveRemoteNotification:(NSNotification *)notification {
@@ -320,9 +336,7 @@ RCT_EXPORT_METHOD( setTags:(NSArray *)tags
   self.asyCallback = callback;
   [JPUSHService setTags:tagSet completion:^(NSInteger iResCode, NSSet *iTags, NSInteger seq) {
     if (iResCode == 0) {
-      callback(@[@{@"tags": [iTags allObjects] ?: @[],
-                   @"errorCode": @(0)
-                   }]);
+      callback(@[@{@"tags": [iTags allObjects] ?: @[]}]);
     } else {
       callback(@[@{@"errorCode": @(iResCode)}]);
     }
@@ -338,9 +352,7 @@ RCT_EXPORT_METHOD( setAlias:(NSString *)alias
   self.asyCallback = callback;
   [JPUSHService setAlias:alias completion:^(NSInteger iResCode, NSString *iAlias, NSInteger seq) {
     if (iResCode == 0) {
-      callback(@[@{@"alias": iAlias ?: @"",
-                   @"errorCode": @(0)
-                   }]);
+      callback(@[@{@"alias": iAlias ?: @""}]);
     } else {
       callback(@[@{@"errorCode": @(iResCode)}]);
     }
@@ -356,9 +368,7 @@ RCT_EXPORT_METHOD( addTags:(NSArray *)tags
   }
   [JPUSHService addTags:tagSet completion:^(NSInteger iResCode, NSSet *iTags, NSInteger seq) {
     if (iResCode == 0) {
-      callback(@[@{@"tags": [iTags allObjects] ?: @[],
-                   @"errorCode": @(0)
-                   }]);
+      callback(@[@{@"tags": [iTags allObjects] ?: @[]}]);
     } else {
       callback(@[@{@"errorCode": @(iResCode)}]);
     }
@@ -374,9 +384,7 @@ RCT_EXPORT_METHOD( deleteTags:(NSArray *)tags
   }
   [JPUSHService deleteTags:tagSet completion:^(NSInteger iResCode, NSSet *iTags, NSInteger seq) {
     if (iResCode == 0) {
-      callback(@[@{@"tags": [iTags allObjects] ?: @[],
-                   @"errorCode": @(0)
-                   }]);
+      callback(@[@{@"tags": [iTags allObjects] ?: @[]}]);
     } else {
       callback(@[@{@"errorCode": @(iResCode)}]);
     }
@@ -386,9 +394,7 @@ RCT_EXPORT_METHOD( deleteTags:(NSArray *)tags
 RCT_EXPORT_METHOD( cleanTags:(RCTResponseSenderBlock)callback) {
   [JPUSHService cleanTags:^(NSInteger iResCode, NSSet *iTags, NSInteger seq) {
     if (iResCode == 0) {
-      callback(@[@{@"tags": [iTags allObjects] ?: @[],
-                   @"errorCode": @(0)
-                   }]);
+      callback(@[@{@"tags": [iTags allObjects] ?: @[]}]);
     } else {
       callback(@[@{@"errorCode": @(iResCode)}]);
     }
@@ -398,9 +404,7 @@ RCT_EXPORT_METHOD( cleanTags:(RCTResponseSenderBlock)callback) {
 RCT_EXPORT_METHOD( getAllTags:(RCTResponseSenderBlock)callback) {
   [JPUSHService getAllTags:^(NSInteger iResCode, NSSet *iTags, NSInteger seq) {
     if (iResCode == 0) {
-      callback(@[@{@"tags": [iTags allObjects] ?: @[],
-                   @"errorCode": @(0)
-                   }]);
+      callback(@[@{@"tags": [iTags allObjects] ?: @[]}]);
     } else {
       callback(@[@{@"errorCode": @(iResCode)}]);
     }
@@ -411,9 +415,7 @@ RCT_EXPORT_METHOD(checkTagBindState:(NSString *)tag
                            callback:(RCTResponseSenderBlock)callback) {
   [JPUSHService validTag:tag completion:^(NSInteger iResCode, NSSet *iTags, NSInteger seq, BOOL isBind) {
     if (iResCode == 0) {
-      callback(@[@{@"isBind": @(isBind),
-                   @"errorCode": @(0)
-                   }]);
+      callback(@[@{@"isBind": @(isBind)}]);
     } else {
       callback(@[@{@"errorCode": @(iResCode)}]);
     }
@@ -423,9 +425,7 @@ RCT_EXPORT_METHOD(checkTagBindState:(NSString *)tag
 RCT_EXPORT_METHOD(deleteAlias:(RCTResponseSenderBlock)callback) {
   [JPUSHService deleteAlias:^(NSInteger iResCode, NSString *iAlias, NSInteger seq) {
     if (iResCode == 0) {
-      callback(@[@{@"alias": iAlias ?: @"",
-                   @"errorCode": @(0)
-                   }]);
+      callback(@[@{@"alias": iAlias ?: @""}]);
     } else {
       callback(@[@{@"errorCode": @(iResCode)}]);
     }
@@ -435,9 +435,7 @@ RCT_EXPORT_METHOD(deleteAlias:(RCTResponseSenderBlock)callback) {
 RCT_EXPORT_METHOD(getAlias:(RCTResponseSenderBlock)callback) {
   [JPUSHService getAlias:^(NSInteger iResCode, NSString *iAlias, NSInteger seq) {
     if (iResCode == 0) {
-      callback(@[@{@"alias": iAlias ?: @"",
-                   @"errorCode": @(0)
-                   }]);
+      callback(@[@{@"alias": iAlias ?: @""}]);
     } else {
       callback(@[@{@"errorCode": @(iResCode)}]);
     }

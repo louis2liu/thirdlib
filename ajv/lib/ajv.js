@@ -131,7 +131,7 @@ function compile(schema, _meta) {
 function addSchema(schema, key, _skipValidation, _meta) {
   if (Array.isArray(schema)){
     for (var i=0; i<schema.length; i++) this.addSchema(schema[i], undefined, _skipValidation, _meta);
-    return this;
+    return;
   }
   var id = this._getId(schema);
   if (id !== undefined && typeof id != 'string')

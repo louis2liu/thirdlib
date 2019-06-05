@@ -1,52 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "react-native-datepicker@^1.6.0",
-        "scope": null,
-        "escapedName": "react-native-datepicker",
-        "name": "react-native-datepicker",
-        "rawSpec": "^1.6.0",
-        "spec": ">=1.6.0 <2.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn"
+      "react-native-datepicker@1.6.0",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1497246217072,
-  "_from": "react-native-datepicker@>=1.6.0 <2.0.0",
-  "_hasShrinkwrap": false,
+  "_from": "react-native-datepicker@1.6.0",
   "_id": "react-native-datepicker@1.6.0",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-OkDcmxEgI8SdYLoqB4nUQLfj2Xw=",
   "_location": "/react-native-datepicker",
-  "_nodeVersion": "6.10.1",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/react-native-datepicker-1.6.0.tgz_1497246216949_0.7338751938659698"
-  },
-  "_npmUser": {
-    "name": "yuebin01",
-    "email": "yuebin01@gmail.com"
-  },
-  "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "react-native-datepicker@^1.6.0",
-    "scope": null,
-    "escapedName": "react-native-datepicker",
+    "type": "version",
+    "registry": true,
+    "raw": "react-native-datepicker@1.6.0",
     "name": "react-native-datepicker",
-    "rawSpec": "^1.6.0",
-    "spec": ">=1.6.0 <2.0.0",
-    "type": "range"
+    "escapedName": "react-native-datepicker",
+    "rawSpec": "1.6.0",
+    "saveSpec": null,
+    "fetchSpec": "1.6.0"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npm.taobao.org/react-native-datepicker/download/react-native-datepicker-1.6.0.tgz",
-  "_shasum": "3a40dc9b112023c49d60ba2a0789d440b7e3d97c",
-  "_shrinkwrap": null,
-  "_spec": "react-native-datepicker@^1.6.0",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn",
+  "_resolved": "https://registry.npmjs.org/react-native-datepicker/-/react-native-datepicker-1.6.0.tgz",
+  "_spec": "1.6.0",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "xgfe"
   },
@@ -84,14 +64,6 @@
     "react-native-mock": "^0.2.8",
     "sinon": "^1.17.4"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "3a40dc9b112023c49d60ba2a0789d440b7e3d97c",
-    "size": 12406,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/react-native-datepicker/download/react-native-datepicker-1.6.0.tgz"
-  },
-  "gitHead": "44c8ec6057ed08aef8e99cddbe13992a43ac5d51",
   "homepage": "https://github.com/xgfe/react-native-datepicker#readme",
   "keywords": [
     "react-native",
@@ -99,19 +71,10 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "maintainers": [
-    {
-      "name": "yuebin01",
-      "email": "yuebin01@gmail.com"
-    }
-  ],
   "name": "react-native-datepicker",
-  "optionalDependencies": {},
   "pre-commit": [
     "lint"
   ],
-  "publish_time": 1497246217072,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xgfe/react-native-datepicker.git"

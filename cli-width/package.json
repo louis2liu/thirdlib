@@ -40,8 +40,7 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/inquirer",
-    "/react-native/inquirer"
+    "/inquirer"
   ],
   "_resolved": "http://registry.npm.taobao.org/cli-width/download/cli-width-2.2.0.tgz",
   "_shasum": "ff19ede8a9a5e579324147b0c11f0fbcbabed639",

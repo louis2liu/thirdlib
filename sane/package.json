@@ -1,52 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "sane@^2.0.0",
-        "scope": null,
-        "escapedName": "sane",
-        "name": "sane",
-        "rawSpec": "^2.0.0",
-        "spec": ">=2.0.0 <3.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/jest-haste-map"
+      "sane@2.2.0",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1518108649356,
-  "_from": "sane@>=2.0.0 <3.0.0",
-  "_hasShrinkwrap": false,
-  "_id": "sane@2.4.1",
-  "_inCache": true,
+  "_from": "sane@2.2.0",
+  "_id": "sane@2.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-OSJxhHO0CgPUw3lUm3GhfREAfza45smvEI9ozuFrxKG10GHVo0ryW9FK5VYlLvxj0SV7HVKHW0voYJIRu27GWg==",
   "_location": "/sane",
-  "_nodeVersion": "8.9.0",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/sane_2.4.1_1518108649258_0.3142059003506539"
-  },
-  "_npmUser": {
-    "name": "stefanpenner",
-    "email": "stefan.penner@gmail.com"
-  },
-  "_npmVersion": "5.6.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "sane@^2.0.0",
-    "scope": null,
-    "escapedName": "sane",
+    "type": "version",
+    "registry": true,
+    "raw": "sane@2.2.0",
     "name": "sane",
-    "rawSpec": "^2.0.0",
-    "spec": ">=2.0.0 <3.0.0",
-    "type": "range"
+    "escapedName": "sane",
+    "rawSpec": "2.2.0",
+    "saveSpec": null,
+    "fetchSpec": "2.2.0"
   },
   "_requiredBy": [
     "/jest-haste-map"
   ],
-  "_resolved": "https://registry.npm.taobao.org/sane/download/sane-2.4.1.tgz",
-  "_shasum": "29f991208cf28636720efdc584293e7fd66663a5",
-  "_shrinkwrap": null,
-  "_spec": "sane@^2.0.0",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/jest-haste-map",
+  "_resolved": "https://registry.npmjs.org/sane/-/sane-2.2.0.tgz",
+  "_spec": "2.2.0",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "amasad"
   },
@@ -74,13 +54,6 @@
     "rimraf": "~2.2.6",
     "tmp": "0.0.27"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "29f991208cf28636720efdc584293e7fd66663a5",
-    "size": 13415,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/sane/download/sane-2.4.1.tgz"
-  },
   "engines": {
     "node": ">=0.6.0"
   },
@@ -88,7 +61,6 @@
     "src",
     "index.js"
   ],
-  "gitHead": "ec657e41e93db7c524a4110c024c3d5f34c9440c",
   "homepage": "https://github.com/amasad/sane",
   "keywords": [
     "watch",
@@ -100,22 +72,10 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "maintainers": [
-    {
-      "name": "amasad",
-      "email": "amjad.masad@gmail.com"
-    },
-    {
-      "name": "stefanpenner",
-      "email": "stefan.penner@gmail.com"
-    }
-  ],
   "name": "sane",
   "optionalDependencies": {
     "fsevents": "^1.1.1"
   },
-  "publish_time": 1518108649356,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amasad/sane.git"
@@ -125,5 +85,5 @@
     "test": "npm run format && eslint src/ test/ index.js && mocha --bail test/test.js && mocha --bail test/utils-test.js",
     "test:debug": "mocha debug --bail"
   },
-  "version": "2.4.1"
+  "version": "2.2.0"
 }

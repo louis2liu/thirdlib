@@ -1,48 +1,32 @@
 {
   "_args": [
     [
-      {
-        "raw": "serve-index@~1.7.2",
-        "scope": null,
-        "escapedName": "serve-index",
-        "name": "serve-index",
-        "rawSpec": "~1.7.2",
-        "spec": ">=1.7.2 <1.8.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/connect"
+      "serve-index@1.7.3",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1453678408474,
-  "_from": "serve-index@>=1.7.2 <1.8.0",
-  "_hasShrinkwrap": false,
+  "_from": "serve-index@1.7.3",
   "_id": "serve-index@1.7.3",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-egV/xu4o3GP2RWbl+lexEahq7NI=",
   "_location": "/serve-index",
-  "_nodeVersion": "4.2.3",
-  "_npmUser": {
-    "name": "dougwilson",
-    "email": "doug@somethingdoug.com"
-  },
-  "_npmVersion": "2.14.7",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "serve-index@~1.7.2",
-    "scope": null,
-    "escapedName": "serve-index",
+    "type": "version",
+    "registry": true,
+    "raw": "serve-index@1.7.3",
     "name": "serve-index",
-    "rawSpec": "~1.7.2",
-    "spec": ">=1.7.2 <1.8.0",
-    "type": "range"
+    "escapedName": "serve-index",
+    "rawSpec": "1.7.3",
+    "saveSpec": null,
+    "fetchSpec": "1.7.3"
   },
   "_requiredBy": [
     "/connect"
   ],
-  "_resolved": "https://registry.npmjs.org/serve-index/-/serve-index-1.7.3.tgz",
-  "_shasum": "7a057fc6ee28dc63f64566e5fa57b111a86aecd2",
-  "_shrinkwrap": null,
-  "_spec": "serve-index@~1.7.2",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/connect",
+  "_resolved": "http://registry.npm.taobao.org/serve-index/download/serve-index-1.7.3.tgz",
+  "_spec": "1.7.3",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Douglas Christopher Wilson",
     "email": "doug@somethingdoug.com"
@@ -66,13 +50,6 @@
     "mocha": "2.3.4",
     "supertest": "1.1.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "7a057fc6ee28dc63f64566e5fa57b111a86aecd2",
-    "size": 63188,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/serve-index/download/serve-index-1.7.3.tgz"
-  },
   "engines": {
     "node": ">= 0.8.0"
   },
@@ -82,19 +59,9 @@
     "HISTORY.md",
     "index.js"
   ],
-  "gitHead": "fc9db6b56a5bd6ae37f635a7cc7230ab83343fc1",
   "homepage": "https://github.com/expressjs/serve-index#readme",
   "license": "MIT",
-  "maintainers": [
-    {
-      "name": "dougwilson",
-      "email": "doug@somethingdoug.com"
-    }
-  ],
   "name": "serve-index",
-  "optionalDependencies": {},
-  "publish_time": 1453678408474,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/expressjs/serve-index.git"

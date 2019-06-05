@@ -1,0 +1,69 @@
+{
+  "_from": "react-native-image-zoom-viewer@^2.2.15",
+  "_id": "react-native-image-zoom-viewer@2.2.18",
+  "_inBundle": false,
+  "_integrity": "sha1-mTBFkqOyVshZywfAZ3cmmG+CzLg=",
+  "_location": "/react-native-image-zoom-viewer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "react-native-image-zoom-viewer@^2.2.15",
+    "name": "react-native-image-zoom-viewer",
+    "escapedName": "react-native-image-zoom-viewer",
+    "rawSpec": "^2.2.15",
+    "saveSpec": null,
+    "fetchSpec": "^2.2.15"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/react-native-image-zoom-viewer/download/react-native-image-zoom-viewer-2.2.18.tgz",
+  "_shasum": "99304592a3b256c859cb07c0677726986f82ccb8",
+  "_spec": "react-native-image-zoom-viewer@^2.2.15",
+  "_where": "/Users/yazheng/Desktop/ydProject/docbook-RN-app-YS/yunshu_rn",
+  "author": {
+    "name": "ascoders"
+  },
+  "bugs": {
+    "url": "https://github.com/ascoders/react-native-image-viewer/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "react-native-image-pan-zoom": "^2.1.9"
+  },
+  "deprecated": false,
+  "description": "react native image viewer,大图浏览",
+  "devDependencies": {
+    "@types/react": "*",
+    "@types/react-native": "*",
+    "ascoders-tslint-config": "^1.0.2",
+    "react": "*",
+    "react-native": "*",
+    "tslint": "^5.8.0",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "^2.9.2"
+  },
+  "homepage": "https://github.com/ascoders/react-native-image-viewer#readme",
+  "keywords": [
+    "image-viewer"
+  ],
+  "license": "MIT",
+  "main": "built/index.js",
+  "name": "react-native-image-zoom-viewer",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ascoders/react-native-image-viewer.git"
+  },
+  "scripts": {
+    "prepare": "rm -rf built && tsc",
+    "start": "tsc -w --outDir demo/built"
+  },
+  "types": "src/index.ts",
+  "version": "2.2.18"
+}

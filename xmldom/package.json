@@ -40,7 +40,10 @@
     "type": "range"
   },
   "_requiredBy": [
+    "/entitlements/plist",
+    "/ipa-metadata/plist",
     "/plist",
+    "/provisioning/plist",
     "/simple-plist/plist"
   ],
   "_resolved": "http://registry.npm.taobao.org/xmldom/download/xmldom-0.1.27.tgz",

@@ -6,10 +6,6 @@ import TabRouter from '../../routers/TabRouter';
 import TabView from '../TabView/TabView';
 import TabBarBottom from '../TabView/TabBarBottom';
 
-const dummyEventSubscriber = (name, handler) => ({
-  remove: () => {},
-});
-
 describe('TabBarBottom', () => {
   it('renders successfully', () => {
     const navigation = {
@@ -17,7 +13,6 @@ describe('TabBarBottom', () => {
         index: 0,
         routes: [{ key: 's1', routeName: 's1' }],
       },
-      addListener: dummyEventSubscriber,
     };
     const router = TabRouter({ s1: { screen: View } });
 

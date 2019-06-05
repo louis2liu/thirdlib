@@ -1,49 +1,31 @@
 {
   "_args": [
     [
-      {
-        "raw": "concat-stream@^1.6.0",
-        "scope": null,
-        "escapedName": "concat-stream",
-        "name": "concat-stream",
-        "rawSpec": "^1.6.0",
-        "spec": ">=1.6.0 <2.0.0",
-        "type": "range"
-      },
-      "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/metro-bundler"
+      "concat-stream@1.6.0",
+      "/Users/tanglin/docbook-RN-app-YS/yunshu_rn"
     ]
   ],
-  "_cnpm_publish_time": 1519914925760,
-  "_from": "concat-stream@>=1.6.0 <2.0.0",
-  "_hasShrinkwrap": false,
-  "_id": "concat-stream@1.6.1",
-  "_inCache": true,
+  "_from": "concat-stream@1.6.0",
+  "_id": "concat-stream@1.6.0",
+  "_inBundle": false,
+  "_integrity": "sha1-CqxmL9Ur54lk1VMvaUeE5wEQrPc=",
   "_location": "/concat-stream",
-  "_nodeVersion": "9.6.1",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/concat-stream_1.6.1_1519914925223_0.0741109955402166"
-  },
-  "_npmUser": {
-    "name": "mafintosh",
-    "email": "mathiasbuus@gmail.com"
-  },
-  "_npmVersion": "5.6.0",
   "_phantomChildren": {
     "core-util-is": "1.0.2",
     "inherits": "2.0.3",
-    "process-nextick-args": "2.0.0",
+    "process-nextick-args": "1.0.7",
     "safe-buffer": "5.1.1",
     "util-deprecate": "1.0.2"
   },
   "_requested": {
-    "raw": "concat-stream@^1.6.0",
-    "scope": null,
-    "escapedName": "concat-stream",
+    "type": "version",
+    "registry": true,
+    "raw": "concat-stream@1.6.0",
     "name": "concat-stream",
-    "rawSpec": "^1.6.0",
-    "spec": ">=1.6.0 <2.0.0",
-    "type": "range"
+    "escapedName": "concat-stream",
+    "rawSpec": "1.6.0",
+    "saveSpec": null,
+    "fetchSpec": "1.6.0"
   },
   "_requiredBy": [
     "/http-basic",
@@ -51,11 +33,9 @@
     "/sync-request",
     "/then-request"
   ],
-  "_resolved": "https://registry.npm.taobao.org/concat-stream/download/concat-stream-1.6.1.tgz",
-  "_shasum": "261b8f518301f1d834e36342b9fea095d2620a26",
-  "_shrinkwrap": null,
-  "_spec": "concat-stream@^1.6.0",
-  "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/metro-bundler",
+  "_resolved": "https://registry.npmjs.org/concat-stream/-/concat-stream-1.6.0.tgz",
+  "_spec": "1.6.0",
+  "_where": "/Users/tanglin/docbook-RN-app-YS/yunshu_rn",
   "author": {
     "name": "Max Ogden",
     "email": "max@maxogden.com"
@@ -72,37 +52,16 @@
   "devDependencies": {
     "tape": "^4.6.3"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "261b8f518301f1d834e36342b9fea095d2620a26",
-    "size": 3779,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/concat-stream/download/concat-stream-1.6.1.tgz"
-  },
   "engines": [
     "node >= 0.8"
   ],
   "files": [
     "index.js"
   ],
-  "gitHead": "bb2b8d07a14afa056c0c8f27422426434dbb5734",
   "homepage": "https://github.com/maxogden/concat-stream#readme",
   "license": "MIT",
   "main": "index.js",
-  "maintainers": [
-    {
-      "name": "mafintosh",
-      "email": "mathiasbuus@gmail.com"
-    },
-    {
-      "name": "maxogden",
-      "email": "max@maxogden.com"
-    }
-  ],
   "name": "concat-stream",
-  "optionalDependencies": {},
-  "publish_time": 1519914925760,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/maxogden/concat-stream.git"
@@ -132,5 +91,5 @@
       "android-browser/4.2..latest"
     ]
   },
-  "version": "1.6.1"
+  "version": "1.6.0"
 }

@@ -2,19 +2,19 @@
   "_args": [
     [
       {
-        "raw": "escape-string-regexp@^1.0.5",
+        "raw": "escape-string-regexp@^1.0.2",
         "scope": null,
         "escapedName": "escape-string-regexp",
         "name": "escape-string-regexp",
-        "rawSpec": "^1.0.5",
-        "spec": ">=1.0.5 <2.0.0",
+        "rawSpec": "^1.0.2",
+        "spec": ">=1.0.2 <2.0.0",
         "type": "range"
       },
       "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/chalk"
     ]
   ],
   "_cnpm_publish_time": 1456059317074,
-  "_from": "escape-string-regexp@>=1.0.5 <2.0.0",
+  "_from": "escape-string-regexp@>=1.0.2 <2.0.0",
   "_hasShrinkwrap": false,
   "_id": "escape-string-regexp@1.0.5",
   "_inCache": true,
@@ -31,27 +31,35 @@
   "_npmVersion": "2.14.12",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "escape-string-regexp@^1.0.5",
+    "raw": "escape-string-regexp@^1.0.2",
     "scope": null,
     "escapedName": "escape-string-regexp",
     "name": "escape-string-regexp",
-    "rawSpec": "^1.0.5",
-    "spec": ">=1.0.5 <2.0.0",
+    "rawSpec": "^1.0.2",
+    "spec": ">=1.0.2 <2.0.0",
     "type": "range"
   },
   "_requiredBy": [
-    "/babel-code-frame/chalk",
     "/chalk",
     "/figures",
-    "/gulp-util/chalk",
-    "/metro-bundler/chalk",
-    "/react-native/chalk",
-    "/react-native/inquirer/chalk"
+    "/inquirer/chalk",
+    "/ipa-metadata/chalk",
+    "/jest-config/chalk",
+    "/jest-diff/chalk",
+    "/jest-jasmine2/chalk",
+    "/jest-matcher-utils/chalk",
+    "/jest-message-util/chalk",
+    "/jest-resolve/chalk",
+    "/jest-runtime/chalk",
+    "/jest-snapshot/chalk",
+    "/jest-util/chalk",
+    "/jest-validate/chalk",
+    "/jest/chalk"
   ],
   "_resolved": "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz",
   "_shasum": "1b61c0562190a8dff6ae3bb2cf0200ca130b86d4",
   "_shrinkwrap": null,
-  "_spec": "escape-string-regexp@^1.0.5",
+  "_spec": "escape-string-regexp@^1.0.2",
   "_where": "/Users/panheshun/RNapps/docbook-RN-app-YS/yunshu_rn/node_modules/chalk",
   "author": {
     "name": "Sindre Sorhus",

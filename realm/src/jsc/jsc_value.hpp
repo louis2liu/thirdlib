@@ -51,6 +51,7 @@ inline const char *jsc::Value::typeof(JSContextRef ctx, const JSValueRef &value)
         case kJSTypeBoolean: return "boolean";
         case kJSTypeUndefined: return "undefined";
     }
+    return "null";
 }
 
 template<>
