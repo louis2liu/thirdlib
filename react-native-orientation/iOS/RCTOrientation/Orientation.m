@@ -64,9 +64,8 @@ static UIInterfaceOrientationMask _orientation = UIInterfaceOrientationMaskAllBu
 
     case UIDeviceOrientationPortraitUpsideDown:
       orientationStr = @"PORTRAITUPSIDEDOWN";
-    
       break;
-          
+
     default:
       // orientation is unknown, we try to get the status bar orientation
       switch ([[UIApplication sharedApplication] statusBarOrientation]) {
