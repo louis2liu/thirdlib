@@ -145,6 +145,8 @@ RCT_EXPORT_METHOD(setup:(NSDictionary *)param){
   }
 
   [JSHAREService setupWithConfig:config];
+    
+    [JSHAREService setDebug:YES];
 }
 
 

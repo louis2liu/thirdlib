@@ -1,7 +1,8 @@
 import React, {PureComponent} from 'react';
 import {
-  Image,
-  Dimensions,
+    Image,
+    Dimensions,
+    Platform,
 } from 'react-native';
 
 const {width} = Dimensions.get('window');
@@ -16,8 +17,9 @@ export default class AutoSizedImage extends PureComponent {
     this.state = {
       // set width 1 is for preventing the warning
       // You must specify a width and height for the image %s
-      width: this.props.style.width || 1,
-      height: this.props.style.height || 1,
+      width: this.props.style.width || (Platform.OS === 'ios'?100:1),
+      height: this.props.style.height || (Platform.OS === 'ios'?100:1),
+
     };
   }
 
@@ -50,6 +52,7 @@ export default class AutoSizedImage extends PureComponent {
     } else {
       source = Object.assign(source, this.props.source, finalSize);
     }
+
 
     return <Image style={style} source={source} />;
   }
